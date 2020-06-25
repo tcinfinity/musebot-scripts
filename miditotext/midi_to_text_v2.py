@@ -10,10 +10,13 @@ import music21
 from music21 import *
 
 import numpy as np
+import math
 
 
 """Converts MIDI file to text"""
 def midiToText(filename):
+
+    print('File: {}'.format(filename))
 
     # read from input filename
     mid = MidiFile(filename)
@@ -43,6 +46,7 @@ def midiToText(filename):
         print('Track {}: {}'.format(i, track.name))
 
         for msg in track:
+            print(msg)
             if msg.type == 'set_tempo': # Note: is_meta
                 msg_bpm = mido.tempo2bpm(msg.tempo) # convert from microseconds to bpm (e.g. 500000 us to 120 bpm)
                 msg_bpm_int = int(msg_bpm)
@@ -61,6 +65,12 @@ def midiToText(filename):
         tempo = check_multiple_tempos[0]
 
     print('Tempo: {}'.format(tempo))
+
+
+    # get total time of piece
+    # mid.length returns total playback time in seconds
+    length_in_ticks = mid.length/60*tempo*mid.ticks_per_beat #mido.second2tick(mid.length, ticks_per_beat=mid.ticks_per_beat, tempo=tempo)
+    print(length_in_ticks)
 
 
     # contains arrays of messages (only notes) for each track
@@ -94,6 +104,7 @@ def midiToText(filename):
         grouped_messages_list.append([])
 
         count = 0
+        temp_count = 0
         while count < len(track):
 
             # add current msg (should be time ≠ 0)
@@ -101,10 +112,17 @@ def midiToText(filename):
                 'group': [track[count]], 
                 'time': track[count].time
             }
+            
+            # add one for current msg added at start
+            count += 1
+
+            # freeze current value of count
+            temp_count = count
 
             # add all following msgs that are time = 0
-            for i in range(1, len(track) - count):
-                msg = track[count+i]
+            for i in range(len(track) - temp_count):
+
+                msg = track[temp_count+i]
                 if msg.time == 0:
                     new_group['group'].append(msg)
                     count += 1
@@ -115,9 +133,6 @@ def midiToText(filename):
 
             # append temp grouped msgs back to group_messages
             grouped_messages_list[x].append(new_group)
-
-            # add one for current msg added at start
-            count += 1
 
 
 
@@ -131,28 +146,66 @@ def midiToText(filename):
     """
 
     # instantiate text list
-    result_list = ['start', 'tempo{}'.format(tempo)]
+    # [CLS] (classification) used for indicating start of input (using other model standards)
+    result_list = ['[CLS]', 'tempo{}'.format(tempo), '[127]']
 
 
     # loop through grouped messages and check for delta time differences between tracks
 
+    # to keep track of time passed during the piece
+    current_wait_time_elapsed = 0
+    time_embed_counter = 126
+    time_embed_interval = math.ceil(length_in_ticks / 127) # rounding up - should prevent underflow of time i.e. [0] comes before end of piece
+
     while max(len(track) for track in grouped_messages_list) > 0:
 
-        all_first_groups = [t.pop(0) for t in grouped_messages_list]        # use pop to remove from list
-        all_first_times = [group['time'] for group in all_first_groups]
+        all_first_groups = []
+        for t in grouped_messages_list:
 
-        min_dt = min(all_first_times)
+            # if track is empty replace with None
+            if len(t) == 0:
+                all_first_groups.append(None)
+
+            else:
+                # use pop to remove from list
+                all_first_groups.append(t.pop(0))
+    
+        # all first times - use None for empty tracks (already replaced with None above)
+        all_first_times = [group['time'] if group is not None else None for group in all_first_groups]
+
+
+        # get min times in all_first_times ignoring None
+        min_dt = min(t for t in all_first_times if t is not None)
 
         # append wait
         if min_dt != 0:
             wait_text = 'wait:{}'.format(min_dt)
             result_list.append(wait_text)
 
+            current_wait_time_elapsed += min_dt
+
+            if time_embed_counter != 0:
+
+                # check for insertion of wait (word) embedding
+                if current_wait_time_elapsed > time_embed_interval:
+
+                    time_embed_multiple = current_wait_time_elapsed // time_embed_interval
+                    time_pushover = current_wait_time_elapsed - time_embed_interval * time_embed_multiple
+
+                    word_embedding = '[{}]'.format(time_embed_counter)
+                    result_list.append(word_embedding)
+
+                    current_wait_time_elapsed = time_pushover
+                    time_embed_counter -= time_embed_multiple
+
+                    # time_embed_counter cannot be 0 due to integer rounding
+
         for i, track_group in enumerate(all_first_groups):
 
-            # if no notes available, i.e. only filler wait
-            # ['group'] will be empty list
-            # causing for loop (below) to be skipped
+            # check if None (no notes left in that track)
+            if track_group is None:
+                continue
+
 
             if all_first_times[i] == min_dt:
                 for msg in track_group['group']:
@@ -172,15 +225,16 @@ def midiToText(filename):
                 time_difference = all_first_times[i] - min_dt
 
                 # prepend filler wait to remaining track
-                new_filler_group = {'group': [], 'time': time_difference}
+                new_filler_group = {'group': all_first_groups[i]['group'], 'time': time_difference}    # no need to .copy()
                 grouped_messages_list[i].insert(0, new_filler_group)
 
 
 
         # Possible scenario: ONLY if at the start, one track has a rest e.g. time=96
 
-
-    result_list.append('end')
+    print('Final time embedding: {}'.format(time_embed_counter))
+    result_list.append('[0]')
+    result_list.append('[END]')
 
     result_string = ' '.join(result_list)
 
