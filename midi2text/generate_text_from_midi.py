@@ -1,5 +1,5 @@
 import midi_to_text
-from midi_to_text import midiToText
+from midi2text import midiToText
 
 import argparse
 import glob
