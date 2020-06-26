@@ -14,8 +14,6 @@ from tqdm import tqdm
 notetonumberacc = {'C#':1,'D-':1,'D#':3,'E-':3,'F#':6,'G-':6,'G#':8,'A-':8,'A#':10,'B-':10, 'C-':-1, 'F-':4, 'B#':12, 'E#':5} 
 notetonumbernat = {'C':0,'D':2,'E':4,'F':5,'G':7,'A':9,'B':11,}
 
-# sample
-# sample_text = 'start tempo120 melody:v72:G4 accomp0:v72:D3 accomp1:v72:G3 wait:96 melody:v0:G4 melody:v72:A4 wait:96 melody:v0:A4 melody:v72:B4 accomp0:v0:D3 accomp0:v72:D3 accomp1:v0:G3 accomp1:v72:B3 wait:192 melody:v0:B4 accomp0:v0:D3 accomp1:v0:B3 end'
 
 # converts from musical notation to midi numbers
 def notetonumber(note):
@@ -41,7 +39,7 @@ def texttotrack(miditext):
     partslist = {}
 
     # cleaning up the string to make a dict
-    midilist = [note.split(':') for note in midilist if not note.startswith('[')] # remove embeddings as well
+    midilist = [note.split(':') for note in midilist if not note.startswith('[') or note != 'start' or note != 'end'] # remove embeddings as well
 
     # getting tempo
     if 'tempo' in midilist[0][0]:

@@ -1,0 +1,714 @@
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/gpt_2_simple/src/sample.py:17: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/gpt_2_simple/src/memory_saving_gradients.py:62: get_backward_walk_ops (from tensorflow.contrib.graph_editor.select) is deprecated and will be removed after 2019-06-06.
+Instructions for updating:
+Please use tensorflow.python.ops.op_selector.get_backward_walk_ops.
+Loading checkpoint models/355M/model.ckpt
+INFO:tensorflow:Restoring parameters from models/355M/model.ckpt
+0%|          | 0/1 [00:00<?, ?it/s]
+Loading dataset...
+100%|██████████| 1/1 [00:23<00:00, 23.48s/it]
+dataset has 6338589 tokens
+Training...
+[10 | 29.20] loss=0.70 avg=0.70
+[20 | 51.12] loss=0.54 avg=0.62
+[30 | 73.12] loss=0.41 avg=0.55
+[40 | 95.19] loss=1.08 avg=0.68
+[50 | 117.34] loss=0.37 avg=0.62
+[60 | 139.47] loss=0.24 avg=0.56
+[70 | 161.58] loss=0.30 avg=0.52
+[80 | 183.69] loss=0.23 avg=0.48
+[90 | 205.81] loss=0.39 avg=0.47
+[100 | 227.92] loss=0.31 avg=0.45
+Saving checkpoint/25jun_tc_run1/model-100
+======== SAMPLE 1 ========
+  melody melody:v0:E-8 melody:v100:C-5 melody:v100:F-4 melody:v0:F4 melody:v100:D5 melody:v100:E-5 melody:v0:E-5 melody:v0:D5 melody:v100:F#4 melody:v100:G4 melody:v0:G4 melody:v100:F#4 melody:v100:G#5 melody:v0:G#5 melody:v0:F#4 melody:v100:C3 melody:v100:G#4 melody:v0:G#4 melody:v100:F#4 melody:v100:B-4 melody:v0:B-4 melody:v100:E-4 melody:v100:G>3 melody:v100:G#4 melody:v0:G#4 melody:v100:B-4 melody:v100:E-4 melody:v0:E-4 melody:v100:E6 melody:v100:E7 accomp0:v0:E6 accomp0:v0:E7 accomp0:v0:E6 accomp0:v0:E3 accomp0:v0:C3 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v100:C3 melody:v100:B-3 melody:v0:B-3 melody:v100:B-3 melody:v0:B-3 melody:v100:G#3 melody:v100:E3 melody:v0:E3 melody:v100:F#3 melody:v100:E2 melody:v0:E2 accomp0:v0:E6 accomp0:v0:E8 harmony melody:v0:E-8 melody:v100:F9 accomp0:v0:E6 accomp0:v0:E8 accomp0:v0:E3 accomp0:v0:C3 accomp0:v0:G#3 accomp0:v100:E3 melody:v100:F#3 melody:v0:F#3 melody:v100:A4 melody:v100:B-3 melody:v0:B-3 melody:v100:D4 melody:v100:B-3 melody:v0:B-3 melody:v0:D4 melody:v100:E6 melody:v100:E7 accomp0:v100:C3 melody:v100:G#3 melody:v0:G#3 melody:v100:D6 melody:v100:E4 accomp0:v0:E6 accomp0:v0:E8 accomp0:v0:E3 accomp0:v0:C3 accomp0:v0:C2 accomp0:v100:F#3 melody:v100:G#3 melody:v0:G#3 melody:v100:D6 accomp0:v0:F9 accomp0:v0:E8 accomp0:v0:E3 accomp0:v0:C3 accomp0:v0:G#3 accomp0:v100:G#3 melody:v100:F#3 melody:v0:F#3 melody:v100:D6 melody:v100:E4 accomp0:v0:G#3 accomp0:v0:F#3 accomp0:v0:E3 accomp0:v100:C3 melody:v100:B-3 melody:v0:B-3 melody:v100:G#3 melody:v100:A4 accomp0:v0:G#3 accomp0:v0:A4 accomp0:v0:E3 accomp0:v100:E3 accomp0:v100:G#3 melody:v0:A4 melody:v100:D6 accomp0:v0:E3 accomp0:v0:G#3 accomp0:v0:C3 accomp0:v100:G#3 melody:v100:E3 melody:v0:E3 melody:v100:G#3 melody:v100:A4 accomp0:v0:G#3 accomp0:v0:E3 accomp0:v0:C3 accomp0:v0:B-3 accomp0:v100:F#3 melody:v100:B-3 melody:v0:B-3 melody:v100:E4 accomp0:v0:E4 accomp0:v0:F#3 accomp0:v0:G#3 accomp0:v100:E3 accomp0:v100:G#3 melody:
+
+[110 | 291.30] loss=0.27 avg=0.44
+[120 | 313.60] loss=0.30 avg=0.42
+[130 | 335.73] loss=0.27 avg=0.41
+[140 | 357.85] loss=0.30 avg=0.40
+[150 | 380.02] loss=0.24 avg=0.39
+[160 | 402.17] loss=0.26 avg=0.38
+[170 | 424.31] loss=0.21 avg=0.37
+[180 | 446.48] loss=0.35 avg=0.37
+[190 | 468.64] loss=0.34 avg=0.37
+[200 | 490.78] loss=0.26 avg=0.36
+Saving checkpoint/25jun_tc_run1/model-200
+WARNING:tensorflow:From /tensorflow-1.15.2/python3.6/tensorflow_core/python/training/saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+======== SAMPLE 1 ========
+C0:D5 melody:v100:C5 melody:v100:C6 wait:48 melody:v0:C6 melody:v0:C5 melody:v0:C6 wait:24 melody:v100:E5 melody:v100:E6 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:E6 melody:v100:E5 melody:v100:E6 melody:v100:G3 wait:48 melody:v0:G3 melody:v0:E3 melody:v100:B-4 melody:v100:B-5 wait:48 melody:v0:B-5 melody:v0:B-4 melody:v100:E5 melody:v100:E6 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:E6 melody:v100:E5 melody:v100:E6 wait:48 melody:v0:E5 melody:v0:E6 melody:v100:E5 melody:v100:E6 wait:48 melody:v0:E6 melody:v0:E5 melody:v100:A5 melody:v100:A6 wait:48 melody:v0:A6 melody:v0:A5 melody:v100:E5 melody:v100:E6 wait:48 melody:v0:E6 melody:v0:E5 melody:v0:E5 melody:v100:E5 melody:v100:E6 melody:v100:G3 wait:48 melody:v0:G3 melody:v0:E3 melody:v100:G5 melody:v100:G6 wait:48 melody:v0:G6 melody:v0:E5 melody:v0:E5 wait:48 melody:v100:E5 melody:v100:E6 melody:v100:E5 accomp0:v100:E-4 accomp0:v100:B-4 accomp0:v100:E-5 wait:48 melody:v0:E5 melody:v0:E6 melody:v100:E5 melody:v100:E6 wait:96 melody:v0:F6 melody:v0:F5 melody:v100:G5 melody:v100:G6 wait:96 melody:v0:G5 melody:v0:E6 melody:v0:E5 melody:v100:E5 melody:v100:E6 wait:96 melody:v0:E6 melody:v0:E5 melody:v100:C5 melody:v100:C6 wait:60 melody:v0:C5 melody:v0:C6 melody:v100:G5 melody:v100:G5 wait:48 melody:v0:G5 melody:v0:G5 melody:v100:A5 melody:v100:A6 wait:48 melody:v0:A6 melody:v0:A5 melody:v100:F5 melody:v100:F6 wait:48 melody:v0:F6 melody:v0:F5 melody:v0:F5 melody:v100:D5 melody:v100:D6 wait:48 melody:v0:D6 melody:v0:D5 melody:v0:D5 wait:60 melody:v0:D5 melody:v0:D6 melody:v0:D5 wait:48 melody:v100:A5 melody:v100:A6 melody:v100:E5 melody:v100:E6 wait:72 melody:v0:E6 melody:v0:E5 melody:v0:E5 melody:v100:E5 melody:v100:E6 melody:v100:E5 wait:72 melody:v0:E5 melody:v0:E5 melody:v100:G5 melody:v100:G5 wait:48 melody:v0:G5 melody:v0:G5 melody:v0:G5 wait:96 melody:v100:C5 melody:v100:C6 melody:v100:G5 wait:48 melody:v0:G5 melody:v0:C5 melody:v0:C5 wait:24 melody:v100:E5 melody:v100:E6 melody:v100:G5 wait:48 melody:v0:E5 melody:v0:E5 melody:v0:G5 wait:48 melody:v0:G5 melody:v0:G5 melody:v0:E5 melody:v100:F5 melody:v
+
+[210 | 552.90] loss=0.29 avg=0.36
+[220 | 575.07] loss=0.36 avg=0.36
+[230 | 597.20] loss=0.17 avg=0.35
+[240 | 619.35] loss=0.35 avg=0.35
+[250 | 641.53] loss=0.23 avg=0.34
+[260 | 663.67] loss=0.29 avg=0.34
+[270 | 685.82] loss=0.21 avg=0.34
+[280 | 707.97] loss=0.24 avg=0.33
+[290 | 730.10] loss=0.22 avg=0.33
+[300 | 752.27] loss=0.21 avg=0.32
+Saving checkpoint/25jun_tc_run1/model-300
+======== SAMPLE 1 ========
+:#1 song:v0:B2 melody:v100:C5 melody:v100:C6 accomp0:v0:G#2 accomp0:v0:G#1 accomp0:v100:G2 accomp0:v100:G1 accomp0:v100:F#2 wait:96 melody:v58:G5 melody:v58:G6 melody:v58:G5 melody:v58:G6 wait:24 melody:v0:G6 melody:v0:G5 melody:v0:G5 melody:v0:G6 melody:v58:G5 melody:v58:G6 melody:v58:G5 melody:v58:G6 accomp0:v0:F#2 accomp0:v0:G1 accomp0:v100:A2 accomp0:v100:B2 accomp0:v100:F#2 wait:48 melody:v0:G6 melody:v0:G5 melody:v58:G6 melody:v58:G5 melody:v58:G5 accomp0:v0:A2 accomp0:v0:B2 accomp0:v100:A2 accomp0:v100:B2 accomp0:v100:F#2 wait:48 melody:v0:G6 melody:v0:G5 melody:v58:G5 melody:v58:G6 melody:v58:G5 melody:v58:G6 melody:v58:G5 melody:v58:G6 melody:v58:G5 melody:v58:G6 accomp0:v0:F#2 accomp0:v0:B2 accomp0:v100:A2 accomp0:v100:B2 accomp0:v100:F#2 wait:24 melody:v0:G6 melody:v0:G5 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 accomp0:v0:F#2 accomp0:v0:A2 accomp0:v100:E2 accomp0:v100:E3 accomp0:v100:B2 wait:48 melody:v0:F#6 melody:v0:F#7 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 accomp0:v0:B2 accomp0:v0:E2 accomp0:v100:G2 accomp0:v100:C3 accomp0:v100:G2 wait:48 melody:v0:F#6 melody:v0:F#8 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 accomp0:v0:G2 accomp0:v0:C3 accomp0:v100:G2 accomp0:v100:C3 accomp0:v100:G2 wait:48 melody:v0:F#6 melody:v0:F#7 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 accomp0:v0:G2 accomp0:v0:C3 accomp0:v100:G2 accomp0:v100:C3 accomp0:v100:G2 wait:48 melody:v0:F#6 melody:v0:F#7 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 melody:v58:F#7 melody:v58:F#6 accomp0:v0:G2 accomp0:v0:C3 accomp0:v100:A2 accomp0:v100:C3 accomp0:v100:G2 wait:48 melody:v0:F#6 melody:v0:F#7 melody:v58:C5 melody:v58:C6 melody:v58:C6 melody:v58:C5 melody:v58:C5 accomp0:v0:A2 accomp0:v0:C3 accomp0:v100:A2 accomp0:v100:C3 accomp0:v100:G2 wait:48 melody:v0:C5 melody:v0:C6 melody:v58:E5 melody:v58:E6 accomp0:v0:G2 accomp0:v
+
+[310 | 816.25] loss=0.22 avg=0.32
+[320 | 838.53] loss=0.16 avg=0.31
+[330 | 860.70] loss=0.22 avg=0.31
+[340 | 882.89] loss=0.17 avg=0.30
+[350 | 905.10] loss=0.29 avg=0.30
+[360 | 927.27] loss=0.20 avg=0.30
+[370 | 949.46] loss=0.26 avg=0.30
+[380 | 971.64] loss=0.21 avg=0.30
+[390 | 993.86] loss=0.25 avg=0.30
+[400 | 1016.05] loss=0.21 avg=0.29
+Saving checkpoint/25jun_tc_run1/model-400
+======== SAMPLE 1 ========
+:v0:G#2 melody:v0:G#3 melody:v0:B-2 melody:v0:B-3 melody:v100:F#4 melody:v100:F#5 melody:v100:B3 melody:v100:E4 melody:v100:E5 wait:96 melody:v0:E5 melody:v0:E4 melody:v0:B3 melody:v0:F#3 melody:v0:B2 melody:v100:E4 melody:v100:E5 melody:v100:B3 melody:v100:D4 melody:v100:F#4 melody:v100:F#5 wait:96 melody:v0:C#5 melody:v0:F#2 melody:v0:B3 melody:v0:F#3 melody:v0:E5 melody:v0:G#2 melody:v0:G#3 melody:v0:B-2 melody:v0:B-3 melody:v100:C#4 melody:v100:E4 melody:v100:E5 melody:v100:B3 melody:v100:E4 melody:v100:E5 wait:96 melody:v0:E5 melody:v0:E4 melody:v0:B3 melody:v0:E4 melody:v0:B2 melody:v0:E5 melody:v0:F#2 melody:v0:E4 melody:v0:E5 melody:v100:B3 melody:v100:E3 melody:v100:G#3 melody:v100:G#2 melody:v100:E4 melody:v100:B3 melody:v100:D4 melody:v100:E4 melody:v100:E5 wait:96 melody:v0:B3 melody:v0:E3 melody:v0:G#3 melody:v0:G#2 melody:v0:E4 melody:v0:B3 melody:v0:E4 melody:v0:E5 melody:v100:E3 melody:v100:G#3 melody:v100:G#2 melody:v100:E4 melody:v100:U4 melody:v100:U5 wait:95 melody:v0:B5 melody:v0:G#4 melody:v0:G#3 melody:v0:E4 melody:v0:E3 melody:v0:G#4 melody:v0:U4 melody:v0:U5 melody:v100:E3 melody:v100:G#3 melody:v100:G#2 melody:v100:E4 melody:v100:E5 melody:v100:B3 melody:v100:E4 melody:v100:B2 melody:v100:E4 melody:v100:E5 wait:100 melody:v0:E5 melody:v0:E4 melody:v0:B2 melody:v0:G#3 melody:v0:B3 melody:v0:E5 melody:v0:E4 melody:v0:B3 melody:v0:E4 melody:v100:E3 melody:v100:G#3 melody:v100:G#2 melody:v100:E4 melody:v100:F#5 melody:v100:B3 melody:v100:E4 melody:v100:E5 melody:v100:F#5 melody:v100:E4 melody:v100:E3 melody:v100:G#3 melody:v100:G#2 melody:v100:E3 melody:v100:E4 melody:v100:G#5 wait:96 melody:v0:G#5 melody:v0:E2 melody:v0:E3 melody:v0:G#3 melody:v0:E3 melody:v0:G#3 melody:v100:E4 melody:v100:E3 melody:v100:G#3 melody:v100:G#2 melody:v100:E5 melody:v100:B3 melody:v100:E4 melody:v100:E5 melody:v100:E6 melody:v0:E5 melody:v0:E6 melody:v0:E5 melody:v0:E4 melody:v0:E4 melody:v0:E6 melody:v0:E5 melody:v0:E6 melody:v100:E3 melody:v100:G#3 melody:v100:G#2 melody:v100:E5 melody
+
+[410 | 1076.28] loss=0.23 avg=0.29
+[420 | 1098.75] loss=0.38 avg=0.29
+[430 | 1120.92] loss=0.27 avg=0.29
+[440 | 1143.13] loss=0.18 avg=0.29
+[450 | 1165.34] loss=0.21 avg=0.29
+[460 | 1187.53] loss=0.57 avg=0.29
+[470 | 1209.73] loss=0.32 avg=0.30
+[480 | 1231.90] loss=0.18 avg=0.29
+[490 | 1254.14] loss=0.13 avg=0.29
+[500 | 1276.35] loss=0.26 avg=0.29
+Saving checkpoint/25jun_tc_run1/model-500
+======== SAMPLE 1 ========
+:F#3 melody:v0:C#5 melody:v100:G#6 wait:48 melody:v0:G#6 melody:v0:G#5 melody:v100:F#5 wait:48 melody:v0:F#5 melody:v0:F#6 melody:v100:B-5 wait:48 accomp0:v0:D3 accomp0:v0:G#3 accomp0:v100:G#3 accomp0:v100:G#2 accomp0:v100:B-3 wait:48 melody:v0:B-5 melody:v0:B-6 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v0:C#6 melody:v100:C#5 accomp0:v0:B-3 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v0:G#3 accomp0:v100:D3 accomp0:v100:G#3 accomp0:v100:G#2 accomp0:v100:B-3 wait:48 melody:v0:C#5 melody:v0:C#6 melody:v100:B-5 accomp0:v0:B-3 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v0:D3 wait:48 melody:v0:B-5 melody:v0:B-6 melody:v100:F#5 accomp0:v0:B-3 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v0:D3 accomp0:v100:B-3 accomp0:v100:G#3 accomp0:v100:G#2 accomp0:v100:F#3 wait:48 melody:v0:F#5 melody:v0:F#6 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v0:C#6 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v0:G#6 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v0:G#6 melody:v100:C#5 accomp0:v0:B-3 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v0:B-3 accomp0:v100:B-3 accomp0:v100:G#3 accomp0:v100:G#2 accomp0:v100:D3 accomp0:v100:E-3 wait:48 melody:v0:C#5 melody:v0:C#6 melody:v100:C#5 accomp0:v0:E-3 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v0:B-3 accomp0:v100:G#3 accomp0:v100:G#2 accomp0:v100:D3 accomp0:v100:E-3 wait:48 melody:v0:C#5 melody:v0:C#6 melody:v100:B-6 accomp0:v0:E-3 accomp0:v0:G#2 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v100:E-3 accomp0:v100:G#3 accomp0:v100:G#2 accomp0:v100:D3 accomp0:v100:B-3 wait:48 melody:v0:B-6 melody:v0:B-6 melody:v100:G#6 accomp0:v0:B-3 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v0:D3 accomp0:v0:G#3 accomp0:v100:G#3 accomp0:v100:G#2 accomp0:v100:D3 accomp0:v100:B-3 wait:48 melody:v0:G#6 melody:v0:G#5 melody:v100:F#5 wait:48 melody:v0:F#5 melody:v0:F#6 melody:v100:A5 accomp0:v0:B-3 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v0:D3 accomp0:v0:G#3 accomp0:v100:E-3 accomp0:v100:G#3 accomp0:v
+
+[510 | 1337.91] loss=0.26 avg=0.29
+[520 | 1360.13] loss=0.11 avg=0.28
+[530 | 1382.34] loss=0.14 avg=0.28
+[540 | 1404.56] loss=0.71 avg=0.29
+[550 | 1426.78] loss=0.28 avg=0.29
+[560 | 1448.95] loss=0.29 avg=0.29
+[570 | 1471.17] loss=0.24 avg=0.29
+[580 | 1493.39] loss=0.22 avg=0.29
+[590 | 1515.58] loss=0.21 avg=0.28
+[600 | 1537.78] loss=0.17 avg=0.28
+Saving checkpoint/25jun_tc_run1/model-600
+======== SAMPLE 1 ========
+4 melody:v100:D5 melody:v100:D4 wait:48 melody:v0:D4 melody:v0:D5 melody:v100:B-4 melody:v100:E-4 melody:v100:E-5 wait:48 melody:v0:E-5 melody:v0:E-4 melody:v100:D4 melody:v100:G4 melody:v100:G5 wait:48 melody:v0:G5 melody:v0:G4 melody:v100:D5 melody:v100:C#3 melody:v100:G#3 melody:v100:G#2 melody:v100:D3 wait:24 melody:v0:D3 wait:8 melody:v0:C#3 melody:v0:G#3 melody:v0:G#2 melody:v100:D3 wait:24 melody:v0:D3 wait:8 melody:v100:D3 wait:24 melody:v0:D3 melody:v100:D3 wait:24 melody:v0:D3 wait:7 melody:v100:G#5 melody:v100:E-3 melody:v100:E-2 melody:v100:A2 melody:v100:B-3 melody:v100:C#5 wait:24 melody:v0:G#5 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v100:A4 melody:v100:A5 wait:48 melody:v0:A4 melody:v100:D4 melody:v100:F#5 wait:48 melody:v0:F#5 melody:v100:D4 melody:v100:E-4 melody:v100:E-5 wait:48 melody:v0:E-5 melody:v0:D4 melody:v100:D5 melody:v100:A4 melody:v100:A5 wait:48 melody:v0:A5 melody:v0:A4 melody:v100:B-4 melody:v100:E-2 melody:v100:E-3 melody:v100:G#3 melody:v100:C#5 melody:v100:E-7 melody:v100:B-3 melody:v100:G#2 melody:v100:A2 melody:v100:C#7 melody:v100:C#6 melody:v100:A5 melody:v100:E-3 melody:v100:E-2 melody:v100:A2 melody:v100:D3 wait:24 melody:v0:C#6 melody:v0:A5 melody:v0:E-3 melody:v0:E-2 melody:v100:D3 wait:24 melody:v0:D6 melody:v0:A5 melody:v100:G#5 wait:48 melody:v0:G#5 wait:48 melody:v0:B-4 melody:v100:B-4 melody:v100:D4 melody:v100:G#4 wait:48 melody:v0:G#4 melody:v0:B-4 melody:v100:F#5 melody:v100:A4 melody:v100:A5 accomp0:v0:B2 accomp0:v0:B1 accomp0:v100:B2 wait:48 melody:v0:A5 melody:v0:A4 melody:v100:D4 melody:v100:F#5 wait:48 melody:v0:F#5 melody:v100:D4 melody:v100:E-4 melody:v100:E-5 wait:48 melody:v0:E-5 melody:v0:D4 melody:v0:E-5 melody:v100:D4 melody:v100:E-4 melody:v100:A4 melody:v100:A5 wait:32 melody:v0:A5 melody:v0:A4 melody:v100:A4 melody:v100:E-2 melody:v100:E-3 melody:v100:G#3 accomp0:v0:B2 accomp0:v0:B1 accomp0:v100:B2 wait:48 melody:v0:A5 melody:v0:E-2 melody:v0:E-3 melody:v0:G#3 accomp0:v0:B2 melody:v100:A2 wait:48 melody:v0:A5 melody:v100:A5 wait:48 melody:v0:A4 melody:v100
+
+[610 | 1599.20] loss=0.12 avg=0.28
+[620 | 1621.43] loss=0.18 avg=0.28
+[630 | 1643.63] loss=0.15 avg=0.27
+[640 | 1665.83] loss=0.13 avg=0.27
+[650 | 1688.09] loss=0.15 avg=0.27
+[660 | 1710.32] loss=0.32 avg=0.27
+[670 | 1732.50] loss=0.28 avg=0.27
+[680 | 1754.70] loss=0.23 avg=0.27
+[690 | 1776.94] loss=0.15 avg=0.27
+[700 | 1799.17] loss=0.18 avg=0.26
+Saving checkpoint/25jun_tc_run1/model-700
+======== SAMPLE 1 ========
+  wait:16 melody:v100:A4 accomp0:v100:A3 wait:16 melody:v100:D5 accomp0:v0:A3 accomp0:v101:A3 wait:24 melody:v0:D5 wait:24 melody:v100:R5 accomp0:v100:A3 wait:24 melody:v0:R5 wait:16 melody:v100:D5 accomp0:v0:A3 accomp0:v101:A3 wait:16 melody:v100:A4 accomp0:v0:A3 accomp0:v101:A3 wait:16 melody:v100:B4 wait:96 melody:v0:B4 accomp0:v0:A3 accomp0:v101:A3 wait:48 melody:v100:B4 accomp0:v100:B3 wait:24 melody:v0:B4 wait:24 melody:v100:A4 accomp0:v100:A3 wait:24 melody:v0:A4 wait:8 melody:v100:D5 wait:24 melody:v100:B5 wait:24 melody:v0:B5 accomp0:v0:A3 accomp0:v101:E3 wait:8 melody:v100:A4 wait:48 melody:v100:B4 accomp0:v100:B3 wait:48 melody:v0:B4 accomp0:v0:B3 accomp0:v101:A3 wait:16 melody:v100:D4 accomp0:v100:A3 wait:16 melody:v100:A4 accomp0:v0:A3 accomp0:v101:C5 wait:48 melody:v0:D4 accomp0:v0:A3 accomp0:v102:E4 wait:192 melody:v100:F4 accomp0:v100:E4 wait:96 melody:v0:F4 melody:v100:D4 accomp0:v0:E4 accomp0:v102:F4 wait:48 accomp0:v100:F4 wait:48 melody:v0:D4 melody:v100:D4 accomp0:v0:F4 accomp0:v102:C5 wait:48 melody:v100:F4 accomp0:v100:F4 wait:48 melody:v0:F4 accomp0:v0:F4 accomp0:v102:A3 wait:24 melody:v100:F4 accomp0:v100:A3 wait:24 melody:v0:F4 wait:96 melody:v100:F4 accomp0:v100:C5 wait:24 melody:v0:F4 wait:48 melody:v100:F4 accomp0:v100:C5 wait:48 melody:v0:F4 wait:24 melody:v100:A4 accomp0:v100:C5 wait:24 melody:v0:A4 wait:48 melody:v100:F4 accomp0:v100:C5 wait:48 melody:v0:F4 wait:24 melody:v100:D4 accomp0:v100:C5 wait:48 melody:v0:D4 accomp0:v0:C5 accomp0:v102:A3 wait:16 melody:v100:D4 accomp0:v100:C3 accomp0:v102:C4 wait:16 melody:v100:A4 accomp0:v100:C3 accomp0:v102:C4 wait:96 melody:v0:A4 wait:24 melody:v100:A4 accomp0:v100:A3 wait:24 melody:v0:A4 accomp0:v0:A3 accomp0:v101:E3 wait:48 melody:v100:F4 accomp0:v100:B3 wait:48 melody:v0:F4 wait:48 melody:v100:D4 accomp0:v100:G3 accomp0:v102:F4 wait:48 melody:v0:D4 accomp0:v0:G3 accomp0:v101:B3 wait:48 melody:v100:B4 accomp0:v100:B3 wait:48 melody:v0:B4 accomp0:v0:B3 accomp0:v101:E4 wait:16 melody:v100:E4 accomp0:v100:E4 wait:16 melody:v100:B4 accomp0:v0:E4 accomp0:v101:F4 wait:24 melody:v0:E4 wait:48 melody:v100:F4 accomp0:v100:E4 wait:48
+
+[710 | 1862.26] loss=0.16 avg=0.26
+[720 | 1884.92] loss=0.33 avg=0.26
+[730 | 1907.11] loss=0.14 avg=0.26
+[740 | 1929.37] loss=0.20 avg=0.26
+[750 | 1951.59] loss=0.18 avg=0.26
+[760 | 1973.78] loss=0.26 avg=0.26
+[770 | 1996.06] loss=0.18 avg=0.26
+[780 | 2018.28] loss=0.12 avg=0.25
+[790 | 2040.53] loss=0.22 avg=0.25
+[800 | 2062.78] loss=0.16 avg=0.25
+Saving checkpoint/25jun_tc_run1/model-800
+======== SAMPLE 1 ========
+v0:B4 melody:v0:E5 melody:v0:C4 accomp0:v0:E3 accomp0:v0:E4 accomp0:v0:B3 wait:24 melody:v100:B4 melody:v100:C4 melody:v100:G4 wait:48 melody:v0:B4 melody:v0:C4 melody:v0:G4 melody:v0:E5 accomp0:v100:B3 accomp0:v100:E4 accomp0:v100:B2 wait:48 melody:v0:E5 melody:v0:B4 melody:v0:C4 melody:v0:G4 accomp0:v0 B2 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:G4 melody:v0:C4 accomp0:v0 B2 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:C4 melody:v0:G4 melody:v0:B4 wait:48 melody:v0:B4 melody:v0:C4 melody:v0:G4 melody:v0:E5 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:G4 melody:v0:C4 accomp0:v0 B2 accomp0:v0 E4 accomp0:v0 B2 wait:24 melody:v100:C4 melody:v100:G4 melody:v100:E4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:24 melody:v0:C4 melody:v0:G4 melody:v0:E4 wait:24 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:24 melody:v0:C4 melody:v0:G4 melody:v0:E4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:E4 melody:v0:G4 melody:v0:C4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:C4 melody:v0:G4 melody:v0:E4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:E4 melody:v0:G4 melody:v0:C4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:24 melody:v100:E4 melody:v100:C4 melody:v100:G4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:24 melody:v0:E4 melody:v0:C4 melody:v0:G4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:G4 melody:v0:C4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:C4 melody:v0:G4 melody:v0:E4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:48 melody:v0:E4 melody:v0:G4 melody:v0:E4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:24 melody:v100:C4 melody:v100:G4 melody:v100:E4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:24 melody:v0:C4 melody:v0:G4 melody:v0:E4 accomp0:v0 B2 accomp0:v0 B3 accomp0:v0 E4 accomp0:v0 B2 wait:24 melody:v100:C4 melody:v100:G4 melody:
+
+[810 | 2123.32] loss=0.17 avg=0.25
+[820 | 2145.68] loss=0.13 avg=0.25
+[830 | 2167.88] loss=0.21 avg=0.25
+[840 | 2190.11] loss=0.18 avg=0.25
+[850 | 2212.34] loss=0.17 avg=0.25
+[860 | 2234.54] loss=0.20 avg=0.24
+[870 | 2256.77] loss=0.31 avg=0.25
+[880 | 2279.00] loss=0.27 avg=0.25
+[890 | 2301.26] loss=0.16 avg=0.24
+[900 | 2323.51] loss=0.25 avg=0.24
+Saving checkpoint/25jun_tc_run1/model-900
+======== SAMPLE 1 ========
+0:v100:B3 melody:v100:B2 melody:v100:F#4 melody:v100:F#5 wait:24 melody:v0:F#5 melody:v0:F#4 wait:24 melody:v100:E-4 melody:v100:E-5 wait:24 melody:v0:E-4 melody:v0:E-5 melody:v100:E-4 melody:v100:E-5 wait:24 melody:v0:E-5 melody:v0:E-4 wait:24 melody:v100:F#4 melody:v100:F#5 wait:24 melody:v0:F#4 melody:v0:F#5 melody:v100:F#4 melody:v100:F#5 wait:24 melody:v0:F#5 melody:v0:F#4 wait:24 melody:v100:E-5 melody:v100:E-6 wait:24 melody:v0:E-5 melody:v0:E-6 melody:v100:F#6 melody:v100:F#5 wait:24 melody:v0:F#5 melody:v0:F#6 melody:v100:E-5 melody:v100:E-6 wait:24 melody:v0:E-6 melody:v0:E-5 melody:v100:D5 melody:v100:D6 wait:24 melody:v0:D5 melody:v0:D6 melody:v100:F#2 melody:v100:F#1 melody:v100:F#5 melody:v100:F#6 wait:24 melody:v0:F#6 melody:v0:F#5 melody:v100:F#5 melody:v100:F#6 wait:24 melody:v0:F#6 melody:v0:F#5 melody:v100:F#6 melody:v100:F#5 wait:24 melody:v0:F#5 melody:v0:F#6 melody:v100:E-5 melody:v100:E-6 wait:24 melody:v0:E-6 melody:v0:E-5 melody:v100:F#5 melody:v100:F#6 wait:24 melody:v0:F#5 melody:v0:F#6 wait:24 melody:v100:F#5 melody:v100:F#6 wait:24 melody:v0:F#5 melody:v0:F#6 wait:24 melody:v100:D5 melody:v100:D6 wait:24 melody:v0:D5 melody:v0:D6 melody:v100:D5 melody:v100:D6 wait:24 melody:d6 melody:d5 melody:v100:F#5 melody:v100:F#6 wait:24 melody:v0:F#6 melody:v0:F#5 melody:v100:F#5 melody:v100:F#6 wait:24 melody:v0:F#6 melody:v0:F#5 wait:24 melody:v100:F#5 melody:v100:F#6 wait:24 melody:v0:F#5 melody:v0:F#6 accomp0:v100:F#4 accomp0:v100:B3 accomp0:v100:B2 wait:24 melody:v100:B2 melody:v100:B3 melody:v100:F#4 melody:v100:F#5 wait:24 melody:v0:F#5 melody:v0:F#4 wait:24 melody:v100:F#4 melody:v100:F#5 wait:24 melody:v0:F#4 melody:v0:F#5 wait:24 melody:v100:G#4 melody:v100:G#5 wait:24 melody:v0:G#4 melody:v0:G#5 melody:v100:G#5 melody:v100:G#6 wait:24 melody:v0:G#6 melody:v0:G#5 melody:v100:B4 melody:v100:B3 wait:24 melody:v0:B3 melody:v0:G#5 melody:v100:B4 melody:v100:G#5 wait:24 melody:v0:G#5 melody:v0:B4 wait:24 melody:v100:E-5 melody:v100:E-6 wait:24 melody:v0:E-5 melody:v0:E-6 melody:v
+
+[910 | 2384.52] loss=0.24 avg=0.24
+[920 | 2406.76] loss=0.17 avg=0.24
+[930 | 2428.97] loss=0.17 avg=0.24
+[940 | 2451.19] loss=0.09 avg=0.24
+[950 | 2473.44] loss=0.41 avg=0.24
+[960 | 2495.68] loss=0.30 avg=0.24
+[970 | 2517.92] loss=0.20 avg=0.24
+[980 | 2540.18] loss=0.24 avg=0.24
+[990 | 2562.41] loss=0.32 avg=0.24
+[1000 | 2584.61] loss=0.19 avg=0.24
+Saving checkpoint/25jun_tc_run1/model-1000
+======== SAMPLE 1 ========
+:B-3 wait:24 accomp0:v0:B3 accomp0:v0:B2 accomp0:v0:F#2 accomp0:v100:B-2 accomp0:v100:B-3 accomp0:v100:F#3 wait:24 melody:v0:B4 melody:v100:F#4 wait:48 melody:v0:F#4 melody:v100:E4 wait:24 accomp0:v0:F#3 accomp0:v0:B3 accomp0:v0:B-2 accomp0:v100:F#3 accomp0:v100:B-2 accomp0:v100:B-3 wait:48 melody:v0:E4 melody:v100:F#4 wait:24 accomp0:v0:B-3 accomp0:v0:B-2 accomp0:v0:F#3 accomp0:v100:B-2 accomp0:v100:B-3 accomp0:v100:F#3 wait:24 melody:v0:F#4 wait:24 melody:v100:E4 wait:24 accomp0:v0:F#3 accomp0:v0:B-2 accomp0:v0:B-3 accomp0:v100:B-3 accomp0:v100:E-3 accomp0:v100:B-2 wait:24 melody:v0:E4 wait:24 wait:24 accomp0:v0:B-2 accomp0:v0:B-3 accomp0:v0:E-3 accomp0:v100:B-2 accomp0:v100:B-3 accomp0:v100:E-3 wait:24 melody:v100:F#4 wait:48 melody:v0:F#4 melody:v100:C#4 wait:48 melody:v0:C#4 accomp0:v0:E-3 accomp0:v0:B-2 accomp0:v0:B-3 accomp0:v100:C#3 accomp0:v100:F#3 accomp0:v100:G#3 wait:48 melody:v100:E4 wait:48 melody:v0:E4 melody:v100:F#4 wait:24 accomp0:v0:C#3 accomp0:v0:F#3 accomp0:v0:G#3 accomp0:v100:C#3 accomp0:v100:F#3 accomp0:v100:G#3 wait:24 melody:v0:F#4 wait:24 accomp0:v0:F#3 accomp0:v0:C#3 accomp0:v0:G#3 accomp0:v100:C#3 accomp0:v100:F#3 accomp0:v100:G#3 wait:24 melody:v100:B-4 wait:24 melody:v0:B-4 wait:24 melody:v100:W4 wait:24 accomp0:v0:G#3 accomp0:v0:C#3 accomp0:v0:F#3 accomp0:v100:F#2 accomp0:v100:F#3 accomp0:v100:B-3 wait:24 melody:v0:W4 melody:v100:F#4 wait:24 accomp0:v0:B-3 accomp0:v0:F#3 accomp0:v0:F#2 accomp0:v100:F#3 accomp0:v100:B-2 accomp0:v100:B-3 wait:24 melody:v0:F#4 wait:24 accomp0:v0:B-3 accomp0:v0:F#3 accomp0:v0:F#2 accomp0:v100:B-2 accomp0:v100:B-3 accomp0:v100:F#3 wait:24 melody:v100:F#4 wait:48 melody:v0:F#4 melody:v100:C#4 wait:48 melody:v0:C#4 accomp0:v0:F#3 accomp0:v0:B-2 accomp0:v0:B-3 accomp0:v100:B-3 accomp0:v100:B-2 accomp0:v100:F#3 wait:24 melody:v100:E4 wait:24 accomp0:v0:F#3 accomp0:v0:B-3 accomp0:v0:B-2 accomp0:v100:B-3 accomp0:v100:B-2 accomp0:v100:F#3 wait:24 melody:v0:
+
+[1010 | 2645.61] loss=0.08 avg=0.24
+[1020 | 2667.94] loss=0.34 avg=0.24
+[1030 | 2690.14] loss=0.30 avg=0.24
+[1040 | 2712.36] loss=0.20 avg=0.24
+[1050 | 2734.60] loss=0.28 avg=0.24
+[1060 | 2756.86] loss=0.23 avg=0.24
+[1070 | 2779.10] loss=0.22 avg=0.24
+[1080 | 2801.33] loss=0.17 avg=0.24
+[1090 | 2823.54] loss=0.27 avg=0.24
+[1100 | 2845.78] loss=0.21 avg=0.24
+Saving checkpoint/25jun_tc_run1/model-1100
+======== SAMPLE 1 ========
+100:E5 melody:v100:E4 melody:v100:C5 melody:v100:C6 accomp6:v0:F2 accomp6:v0:C2 accomp6:v0:F3 accomp6:v0:C3 accomp6:v0:F3 accomp6:v100:F3 accomp6:v100:B-2 accomp6:v100:E-3 accomp6:v100:G3 wait:48 melody:v0:C6 melody:v0:C5 melody:v0:G3 melody:v0:E-4 melody:v0:E-5 melody:v100:E5 melody:v100:E6 melody:v100:G5 melody:v100:G6 accomp6:v0:A1 accomp6:v0:A2 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v0:B-2 accomp6:v100:F3 accomp6:v100:B-2 accomp6:v100:E-3 accomp6:v100:G3 wait:48 melody:v0:G6 melody:v0:G5 melody:v0:G3 melody:v0:E-5 melody:v0:E-4 melody:v0:E-6 melody:v100:E5 melody:v100:E6 melody:v100:F5 melody:v100:F6 accomp6:v0:A3 accomp6:v0:A2 accomp6:v0:B-2 accomp6:v0:E-3 accomp6:v0:F3 accomp6:v100:F3 accomp6:v100:B-2 accomp6:v100:E-3 accomp6:v100:G3 wait:24 accomp6:v0:G3 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v0:F3 accomp6:v0:G3 accomp6:v0:B-2 accomp6:v0:E-3 accomp6:v0:E-3 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v100:E-3 accomp6:v100:B-2 accomp6:v100:E-3 accomp6:v100:G3 wait:48 melody:v0:F6 melody:v0:F5 melody:v0:G3 melody:v0:E-5 melody:v0:E-4 melody:v0:E-6 melody:v100:F5 melody:v100:F6 melody:v100:A5 melody:v100:A6 accomp6:v0:G3 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v100:B-2 accomp6:v100:E-3 accomp6:v100:E-3 accomp6:v100:E-3 accomp6:v100:B-2 wait:48 melody:v0:A6 melody:v0:A5 melody:v0:E-6 melody:v0:E-5 melody:v100:E-5 melody:v100:E-6 melody:v100:F5 melody:v100:F6 accomp6:v0:E-3 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v0:E-3 accomp6:v0:B-2 accomp6:v100:C3 accomp6:v100:G2 accomp6:v100:C3 accomp6:v100:G3 wait:24 accomp6:v0:G3 accomp6:v0:G2 accomp6:v0:C3 accomp6:v0:C3 accomp6:v0:G3 accomp6:v0:G2 accomp6:v0:C3 accomp6:v0:G3 accomp6:v0:C3 accomp6:v0:G2 accomp6:v0:G3 accomp6:v100:G3 accomp6:v100:C3 accomp6:v100:C2 accomp6:v100:G2 accomp6:v100:E-3 wait:24 melody:v0:F6 melody:v0:F5 melody:v0:G3 melody:v0:E
+
+[1110 | 2907.62] loss=0.12 avg=0.24
+[1120 | 2930.19] loss=0.19 avg=0.24
+[1130 | 2952.39] loss=0.20 avg=0.24
+[1140 | 2974.62] loss=0.19 avg=0.24
+[1150 | 2996.86] loss=0.19 avg=0.24
+[1160 | 3019.10] loss=0.14 avg=0.24
+[1170 | 3041.30] loss=0.16 avg=0.23
+[1180 | 3063.54] loss=0.16 avg=0.23
+[1190 | 3085.79] loss=0.20 avg=0.23
+[1200 | 3108.01] loss=0.22 avg=0.23
+Saving checkpoint/25jun_tc_run1/model-1200
+======== SAMPLE 1 ========
+  accomp0:v0:G#3 accomp0:v100:B2 accomp0:v100:E3 accomp0:v100:G#3 wait:48 melody:v0:G#5 melody:v0:G#4 melody:v100:B4 melody:v100:B5 accomp0:v0:G#3 accomp0:v0:E3 accomp0:v0:B2 accomp0:v100:E3 accomp0:v100:B2 accomp0:v100:G#3 wait:48 melody:v0:B5 melody:v0:B4 melody:v100:C#5 melody:v100:C#6 accomp0:v0:E3 accomp0:v0:G#3 accomp0:v0:B2 accomp0:v100:B2 accomp0:v100:F#2 accomp0:v100:C#3 wait:24 accomp0:v0:C#3 accomp0:v0:F#2 accomp0:v0:B2 wait:24 accomp0:v100:A2 accomp0:v100:F#2 accomp0:v100:C#3 wait:24 accomp0:v0:A2 accomp0:v0:F#2 accomp0:v0:C#3 wait:24 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:F#2 wait:24 accomp0:v0:G#2 accomp0:v0:C#3 accomp0:v0:F#2 wait:24 accomp0:v100:F#2 accomp0:v100:A2 accomp0:v100:C#3 wait:24 accomp0:v0:F#2 accomp0:v0:A2 accomp0:v0:C#3 wait:24 accomp0:v100:G#3 accomp0:v100:C#3 accomp0:v100:A2 wait:48 melody:v0:C#6 melody:v0:C#5 wait:24 melody:v100:C#5 accomp0:v0:A2 accomp0:v0:C#3 accomp0:v0:G#3 accomp0:v100:A2 accomp0:v100:C#3 accomp0:v100:F#3 wait:24 accomp0:v0:F#3 accomp0:v0:A2 accomp0:v0:C#3 wait:24 accomp0:v100:E3 accomp0:v100:A2 accomp0:v100:G#3 wait:24 accomp0:v0:E3 accomp0:v0:A2 accomp0:v0:G#3 wait:24 accomp0:v100:A2 accomp0:v100:E3 accomp0:v100:G#3 wait:48 melody:v0:C#5 melody:v0:C#6 accomp0:v0:A2 accomp0:v0:E3 accomp0:v0:E3 wait:24 melody:v100:B5 melody:v100:B5 melody:v100:B5 accomp0:v0:A2 accomp0:v0:E3 accomp0:v0:A2 accomp0:v100:A2 accomp0:v100:B2 accomp0:v100:F#3 wait:24 accomp0:v0:F#3 accomp0:v0:A2 accomp0:v0:B2 wait:24 accomp0:v100:C#3 accomp0:v100:A2 accomp0:v100:F#3 wait:24 accomp0:v0:C#3 accomp0:v0:A2 accomp0:v0:F#3 wait:24 accomp0:v100:E3 accomp0:v100:B2 accomp0:v100:C#3 wait:48 melody:v0:B5 melody:v0:B5 melody:v100:B5 accomp0:v0:C#3 accomp0:v0:A2 accomp0:v0:E3 accomp0:v100:B2 accomp0:v100:E3 accomp0:v100:G#3 wait:48 melody:v0:B5 melody:v0:B5 melody:v100:G#5 melody:v100:G#5 accomp0:v0:G#3 accomp0:v0:E3 accomp0:v0:B2 accomp0:v100:E3 accomp0:v100:B2 accomp0:v100:G#3 wait:48 melody:v0
+
+[1210 | 3167.61] loss=0.32 avg=0.23
+[1220 | 3189.96] loss=0.22 avg=0.23
+[1230 | 3212.21] loss=0.25 avg=0.23
+[1240 | 3234.46] loss=0.22 avg=0.23
+[1250 | 3256.70] loss=0.10 avg=0.23
+[1260 | 3278.94] loss=0.15 avg=0.23
+[1270 | 3301.20] loss=0.24 avg=0.23
+[1280 | 3323.44] loss=0.17 avg=0.23
+[1290 | 3345.68] loss=0.21 avg=0.23
+[1300 | 3367.92] loss=0.16 avg=0.23
+Saving checkpoint/25jun_tc_run1/model-1300
+======== SAMPLE 1 ========
+:v0:C6 accomp0:v0:F3 accomp0:v0:F2 accomp0:v100:C4 accomp0:v100:C3 accomp0:v100:G3 wait:48 melody:v0:C6 melody:v100:B-6 wait:48 melody:v0:B-6 melody:v100:A6 wait:48 melody:v0:A6 melody:v100:E-6 wait:48 melody:v0:E-6 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:E-6 wait:48 melody:v0:E-6 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:B-6 wait:48 melody:v0:B-6 melody:v100:A6 wait:48 melody:v0:A6 melody:v100:E-6 wait:48 melody:v0:E-6 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:F5 wait:48 melody:v0:F5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:E-6 wait:48 melody:v0:E-6 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:E-6 wait:48 melody:v0:E-6 melody:v100:B-6 wait:48 melody:v0:B-6 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:B-6 wait:48 melody:v0:B-6 melody:v100:E-6 wait:48 melody:v0:E-6 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:E-6 wait:48 melody:v0:E-6 melody:v100:B-5 accomp0:v0:G3 accomp0:v0:C3 accomp0:v0:C4 accomp0:v100:G3 accomp0:v100:F3 accomp0:v100:E-4 wait:48 melody:v0:B-5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:C5 accomp0:v0:E-4 accomp0:v0:F3 accomp0:v0:G3 accomp0:v100:C3 accomp0:v100:F3 accomp0:v100:F2 wait:48 melody:v0:C5 melody:v100:B-5 wait:48 melody:v0:B-5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C5 wait:48 melody:v0:C5 melody:v100:E-5 wait:48 melody:v0:E-5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C5 accomp0:v0:F2 accomp0:v0:F3 accomp0:v0:C3 accomp0:v100:C3 accomp0:v100:F3 accomp0:v100:F2 wait:48 melody:v0:C5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:C5 accomp0:v0:F2 accomp0:v0:F3 accomp0:v0:C3 accomp0:v100:B-3 accomp0:v100:E-2 accomp0:v100:E-3 wait:96 melody:v0:C5 melody:v100:G5 wait:24 melody:v0:G5 wait:24 melody:v100:G5 wait:
+
+[1310 | 3431.05] loss=0.18 avg=0.23
+[1320 | 3453.41] loss=0.15 avg=0.23
+[1330 | 3475.64] loss=0.15 avg=0.23
+[1340 | 3497.88] loss=0.14 avg=0.22
+[1350 | 3520.14] loss=0.21 avg=0.22
+[1360 | 3542.40] loss=0.14 avg=0.22
+[1370 | 3564.64] loss=0.31 avg=0.22
+[1380 | 3586.85] loss=0.30 avg=0.23
+[1390 | 3609.11] loss=0.17 avg=0.22
+[1400 | 3631.33] loss=0.22 avg=0.22
+Saving checkpoint/25jun_tc_run1/model-1400
+======== SAMPLE 1 ========
+:v0:E4 melody:v0:B-4 melody:v0:G#4 melody:v100:E4 melody:v100:B-4 melody:v100:G#4 melody:v100:C#6 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v0:C#6 melody:v100:G#4 melody:v100:B-4 melody:v100:E4 wait:48 melody:v0:C#6 melody:v0:C#5 melody:v100:C#5 melody:v100:C#6 melody:v100:E4 melody:v100:C#6 melody:v100:C#5 wait:48 melody:v0:C#6 melody:v0:C#5 melody:v100:G#4 melody:v100:B-4 melody:v100:E4 melody:v100:C#6 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v0:C#6 melody:v100:C#5 melody:v100:C#6 melody:v100:E4 melody:v100:B-4 melody:v100:G#4 melody:v100:E4 melody:v100:C#6 melody:v100:C#5 melody:v100:E5 melody:v100:C#6 melody:v100:E6 melody:v100:E6 melody:v100:E6 melody:v100:E6 wait:48 melody:v0:E6 melody:v0:E6 melody:v0:E6 melody:v100:C#6 melody:v100:C#5 melody:v100:E6 melody:v100:E6 melody:v100:G#6 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v0:G#6 melody:v0:G#6 melody:v0:G#5 melody:v0:E6 melody:v100:G#5 melody:v100:G#6 melody:v100:G#5 melody:v100:E5 melody:v100:E6 melody:v100:G#6 melody:v100:G#6 melody:v100:G#5 melody:v100:G#5 melody:v100:G#6 melody:v100:G#6 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v0:G#6 melody:v0:G#6 melody:v100:G#5 melody:v100:G#6 melody:v100:G#5 melody:v100:B-5 melody:v100:B-5 melody:v100:B-6 melody:v100:B-6 wait:48 melody:v0:B-6 melody:v0:B-6 melody:v0:B-6 melody:v100:B-6 melody:v100:B-5 wait:48 melody:v0:B-5 melody:v0:B-6 melody:v100:E6 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:E6 melody:v100:G#5 melody:v100:G#6 accomp0:v100:G#2 accomp0:v100:G#1 accomp0:v100:C#4 accomp0:v100:C#3 wait:96 melody:v0:G#6 melody:v0:G#5 melody:v100:G#5 melody:v100:G#6 melody:v100:E5 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:E5 melody:v0:G#6 melody:v100:B-6 melody:v100:B-5 wait:48 melody:v0:B-5 melody:v0:B-6 melody:v100:C#6 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v0:C#6 melody:v100:G#6 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v0:G#6 melody:v100:G#6 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v0:G#6 melody:v100:B-6 melody:v100:B-5 wait:48 melody:v0:B-5 melody:v0:B
+
+[1410 | 3690.64] loss=0.23 avg=0.22
+[1420 | 3713.18] loss=0.26 avg=0.23
+[1430 | 3735.42] loss=0.28 avg=0.23
+[1440 | 3757.65] loss=0.33 avg=0.23
+[1450 | 3779.89] loss=0.25 avg=0.23
+[1460 | 3802.14] loss=0.09 avg=0.23
+[1470 | 3824.42] loss=0.15 avg=0.22
+[1480 | 3846.68] loss=0.19 avg=0.22
+[1490 | 3868.92] loss=0.15 avg=0.22
+[1500 | 3891.16] loss=0.14 avg=0.22
+Saving checkpoint/25jun_tc_run1/model-1500
+======== SAMPLE 1 ========
+:A3 melody:v100:A2 melody:v100:E4 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:E4 melody:v0:A2 melody:v0:E3 melody:v0:A5 melody:v0:E4 melody:v100:E3 melody:v100:A2 melody:v100:E4 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:E4 melody:v0:A2 melody:v0:E3 melody:v0:E4 melody:v100:E3 melody:v100:A2 melody:v100:B3 melody:v100:B4 wait:48 melody:v0:B3 melody:v0:B2 melody:v0:E3 melody:v0:B3 melody:v100:B2 melody:v100:F#3 melody:v100:B3 melody:v100:B5 wait:24 melody:v0:B5 melody:v0:B4 melody:v100:B5 melody:v100:B4 wait:24 melody:v0:B5 melody:v0:B4 melody:v0:B2 melody:v0:B3 melody:v0:B3 melody:v100:B2 melody:v100:G3 melody:v100:C#3 melody:v100:C#5 melody:v100:C#6 wait:48 melody:v0:C#6 melody:v0:C#5 melody:v0:C#3 melody:v0:G3 melody:v0:B2 melody:v0:C#2 melody:v100:C#2 melody:v100:G#2 melody:v100:C#3 melody:v100:E4 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:E4 melody:v0:C#3 melody:v0:G#2 melody:v0:C#2 melody:v0:E4 melody:v0:E5 melody:v100:C#2 melody:v100:G#3 melody:v100:C#3 melody:v100:C#5 wait:24 melody:v0:C#2 melody:v100:C#2 melody:v100:G#3 melody:v100:C#3 melody:v100:B5 melody:v100:C#4 wait:48 melody:v0:C#4 melody:v0:G#2 melody:v0:C#3 melody:v0:G#3 melody:v0:B5 melody:v0:C#5 melody:v100:C#2 melody:v100:G#3 melody:v100:C#3 melody:v100:B4 melody:v100:B5 wait:48 melody:v0:B5 melody:v0:B4 melody:v0:C#3 melody:v0:G#3 melody:v0:C#2 melody:v0:B4 melody:v0:B5 melody:v100:C#2 melody:v100:G#3 melody:v100:C#3 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:E4 melody:v0:C#3 melody:v0:G#2 melody:v0:C#2 melody:v0:C#3 melody:v100:F#3 melody:v100:B3 melody:v100:B2 melody:v100:C#5 melody:v100:C#4 wait:48 melody:v0:C#4 melody:v0:B2 melody:v0:B3 melody:v0:F#3 melody:v0:C#5 melody:v0:C#4 melody:v100:F#3 melody:v100:B3 melody:v100:B2 melody:v100:E5 melody:v100:E4 wait:48 melody:v0:E4 melody:v0:E5 melody:v0:B2 melody:v0:B3 melody:v0:F#3 melody:v100:C#3 melody:v100:E3 melody:v100:B2 melody:v100:B5 melody:v100:B4 wait:48 melody:v0:B2 melody:v0:E3 melody:v0:C#3 melody:v0:B5 melody:v0:B5 melody:v0:C#3 melody:
+
+[1510 | 3951.87] loss=0.22 avg=0.22
+[1520 | 3974.19] loss=0.28 avg=0.22
+[1530 | 3996.44] loss=0.25 avg=0.22
+[1540 | 4018.68] loss=0.22 avg=0.22
+[1550 | 4040.92] loss=0.19 avg=0.22
+[1560 | 4063.20] loss=0.08 avg=0.22
+[1570 | 4085.46] loss=0.25 avg=0.22
+[1580 | 4107.70] loss=0.13 avg=0.22
+[1590 | 4129.97] loss=0.17 avg=0.22
+[1600 | 4152.18] loss=0.17 avg=0.22
+Saving checkpoint/25jun_tc_run1/model-1600
+======== SAMPLE 1 ========
+60:G3 accomp5:v0:G4 wait:24 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:F#4 accomp4:v0:E-4 accomp4:v0:C4 accomp4:v0:G#4 wait:24 melody:v0:F#4 accomp4:v100:B-4 accomp4:v100:G#4 accomp4:v100:E-4 wait:48 melody:v0:B-4 accomp4:v0:B-4 accomp4:v0:G#4 accomp4:v0:E-4 wait:24 melody:v100:B-4 accomp4:v100:B-4 accomp4:v100:G4 accomp4:v100:E-4 wait:48 melody:v0:B-4 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v100:C#5 accomp4:v0:B-4 accomp4:v0:G4 accomp4:v0:E-4 wait:48 melody:v0:C#5 melody:v100:C#5 accomp4:v100:C#4 accomp4:v100:G4 accomp4:v100:E-4 wait:48 melody:v0:C#5 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v100:C#5 wait:24 accomp4:v0:C#4 accomp4:v0:G4 accomp4:v0:E-4 wait:24 melody:v0:C#5 accomp4:v100:D4 accomp4:v100:G4 accomp4:v100:B-4 wait:24 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:E-5 wait:24 melody:v0:E-5 melody:v100:G5 wait:24 melody:v0:G5 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:F5 accomp4:v0:D4 accomp4:v0:G4 accomp4:v0:B-4 wait:48 melody:v0:F5 melody:v100:E-5 wait:24 accomp4:v100:E-3 accomp4:v100:G3 accomp4:v100:B-3 wait:48 melody:v0:E-5 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v100:B-4 accomp4:v0:E-3 accomp4:v0:G3 accomp4:v0:B-3 wait:24 melody:v0:B-4 accomp4:v100:C4 accomp4:v100:F4 accomp4:v100:B-3 wait:24 melody:v100:C6 wait:48 melody:v0:C6 melody:v100:G3 accomp4:v0:C4 accomp4:v0:F4 accomp4:v0:B-3 wait:48 melody:v0:G3 melody:v100:G3 wait:48 melody:v0:G3 melody:v100:G3 accomp4:v100:C4 accomp4:v100:F4 accomp4:v100:B-3 wait:48 melody:v0:G3 melody:v100:G3 wait:24 accomp4:v0:C4 accomp4:v0:F4 accomp4:v0:B-3 wait:24 melody:v0:G3 melody:v100:G#4 wait:48 melody:v0:G#4 melody:v100:B-4 accomp4:v100:G#4 accomp4:v100:G4 accomp4:v100:E-4 wait:48 melody:v0:B-4 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v100:C#5 accomp4:v0:G#4 accomp4:v0:G4 accomp4:v0:E-4 wait:24 melody:v0:C#5 accomp4:v100:G#4 accomp4:v100:G4 accomp4:v100:B-3 wait:48 melody:v0:C#5 melody:v100:C5 wait:48 melody:v0:C5 melody:v100:C#5 wait:24 accomp4:v0:G#4 accomp4:v0:G
+
+[1610 | 4214.78] loss=0.14 avg=0.22
+[1620 | 4237.09] loss=0.14 avg=0.22
+[1630 | 4259.36] loss=0.14 avg=0.22
+[1640 | 4281.60] loss=0.18 avg=0.22
+[1650 | 4303.86] loss=0.23 avg=0.22
+[1660 | 4326.11] loss=0.22 avg=0.22
+[1670 | 4348.36] loss=0.15 avg=0.22
+[1680 | 4370.62] loss=0.75 avg=0.22
+[1690 | 4392.90] loss=0.09 avg=0.22
+[1700 | 4415.18] loss=0.20 avg=0.22
+Saving checkpoint/25jun_tc_run1/model-1700
+======== SAMPLE 1 ========
+100:C3 melody:v0:A2 melody:v100:E2 melody:v100:E3 melody:v100:B2 melody:v100:C3 melody:v100:A2 wait:96 melody:v0:A2 melody:v0:E3 melody:v0:C3 melody:v0:E2 melody:v100:C3 melody:v100:E3 melody:v100:B2 melody:v100:C3 melody:v100:A2 wait:96 melody:v0:A2 melody:v0:B2 melody:v0:E3 melody:v0:C3 melody:v0:C3 melody:v100:C3 melody:v100:E3 melody:v100:B2 melody:v100:C3 melody:v100:A2 wait:48 melody:v0:E2 melody:v0:E3 melody:v0:B2 melody:v0:C3 melody:v0:A2 melody:v100:C3 melody:v100:E3 melody:v100:B2 melody:v100:C3 wait:48 melody:v0:C3 melody:v0:E3 melody:v0:B2 wait:48 melody:v100:C3 melody:v100:B2 melody:v100:E3 melody:v100:E2 melody:v100:D3 melody:v100:F2 melody:v100:C3 melody:v100:B3 wait:48 melody:v0:B3 melody:v0:C3 melody:v0:B2 melody:v0:E3 melody:v0:E2 melody:v0:C3 melody:v100:C3 melody:v100:B2 melody:v100:E3 melody:v100:E2 melody:v100:D3 wait:48 melody:v0:D3 melody:v0:E2 melody:v0:E3 melody:v0:B2 melody:v0:C3 melody:v100:C5 melody:v100:C3 melody:v100:B2 melody:v100:E3 melody:v100:E2 melody:v100:A2 melody:v100:D3 wait:72 melody:v0:D3 melody:v0:O2 melody:v0:E2 melody:v0:A2 melody:v0:C5 melody:v100:B2 melody:v100:E3 melody:v100:E2 melody:v100:G5 melody:v100:G5 melody:v100:G6 melody:v100:G6 melody:v100:G5 melody:v100:G6 melody:v100:G5 melody:v100:B4 melody:v100:B4 melody:v100:B3 melody:v100:D5 wait:48 melody:v0:D5 melody:v0:D5 melody:v0:D5 melody:v0:D5 melody:v0:B3 melody:v0:B3 melody:v0:D5 melody:v100:G3 melody:v100:G2 melody:v100:D3 melody:v100:B3 melody:v100:D5 melody:v100:D5 wait:48 melody:v0:D5 melody:v0:D5 melody:v0:D5 melody:v0:D5 melody:v0:G3 melody:v0:G2 melody:v0:D3 melody:v100:B2 melody:v100:D3 melody:v100:D2 melody:v100:G5 melody:v100:G5 melody:v100:G6 melody:v100:G6 melody:v100:G5 melody:v100:G5 melody:v100:G6 wait:48 melody:v0:G6 melody:v0:G5 melody:v0:G5 melody:v0:G6 melody:v0:G5 melody:v0:G5 melody:v100:E3 melody:v100:B2 melody:v100:D3 melody:v100:D5 melody:v100:D5 melody:v100:D6 wait:48 melody:v0:D6 melody:v0:D5 melody:v0:D5 melody:v0:D6 melody:v0:D5 melody:v0:E3 melody:v0:B2 melody:v0:D5 melody:v100:F2 melody:v100:F3 melody:v100:C5 melody:v100
+
+[1710 | 4476.71] loss=0.16 avg=0.22
+[1720 | 4499.02] loss=0.18 avg=0.22
+[1730 | 4521.26] loss=0.16 avg=0.22
+[1740 | 4543.52] loss=0.28 avg=0.22
+[1750 | 4565.77] loss=0.16 avg=0.22
+[1760 | 4588.04] loss=0.21 avg=0.22
+[1770 | 4610.31] loss=0.10 avg=0.22
+[1780 | 4632.60] loss=0.44 avg=0.22
+[1790 | 4654.87] loss=0.24 avg=0.22
+[1800 | 4677.15] loss=0.28 avg=0.22
+Saving checkpoint/25jun_tc_run1/model-1800
+======== SAMPLE 1 ========
+v100:G#4 accomp0:v100:D3 wait:24 accomp0:v0:G#4 accomp0:v0:D3 wait:24 melody:v100:G#4 melody:v100:F#6 melody:v100:A5 accomp0:v100:D3 wait:48 melody:v0:A5 melody:v0:F#6 melody:v0:G#4 accomp0:v0:D3 wait:48 accomp0:v100:G#4 wait:24 accomp0:v0:G#4 wait:24 melody:v100:C#5 melody:v100:A5 melody:v100:F#6 accomp0:v100:F#3 wait:48 accomp0:v0:F#3 wait:24 melody:v0:F#6 melody:v0:A5 melody:v0:C#5 melody:v100:A5 melody:v100:D6 melody:v100:F#6 accomp0:v100:F#3 wait:144 accomp0:v0:F#3 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 melody:v100:A5 melody:v100:A6 melody:v100:F#6 accomp0:v100:F#3 wait:48 accomp0:v0:F#3 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 melody:v0:A5 melody:v0:A6 melody:v0:F#6 melody:v100:G#5 melody:v100:A5 melody:v100:F#6 accomp0:v100:A2 wait:144 accomp0:v0:A2 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 melody:v100:C#5 melody:v100:A5 melody:v100:F#6 wait:48 accomp0:v100:A2 wait:48 accomp0:v0:A2 wait:24 accomp0:v100:E4 wait:24 accomp0:v0:E4 wait:24 accomp0:v100:D4 wait:24 accomp0:v0:D4 wait:24 melody:v100:A5 melody:v100:A5 melody:v100:D6 accomp0:v100:B1 wait:144 accomp0:v0:B1 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 melody:v0:A5 melody:v0:A5 melody:v0:D6 melody:v100:G#5 melody:v100:A5 melody:v100:F#6 accomp0:v100:B1 wait:48 accomp0:v0:B1 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 melody:v0:A5 melody:v0:A5 melody:v0:F#6 melody:v100:A5 melody:v100:F#6 melody:v100:A6 accomp0:v100:G#3 wait:144 accomp0:v0:G#3 wait:24 accomp0:v100:G#4 wait:24 accomp0:v0:G#4 wait:24 accomp0:v100:G#4 wait:24 accomp0:v0:G#4 wait:24 melody:v100:C#5 melody:v100:A5 melody:v100:F#6 wait:48 accomp0:v100:B1 wait:48 accomp0:v0:B1 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:24 accomp0:v100:F#4 wait:24 accomp0:v0:F#4 wait:48 melody:v0:C#5 melody:v0:A5 melody:v0:F#6 melody:v100:A5 melody:v100:A6
+
+[1810 | 4737.75] loss=0.13 avg=0.22
+[1820 | 4760.01] loss=0.13 avg=0.22
+[1830 | 4782.25] loss=0.39 avg=0.22
+[1840 | 4804.53] loss=0.26 avg=0.22
+[1850 | 4826.80] loss=0.20 avg=0.22
+[1860 | 4849.03] loss=0.11 avg=0.22
+[1870 | 4871.30] loss=0.20 avg=0.22
+[1880 | 4893.57] loss=0.24 avg=0.22
+[1890 | 4915.84] loss=0.20 avg=0.22
+[1900 | 4938.10] loss=0.24 avg=0.22
+Saving checkpoint/25jun_tc_run1/model-1900
+======== SAMPLE 1 ========
+  accomp0:v100:D2 accomp0:v100:D3 accomp0:v100:A3 wait:48 accomp0:v0:A3 accomp0:v0:D3 accomp0:v0:D2 wait:48 melody:v0:F#5 wait:24 melody:v100:D5 wait:48 melody:v0:D5 melody:v100:F#5 wait:48 melody:v0:F#5 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:E5 accomp0:v100:A3 accomp0:v100:D3 accomp0:v100:D2 wait:48 melody:v0:E5 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v100:B4 accomp0:v0:A3 accomp0:v0:D3 accomp0:v0:D2 accomp0:v100:D3 accomp0:v100:D2 accomp0:v100:A3 wait:48 accomp0:v0:A3 accomp0:v0:D2 accomp0:v0:D3 wait:24 melody:v0:B4 melody:v100:D5 wait:48 accomp0:v100:A3 accomp0:v100:D2 accomp0:v100:D3 wait:24 melody:v0:D5 melody:v100:A4 accomp0:v0:A3 accomp0:v0:D2 accomp0:v0:D3 accomp0:v100:A3 accomp0:v100:D2 accomp0:v100:D3 wait:48 accomp0:v0:D3 accomp0:v0:D2 accomp0:v0:A3 wait:24 melody:v0:A4 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v100:A4 wait:48 accomp0:v100:A3 accomp0:v100:D2 accomp0:v100:D3 wait:48 melody:v0:A4 melody:v100:E5 accomp0:v0:A3 accomp0:v0:D2 accomp0:v0:D3 accomp0:v100:D2 accomp0:v100:D3 accomp0:v100:A3 wait:48 melody:v0:E5 melody:v100:C#5 wait:48 melody:v0:C#5 melody:v100:G#4 accomp0:v0:A3 accomp0:v0:D3 accomp0:v0:D2 wait:48 melody:v0:G#4 melody:v100:F#4 wait:48 melody:v0:F#4 melody:v100:A4 accomp0:v100:A3 accomp0:v100:D3 accomp0:v100:D2 wait:48 melody:v0:A4 melody:v100:E5 accomp0:v0:A3 accomp0:v0:D3 accomp0:v0:D2 accomp0:v100:A3 accomp0:v100:D3 accomp0:v100:D2 wait:48 melody:v0:E5 melody:v100:G#4 wait:48 melody:v0:G#4 melody:v100:F#4 wait:48 accomp0:v0:D2 accomp0:v0:D3 accomp0:v0:A3 accomp0:v100:C#3 accomp0:v100:E2 accomp0:v100:A2 wait:48 melody:v0:F#4 wait:24 melody:v100:F#4 wait:48 melody:v0:F#4 melody:v100:E4 wait:48 melody:v0:E4 melody:v100:G#4 accomp0:v0:A2 accomp0:v0:E2 accomp0:v0:C#3 accomp0:v100:A2 accomp0:v100:E2 accomp0:v100:C#3 wait:48 melody:v0:G#4 wait:24 melody:v100:F#4 wait:48 melody:v0:F#4 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:E5 accomp0:v0:C#3 accomp0:v0:E2 accomp0:v0:A2 accomp0:v100:A2 accomp0:v100:E2 accomp0:v100:C#3 wait:48 melody:v0:E
+
+[1910 | 5001.79] loss=0.21 avg=0.22
+[1920 | 5024.10] loss=0.12 avg=0.22
+[1930 | 5046.34] loss=0.10 avg=0.22
+[1940 | 5068.62] loss=0.16 avg=0.22
+[1950 | 5090.87] loss=0.16 avg=0.22
+[1960 | 5113.13] loss=0.16 avg=0.21
+[1970 | 5135.38] loss=0.15 avg=0.21
+[1980 | 5157.62] loss=0.08 avg=0.21
+[1990 | 5179.86] loss=0.20 avg=0.21
+[2000 | 5202.12] loss=0.26 avg=0.21
+Saving checkpoint/25jun_tc_run1/model-2000
+======== SAMPLE 1 ========
+:E4 accomp0:v100:A3 accomp0:v100:C4 accomp0:v100:E4 wait:24 accomp0:v0:E4 accomp0:v0:A3 accomp0:v0:C4 accomp0:v0:E4 accomp0:v100:E4 accomp0:v100:A3 accomp0:v100:C4 accomp0:v100:E4 wait:24 melody:v100:E5 accomp0:v0:E4 accomp0:v0:A3 accomp0:v0:C4 accomp0:v0:E4 accomp0:v100:E4 accomp0:v100:A3 accomp0:v100:C4 wait:48 melody:v0:E5 accomp0:v0:C4 accomp0:v0:A3 accomp0:v0:E4 accomp0:v100:C4 accomp0:v100:A3 accomp0:v100:E4 accomp0:v100:A4 wait:24 accomp0:v0:A4 accomp0:v0:E4 accomp0:v0:A3 accomp0:v0:C4 accomp0:v100:D4 accomp0:v100:B3 accomp0:v100:G3 accomp0:v100:G2 wait:48 accomp0:v0:G2 accomp0:v0:G3 accomp0:v0:D4 accomp0:v100:G4 accomp0:v100:G3 accomp0:v100:E4 accomp0:v100:C4 wait:24 accomp0:v0:C4 accomp0:v0:E4 accomp0:v0:G3 accomp0:v0:G4 accomp0:v100:D4 accomp0:v100:B3 accomp0:v100:G3 accomp0:v100:G2 wait:48 accomp0:v0:G2 accomp0:v0:G3 accomp0:v0:D4 accomp0:v100:G4 accomp0:v100:G3 accomp0:v100:E4 accomp0:v100:C4 wait:24 accomp0:v0:C4 accomp0:v0:E4 accomp0:v0:G3 accomp0:v0:G4 accomp0:v100:D4 accomp0:v100:B3 accomp0:v100:G3 accomp0:v100:G2 wait:48 accomp0:v0:G2 accomp0:v0:G3 accomp0:v0:B3 accomp0:v0:D4 accomp0:v100:G4 accomp0:v100:G3 accomp0:v100:E4 accomp0:v100:C4 wait:24 accomp0:v0:C4 accomp0:v0:E4 accomp0:v0:G3 accomp0:v0:G4 accomp0:v100:C4 accomp0:v100:E4 accomp0:v100:G3 accomp0:v100:G2 wait:24 melody:v100:A4 accomp0:v0:A4 accomp0:v0:G2 accomp0:v0:G4 accomp0:v0:E4 accomp0:v0:C4 accomp0:v100:C3 accomp0:v100:G2 accomp0:v100:E2 accomp0:v100:A2 wait:48 melody:v0:A4 accomp0:v0:C3 accomp0:v0:E2 accomp0:v0:A2 accomp0:v0:C4 accomp0:v0:A3 accomp0:v100:G3 accomp0:v100:E3 accomp0:v100:B2 accomp0:v100:E2 wait:48 accomp0:v0:E2 accomp0:v0:E3 accomp0:v0:B2 accomp0:v0:G3 accomp0:v100:C4 accomp0:v100:A3 accomp0:v100:E4 accomp0:v100:A4 wait:24 accomp0:v0:A4 accomp0:v0:E4 accomp0:v0:A3 accomp0:v0:A2 accomp0:v0:C4 accomp0:v0:G3 wait:24 melody:v100:A4 accomp0:v100:A3 accomp0:v100:E4 accomp0:v100:C4 wait:48 melody:v0:A4 accomp0:v0:A3 accomp0:v0:E4 accomp0:
+
+[2010 | 5262.55] loss=0.21 avg=0.21
+[2020 | 5284.81] loss=0.25 avg=0.21
+[2030 | 5307.04] loss=0.15 avg=0.21
+[2040 | 5329.29] loss=0.23 avg=0.21
+[2050 | 5351.55] loss=0.07 avg=0.21
+[2060 | 5373.82] loss=0.16 avg=0.21
+[2070 | 5396.05] loss=0.22 avg=0.21
+[2080 | 5418.31] loss=0.11 avg=0.21
+[2090 | 5440.56] loss=0.12 avg=0.21
+[2100 | 5462.80] loss=0.23 avg=0.21
+Saving checkpoint/25jun_tc_run1/model-2100
+======== SAMPLE 1 ========
+  melody:v0:E5 wait:48 melody:v100:C#5 accomp0:v100:C#3 wait:72 melody:v0:C#5 wait:120 melody:v100:B4 accomp0:v0:C#3 accomp0:v100:G#3 wait:144 melody:v0:B4 wait:48 melody:v100:B4 accomp0:v0:G#3 accomp0:v100:E3 wait:72 melody:v0:B4 wait:48 melody:v100:A4 accomp0:v0:E3 accomp0:v100:B3 wait:48 melody:v0:A4 wait:48 melody:v100:A4 accomp0:v0:B3 accomp0:v100:E3 wait:48 melody:v0:A4 wait:48 melody:v100:F#4 accomp0:v0:E3 accomp0:v100:B3 wait:72 melody:v0:F#4 wait:96 melody:v100:C#5 wait:48 melody:v0:C#5 wait:72 melody:v100:C#5 accomp0:v100:F#3 accomp0:v100:C#4 accomp0:v100:A3 wait:72 melody:v0:C#5 accomp0:v0:F#3 accomp0:v0:C#4 accomp0:v0:A3 wait:72 melody:v100:C#5 accomp0:v100:A3 wait:48 melody:v0:C#5 wait:48 melody:v100:A4 accomp0:v0:A3 accomp0:v100:C#3 accomp0:v100:F#3 accomp0:v100:A3 wait:24 melody:v0:A4 melody:v100:F#4 wait:24 melody:v0:F#4 accomp0:v0:A3 accomp0:v0:C#3 accomp0:v0:F#3 wait:24 melody:v100:F#4 accomp0:v100:F#3 wait:24 melody:v0:F#4 accomp0:v0:F#3 accomp0:v100:C#3 wait:24 melody:v100:G#4 accomp0:v0:C#3 accomp0:v100:A3 wait:24 melody:v0:G#4 melody:v100:C#5 wait:24 melody:v0:C#5 accomp0:v0:A3 accomp0:v0:C#3 accomp0:v100:E3 accomp0:v100:C#4 accomp0:v100:G#3 wait:96 melody:v100:C#5 wait:48 melody:v0:C#5 wait:48 melody:v100:C#5 accomp0:v100:F#3 accomp0:v100:C#4 accomp0:v100:A3 wait:48 melody:v0:C#5 accomp0:v0:F#3 accomp0:v0:C#4 accomp0:v0:A3 wait:48 melody:v100:D4 accomp0:v100:F#3 accomp0:v100:C#4 accomp0:v100:A3 wait:48 melody:v0:D4 wait:48 melody:v100:D5 accomp0:v0:F#3 accomp0:v0:C#4 accomp0:v0:A3 wait:48 melody:v0:D5 melody:v100:C#5 wait:48 melody:v0:C#5 accomp0:v100:F#3 accomp0:v100:G#3 accomp0:v100:C#4 wait:48 melody:v100:D4 accomp0:v0:C#4 accomp0:v0:F#3 accomp0:v0:G#3 wait:48 melody:v0:D5 melody:v100:C#5 accomp0:v100:C#4 accomp0:v100:A3 accomp0:v100:F#3 wait:48 melody:v0:C#5 melody:v100:D5 wait:48 melody:v0:D5 melody:v100:B4 accomp0:v0:F#3 accomp0:v0:C#4 accomp0:v0:A3 accomp0:v100:E3 accomp0:v100:C#4 accomp0:v100:F#3 wait:96 melody:v100:C#5 wait:48 melody:v0:C#5 wait:
+
+[2110 | 5523.38] loss=0.14 avg=0.21
+[2120 | 5545.80] loss=0.21 avg=0.21
+[2130 | 5568.04] loss=0.23 avg=0.21
+[2140 | 5590.27] loss=0.10 avg=0.21
+[2150 | 5612.53] loss=0.11 avg=0.21
+[2160 | 5634.79] loss=0.33 avg=0.21
+[2170 | 5657.04] loss=0.19 avg=0.21
+[2180 | 5679.30] loss=0.22 avg=0.21
+[2190 | 5701.57] loss=0.22 avg=0.21
+[2200 | 5723.85] loss=0.22 avg=0.21
+Saving checkpoint/25jun_tc_run1/model-2200
+======== SAMPLE 1 ========
+F100:C#2 wait:24 melody:v0:G#5 melody:v100:G#5 wait:24 melody:v0:G#5 wait:24 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v100:F#5 wait:48 melody:v0:F#5 melody:v100:F#5 wait:48 melody:v0:F#5 melody:v100:F#6 wait:96 melody:v0:F#6 wait:24 melody:v100:F#6 wait:48 melody:v0:F#6 melody:v100:G#5 wait:24 melody:v0:G#5 accomp0:v0:E-3 accomp0:v0:C#3 accomp0:v0:C#2 wait:48 melody:v0:G#5 accomp0:v100:F#3 accomp0:v100:B-3 accomp0:v100:B-2 wait:48 melody:v100:G#5 wait:48 melody:v0:G#5 wait:24 melody:v100:G#5 wait:24 melody:v100:G#5 wait:24 melody:v0:G#5 melody:v100:F#5 accomp0:v0:F#3 accomp0:v0:B-3 accomp0:v0:B-2 wait:24 melody:v0:F#5 melody:v100:G#5 wait:48 melody:v0:G#5 melody:v100:C#6 accomp0:v100:G#3 accomp0:v100:C#4 accomp0:v100:C#3 wait:24 melody:v0:C#6 accomp0:v0:G#3 accomp0:v0:C#4 accomp0:v0:C#3 wait:24 melody:v100:C#6 wait:96 accomp0:v100:C#3 accomp0:v100:C#4 accomp0:v100:G#3 wait:24 melody:v0:C#6 accomp0:v0:C#3 accomp0:v0:C#4 accomp0:v0:G#3 wait:24 melody:v100:C#6 wait:48 melody:v0:C#6 melody:v100:E-6 wait:48 melody:v0:E-6 melody:v100:C#6 wait:48 melody:v0:C#6 accomp0:v100:C#3 accomp0:v100:G#3 accomp0:v100:C#4 wait:96 accomp0:v0:C#3 accomp0:v0:G#3 accomp0:v0:C#4 wait:48 melody:v100:C#6 accomp0:v100:G#3 accomp0:v100:C#4 accomp0:v100:C#3 accomp0:v100:C#4 wait:48 melody:v0:C#6 accomp0:v0:G#3 accomp0:v0:C#4 accomp0:v0:C#3 accomp0:v0:C#3 accomp0:v100:G#3 accomp0:v100:C#4 accomp0:v100:C#3 wait:48 melody:v100:C#6 accomp0:v0:C#3 accomp0:v0:C#4 accomp0:v0:C#3 accomp0:v100:G#3 accomp0:v100:G#4 accomp0:v100:C#3 wait:48 melody:v0:C#6 accomp0:v0:G#3 accomp0:v0:G#4 accomp0:v0:C#3 wait:24 melody:v100:F#6 wait:48 melody:v0:F#6 melody:v100:G#5 wait:24 melody:v0:G#5 melody:v100:F#5 accomp0:v100:G#3 accomp0:v100:C#4 accomp0:v100:C#3 wait:24 melody:v0:F#5 melody:v100:G#5 wait:96 melody:v0:G#5 accomp0:v0:G#3 accomp0:v0:C#4 accomp0:v0:C#3 wait:24 melody:v100:C#6 wait:48 melody:v0:C#6 melody:v100:C#6 wait:24 melody:v0:C#6 melody:v100:B-5 wait:24 melody:v0:
+
+[2210 | 5786.86] loss=0.22 avg=0.21
+[2220 | 5809.20] loss=0.15 avg=0.21
+[2230 | 5831.45] loss=0.31 avg=0.21
+[2240 | 5853.70] loss=0.17 avg=0.21
+[2250 | 5875.97] loss=0.15 avg=0.21
+[2260 | 5898.21] loss=0.20 avg=0.21
+[2270 | 5920.45] loss=0.24 avg=0.21
+[2280 | 5942.69] loss=0.23 avg=0.21
+[2290 | 5964.93] loss=0.18 avg=0.21
+[2300 | 5987.21] loss=0.38 avg=0.21
+Saving checkpoint/25jun_tc_run1/model-2300
+======== SAMPLE 1 ========
+:B1 melody:v0:B2 melody:v100:B1 melody:v100:B2 wait:24 melody:v0:B2 melody:v99:A2 melody:v99:A1 wait:24 melody:v0:A1 melody:v99:E2 melody:v99:E1 wait:24 melody:v0:E2 melody:v99:B1 melody:v99:B2 wait:24 melody:v0:B3 melody:v99:A3 accomp0:v0:F2 accomp0:v1:F1 accomp0:v100:A2 accomp0:v100:D3 accomp0:v100:A3 wait:24 melody:v0:A3 melody:v99:A3 accomp0:v0:A3 wait:24 melody:v0:A3 wait:24 melody:v99:A3 accomp0:v0:A2 accomp0:v0:D3 accomp0:v0:A3 wait:24 melody:v0:A3 melody:v99:A3 accomp0:v0:A2 accomp0:v0:D3 accomp0:v0:A3 wait:24 melody:v0:A3 melody:v99:A3 accomp0:v0:A3 wait:24 melody:v0:A3 wait:24 melody:v101:F3 wait:24 melody:v0:F3 wait:24 melody:v101:F3 accomp0:v100:F1 accomp0:v100:F2 accomp0:v100:C3 wait:48 melody:v0:F3 melody:v101:F3 accomp0:v0:F1 accomp0:v0:F2 accomp0:v0:C3 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v0:F1 accomp0:v0:F2 accomp0:v0:C3 wait:24 melody:v0:F3 wait:24 melody:v101:F3 accomp0:v0:C3 accomp0:v0:F3 accomp0:v0:F1 accomp0:v100:F2 accomp0:v100:F1 accomp0:v100:C3 wait:48 melody:v0:F3 melody:v101:F3 accomp0:v0:C3 accomp0:v0:F3 accomp0:v0:F1 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v100:D3 accomp0:v100:A3 accomp0:v100:A2 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v0:D3 accomp0:v0:A3 accomp0:v0:A2 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v100:D3 accomp0:v100:A3 accomp0:v100:A2 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v0:D3 accomp0:v0:A3 accomp0:v0:A2 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v100:A2 accomp0:v100:D3 accomp0:v100:A3 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v0:A2 accomp0:v0:D3 accomp0:v0:A3 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v100:F2 accomp0:v100:F1 accomp0:v100:C3 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v0:F2 accomp0:v0:F1 accomp0:v0:C3 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v100:F2 accomp0:v100:F1 accomp0:v100:C3 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v0:F2 accomp0:v0:F1 accomp0:v0:C3 wait:24 melody:v0:F3 wait:24 melody:v101:F3 accomp0:v100:G2 accomp0:v100:G1 accomp0:v100:G1 wait:24 melody:v0:F3 melody:v101:F3 accomp0:v0:G2 accomp0
+
+[2310 | 6048.70] loss=0.16 avg=0.21
+[2320 | 6070.98] loss=0.17 avg=0.21
+[2330 | 6093.24] loss=0.17 avg=0.21
+[2340 | 6115.48] loss=0.13 avg=0.21
+[2350 | 6137.73] loss=0.24 avg=0.21
+[2360 | 6159.97] loss=0.13 avg=0.21
+[2370 | 6182.23] loss=0.12 avg=0.21
+[2380 | 6204.47] loss=0.85 avg=0.21
+[2390 | 6226.75] loss=0.25 avg=0.21
+[2400 | 6249.00] loss=0.13 avg=0.21
+Saving checkpoint/25jun_tc_run1/model-2400
+======== SAMPLE 1 ========
+:A3 wait:48 melody:v100:E4 accomp0:v100:D3 accomp0:v100:A3 wait:48 melody:v0:E4 accomp0:v0:D3 accomp0:v0:A3 wait:48 melody:v100:G4 accomp0:v100:C3 wait:96 melody:v0:G4 melody:v100:E4 accomp0:v100:B3 wait:96 melody:v0:E4 accomp0:v0:C3 wait:24 melody:v0:E4 wait:24 melody:v100:B4 accomp0:v100:E3 wait:48 melody:v0:B4 melody:v100:A4 accomp0:v0:E3 wait:24 melody:v0:A4 wait:24 melody:v100:B4 accomp0:v100:B3 wait:48 melody:v0:B4 melody:v100:B4 accomp0:v0:B3 wait:48 melody:v0:B4 melody:v100:A4 accomp0:v100:F#3 wait:96 melody:v0:A4 melody:v100:C4 accomp0:v100:B3 wait:96 melody:v0:C4 melody:v100:A4 wait:24 melody:v0:A4 wait:24 melody:v100:A4 accomp0:v0:F#3 wait:24 melody:v0:A4 wait:24 melody:v100:A4 accomp0:v100:C3 wait:24 melody:v0:A4 wait:24 melody:v100:G4 wait:144 melody:v0:G4 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:E4 melody:v100:A4 wait:48 melody:v0:A4 melody:v0:E4 melody:v0:A4 wait:24 melody:v100:D4 wait:96 melody:v0:D4 melody:v100:D4 wait:96 melody:v0:D4 melody:v100:B4 wait:96 melody:v0:B4 melody:v100:G4 wait:96 melody:v0:G4 melody:v100:A4 wait:24 melody:v0:A4 wait:24 melody:v100:B4 accomp0:v0:C3 wait:24 melody:v0:B4 wait:24 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:G4 wait:288 melody:v0:G4 melody:v100:A4 wait:24 melody:v0:A4 wait:24 melody:v100:A4 wait:24 melody:v0:A4 wait:24 melody:v100:A4 wait:24 melody:v0:A4 wait:24 melody:v100:G4 wait:144 melody:v0:G4 wait:24 melody:v100:E4 wait:24 melody:v0:E4 wait:24 melody:v0:G4 melody:v100:B3 wait:24 melody:v0:B3 wait:24 melody:v100:C4 wait:24 melody:v0:C4 wait:24 melody:v100:S4 wait:24 melody:v0:S4 wait:24 melody:v0:C4 wait:24 melody:v100:G4 wait:48 melody:v0:G4 wait:24 melody:v100:C4 wait:48 melody:v100:E5 accomp0:v0:C3 wait:24 melody:v0:C4 wait:24 melody:v100:B4 wait:24 melody:v0:B4 wait:24 melody:v100:G4 wait:144 melody:v0:G4 melody:v100:B4 wait:24 melody:v0:B4 wait:24 melody:v100:C4 wait:24 melody:v0:B4 wait:24 melody:v100:G4 wait:24 melody:v0:C4 wait:24 melody:v100:D4 wait:24 melody:v0:D4 wait:24 melody:v100:F#4 wait:24 melody:v0:F#4 wait:24 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:G4 wait:144 melody:v0:G4 wait:24 melody:v100:G4 wait:24 melody:v0:G4 wait:24 melody:v100:E4 wait
+
+[2410 | 6309.92] loss=0.15 avg=0.21
+[2420 | 6332.20] loss=0.14 avg=0.21
+[2430 | 6354.47] loss=0.19 avg=0.21
+[2440 | 6376.75] loss=0.13 avg=0.21
+[2450 | 6399.02] loss=0.14 avg=0.21
+[2460 | 6421.27] loss=0.22 avg=0.21
+[2470 | 6443.57] loss=0.19 avg=0.21
+[2480 | 6465.88] loss=0.21 avg=0.21
+[2490 | 6488.12] loss=0.16 avg=0.21
+[2500 | 6510.38] loss=0.19 avg=0.21
+Saving checkpoint/25jun_tc_run1/model-2500
+======== SAMPLE 1 ========
+:v0:F4 melody:v100:D5 melody:v100:D4 accomp0:v0:F3 accomp0:v0:F2 accomp0:v0:C3 accomp0:v100:C3 accomp0:v100:F3 accomp0:v100:F2 wait:48 melody:v0:D4 melody:v0:D5 wait:48 melody:v100:C6 melody:v100:C5 accomp0:v0:F2 accomp0:v0:F3 accomp0:v0:C3 accomp0:v100:F2 accomp0:v100:C3 accomp0:v100:F3 wait:48 melody:v0:C6 melody:v0:C5 melody:v100:E5 melody:v100:E4 accomp0:v0:F3 accomp0:v0:C3 accomp0:v0:F2 accomp0:v100:F2 accomp0:v100:C3 accomp0:v100:F3 wait:48 melody:v0:E4 melody:v0:E5 accomp0:v0:F3 accomp0:v0:C3 accomp0:v0:F2 wait:96 melody:v100:C5 melody:v100:C6 accomp0:v100:F2 accomp0:v100:C3 accomp0:v100:F3 wait:48 melody:v0:C5 melody:v0:C6 melody:v100:C5 melody:v100:C6 accomp0:v0:F3 accomp0:v0:C3 accomp0:v0:F2 accomp0:v100:F2 accomp0:v100:C3 accomp0:v100:F3 wait:48 melody:v0:C6 melody:v0:C5 wait:48 melody:v100:G5 melody:v100:G4 accomp0:v0:F3 accomp0:v0:C3 accomp0:v0:F2 accomp0:v100:C2 accomp0:v100:G2 accomp0:v100:C3 wait:96 melody:v0:G4 melody:v0:G5 melody:v100:G5 melody:v100:G4 accomp0:v0:C3 accomp0:v0:G2 accomp0:v0:C2 accomp0:v100:G2 accomp0:v100:C2 accomp0:v100:C3 wait:24 melody:v0:G4 melody:v0:G5 melody:v100:G5 melody:v100:G4 accomp0:v0:C3 accomp0:v0:C2 accomp0:v0:G2 accomp0:v100:C2 accomp0:v100:G2 accomp0:v100:C3 wait:1 melody:v0:G4 melody:v0:G5 melody:v100:G5 melody:v100:G4 wait:24 accomp0:v0:C3 accomp0:v0:G2 accomp0:v0:C2 accomp0:v100:C2 accomp0:v100:G2 accomp0:v100:C3 wait:1 melody:v0:G4 melody:v0:G5 melody:v100:G5 melody:v100:G4 wait:48 melody:v0:G4 melody:v0:G5 melody:v100:G5 melody:v100:G4 accomp0:v0:C3 accomp0:v0:G2 accomp0:v0:C2 accomp0:v100:E2 accomp0:v100:B2 accomp0:v100:E3 wait:48 melody:v0:G4 melody:v0:G5 wait:24 melody:v100:G5 melody:v100:G4 accomp0:v0:E3 accomp0:v0:B2 accomp0:v0:E2 accomp0:v100:E2 accomp0:v100:B2 accomp0:v100:E3 wait:1 melody:v0:G4 melody:v0:G5 melody:v100:G5 melody:v100:G4 wait:24 accomp0:v0:E3 accomp0:v0:B2 accomp0:v0:E2 accomp0:v100:E2 accomp0:v100:B2 accomp0:v100:E3 wait:1 melody:v0:G4 melody:v0:G5 melody:v100:G5 melody:v100:G6 wait:1 melody:v0
+
+[2510 | 6572.67] loss=0.10 avg=0.21
+[2520 | 6594.98] loss=0.17 avg=0.21
+[2530 | 6617.25] loss=0.21 avg=0.21
+[2540 | 6639.52] loss=0.26 avg=0.21
+[2550 | 6661.84] loss=0.24 avg=0.21
+[2560 | 6684.13] loss=0.11 avg=0.21
+[2570 | 6706.44] loss=0.14 avg=0.21
+[2580 | 6728.71] loss=0.11 avg=0.20
+[2590 | 6751.04] loss=0.23 avg=0.20
+[2600 | 6773.32] loss=0.10 avg=0.20
+Saving checkpoint/25jun_tc_run1/model-2600
+======== SAMPLE 1 ========
+B6 accomp0:v0:A3 accomp0:v0:D3 accomp0:v0:C3 wait:24 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 wait:24 accomp0:v0:G3 accomp0:v0:D3 accomp0:v0:B3 wait:24 accomp0:v100:D3 accomp0:v100:B3 accomp0:v100:G3 wait:24 accomp0:v0:D3 accomp0:v0:B3 accomp0:v0:G3 wait:24 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 wait:24 accomp0:v0:G3 accomp0:v0:D3 accomp0:v0:B3 wait:24 melody:v100:G5 wait:48 melody:v0:G5 melody:v100:B5 wait:48 melody:v0:B5 melody:v100:C5 wait:48 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 wait:48 melody:v0:C5 melody:v100:D5 wait:48 melody:v0:D5 melody:v100:G5 wait:48 melody:v0:G5 melody:v100:D5 wait:48 melody:v0:D5 melody:v100:G5 wait:48 melody:v0:G5 melody:v100:D5 accomp0:v0:G3 accomp0:v0:D3 accomp0:v0:B3 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 wait:24 accomp0:v0:B3 accomp0:v0:D3 accomp0:v0:G3 wait:24 melody:v100:G5 wait:48 melody:v0:E-5 accomp0:v100:A3 accomp0:v100:C3 accomp0:v100:F3 wait:24 accomp0:v0:A3 accomp0:v0:C3 accomp0:v0:F3 wait:48 accomp0:v100:A3 accomp0:v100:C3 accomp0:v100:F3 wait:24 accomp0:v0:A3 accomp0:v0:C3 accomp0:v0:F3 wait:24 melody:v100:D5 wait:48 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 wait:24 melody:v0:D5 accomp0:v0:G3 accomp0:v0:D3 accomp0:v0:B3 wait:24 melody:v100:C5 wait:48 accomp0:v100:D3 accomp0:v100:B3 accomp0:v100:G3 wait:48 melody:v0:C5 melody:v100:D5 accomp0:v0:D3 accomp0:v0:B3 accomp0:v0:G3 wait:24 accomp0:v100:C4 accomp0:v100:G3 accomp0:v100:E4 wait:24 accomp0:v0:C4 accomp0:v0:G3 accomp0:v0:E4 wait:24 melody:v0:D5 wait:24 melody:v100:G5 wait:48 accomp0:v100:E4 accomp0:v100:G3 accomp0:v100:C4 wait:24 accomp0:v0:E4 accomp0:v0:G3 accomp0:v0:C4 wait:24 melody:v0:G5 accomp0:v100:C4 accomp0:v100:G3 accomp0:v100:E4 wait:24 accomp0:v0:C4 accomp0:v0:G3 accomp0:v0:E4 wait:48 accomp0:v100:E4 accomp0:v100:G3 accomp0:v100:C4 wait:24 accomp0:v0:E4 accomp0:v0:G3 accomp0:v0:C4 wait:24 melody:v100:D5 wait:48 accomp0:v100:E4 accomp0:v100:G3 accomp0:v100:C4 wait:24 accomp0:v0:E4 accomp0:v0:G3 accomp0:v0:C4 wait:24 melody:v0:D5 melody:v100:C5 wait:48 accomp0:
+
+[2610 | 6838.35] loss=0.18 avg=0.20
+[2620 | 6860.66] loss=0.17 avg=0.20
+[2630 | 6882.93] loss=0.12 avg=0.20
+[2640 | 6905.19] loss=0.10 avg=0.20
+[2650 | 6927.48] loss=0.12 avg=0.20
+[2660 | 6949.73] loss=0.36 avg=0.20
+[2670 | 6972.03] loss=0.12 avg=0.20
+[2680 | 6994.29] loss=0.27 avg=0.20
+[2690 | 7016.53] loss=0.10 avg=0.20
+[2700 | 7038.76] loss=0.16 avg=0.20
+Saving checkpoint/25jun_tc_run1/model-2700
+======== SAMPLE 1 ========
+v:C#3 melody:v100:C#3 wait:24 melody:v0:F2 melody:v0:F3 melody:v0:C#4 melody:v100:C#4 melody:v100:G#3 melody:v100:C#3 wait:24 melody:v0:F4 melody:v100:E4 wait:24 melody:v0:C#3 melody:v0:G#3 melody:v0:C#4 melody:v100:C#4 melody:v100:G#3 melody:v100:C#3 wait:24 melody:v0:E4 melody:v100:A4 wait:24 melody:v0:C#3 melody:v0:G#3 melody:v0:C#4 melody:v100:C#4 melody:v100:G#3 melody:v100:C#3 wait:24 melody:v0:A4 wait:24 melody:v0:E3 melody:v0:G#3 melody:v0:C#4 wait:24 melody:v100:D4 wait:24 melody:v0:D4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:F4 wait:24 melody:v0:F4 melody:v100:C#4 wait:24 melody:v0:E3 melody:v0:G#3 melody:v0:C#4 melody:v100:B3 melody:v100:F#4 wait:24 melody:v0:C#4 melody:v100:C#4 wait:24 melody:v0:F#4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:F4 wait:24 melody:v0:C#4 melody:v0:F4 melody:v100:E4 wait:24 melody:v0:F4 melody:v100:D5 wait:24 melody:v0:E4 melody:v0:D5 melody:v100:A3 wait:24 melody:v0:A3 melody:v100:F#4 wait:24 melody:v0:F#4 melody:v100:D5 wait:24 melody:v0:F3 melody:v0:C#3 melody:v0:A2 melody:v100:D3 melody:v100:A3 melody:v100:D4 wait:24 melody:v0:D4 melody:v100:A4 wait:24 melody:v0:A3 melody:v0:A2 melody:v0:D3 wait:24 melody:v100:D4 wait:24 melody:v0:D4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:F4 wait:24 melody:v0:F4 melody:v100:C#4 wait:24 melody:v0:C#4 melody:v100:C#4 wait:24 melody:v0:F4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:A4 wait:24 melody:v0:A4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:A4 wait:24 melody:v0:A3 melody:v0:D3 melody:v0:D4 wait:24 melody:v100:D4 wait:24 melody:v0:D4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:F4 wait:24 melody:v0:F4 melody:v100:C#4 wait:24 melody:v0:C#4 melody:v100:C#4 melody:v100:G#3 melody:v100:C#3 wait:24 melody:v0:F4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:A4 wait:24 melody:v0:A4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:A4 wait:24 melody:v0:A4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:A4 wait:24 melody:v0:A4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:A4 wait:24 melody:v0:E4 melody:v100:A4 wait:24 melody:v0:A4 melody:v100:E4 wait:24 melody
+
+[2710 | 7097.83] loss=0.17 avg=0.20
+[2720 | 7120.43] loss=0.16 avg=0.20
+[2730 | 7142.70] loss=0.10 avg=0.20
+[2740 | 7164.96] loss=0.13 avg=0.20
+[2750 | 7187.25] loss=0.09 avg=0.20
+[2760 | 7209.54] loss=0.09 avg=0.20
+[2770 | 7231.79] loss=0.15 avg=0.19
+[2780 | 7254.08] loss=0.14 avg=0.19
+[2790 | 7276.32] loss=0.27 avg=0.20
+[2800 | 7298.56] loss=0.17 avg=0.19
+Saving checkpoint/25jun_tc_run1/model-2800
+======== SAMPLE 1 ========
+C#3 accomp0:v62:E3 accomp0:v62:B3 accomp0:v62:G#3 wait:48 melody:v0:B-5 melody:v62:E-5 melody:v62:B5 melody:v62:F#5 wait:24 melody:v0:F#5 melody:v62:F#5 wait:24 melody:v0:E-5 melody:v62:C#6 wait:24 melody:v0:F#6 melody:v62:E-6 wait:24 melody:v0:E-6 melody:v62:G#5 wait:24 melody:v0:B5 melody:v62:E-6 wait:24 melody:v0:E-6 melody:v62:F#5 wait:24 melody:v0:B5 melody:v62:E-5 wait:24 melody:v0:E-5 melody:v62:C#5 wait:24 melody:v0:C#5 melody:v62:G#4 wait:24 melody:v0:G#4 melody:v62:B4 wait:24 melody:v0:B4 melody:v62:E-5 wait:24 melody:v0:E-5 melody:v62:F#5 wait:24 melody:v0:F#5 melody:v62:E-5 wait:24 melody:v0:E-5 melody:v62:G#4 wait:24 melody:v0:G#4 melody:v62:B4 wait:24 melody:v0:B4 melody:v62:B#5 wait:24 melody:v0:B#5 melody:v62:A5 wait:24 melody:v0:A5 melody:v62:C#5 wait:24 melody:v0:C#5 melody:v62:F#5 wait:24 melody:v0:F#5 melody:v62:G#5 wait:24 melody:v0:G#5 melody:v62:C#6 wait:24 melody:v0:C#6 melody:v62:E-6 wait:24 melody:v0:E-6 melody:v62:C#6 wait:24 melody:v0:F#6 melody:v62:E-6 wait:24 melody:v0:E-6 melody:v62:F#5 wait:24 melody:v0:F#5 melody:v62:F#5 wait:24 melody:v0:F#5 melody:v62:E-6 wait:24 melody:v0:E-6 melody:v62:F#5 wait:24 melody:v0:F#5 melody:v62:E-6 wait:24 melody:v0:E-6 melody:v58:C#6 wait:24 melody:v0:C#6 melody:v58:E-6 wait:24 melody:v0:E-6 melody:v58:C#6 wait:24 melody:v0:C#6 melody:v59:F#5 wait:24 melody:v0:F#5 melody:v59:D5 wait:24 melody:v0:D5 melody:v59:G#5 wait:24 melody:v0:G#5 melody:v59:E-5 wait:24 melody:v0:E-5 melody:v59:E-5 wait:24 melody:v0:E-5 melody:v59:C#6 wait:24 melody:v0:C#6 wait:24 melody:v58:E-5 wait:24 melody:v0:E-5 melody:v58:E-5 wait:24 melody:v0:E-5 melody:v58:C#5 wait:24 melody:v0:C#5 melody:v58:G#5 accomp0:v62:E3 accomp0:v62:B3 accomp0:v62:G#3 wait:48 melody:v0:G#5 melody:v58:F#5 melody:v58:B-5 melody:v58:E-5 wait:48 melody:v0:F#5 melody:v0:B-5 melody:v0:E-5 melody:v58:E-5 melody:v58:B-5 melody:v58:C#5 wait:48 melody:v0:C#5 melody:v0:B-5 melody:v0:E-5 melody:v58:C#5 melody:v58:B-5 melody:v58:F#5 wait:48 melody:v0:F
+
+[2810 | 7358.53] loss=0.29 avg=0.20
+[2820 | 7381.24] loss=0.14 avg=0.20
+[2830 | 7403.51] loss=0.12 avg=0.19
+[2840 | 7425.79] loss=0.09 avg=0.19
+[2850 | 7448.08] loss=0.13 avg=0.19
+[2860 | 7470.36] loss=0.36 avg=0.19
+[2870 | 7492.63] loss=0.11 avg=0.19
+[2880 | 7514.92] loss=0.05 avg=0.19
+[2890 | 7537.20] loss=0.17 avg=0.19
+[2900 | 7559.46] loss=0.15 avg=0.19
+Saving checkpoint/25jun_tc_run1/model-2900
+======== SAMPLE 1 ========
+v100:G3 accomp0:v0:G4 accomp0:v0:D4 accomp0:v0:G3 accomp0:v100:C3 accomp0:v100:D3 accomp0:v100:G3 accomp100:G2 wait:48 melody:v0:D6 melody:v0:D5 melody:v100:A5 melody:v100:A6 accomp0:v0:G2 accomp0:v0:G3 accomp0:v0:D3 accomp0:v0:C3 accomp0:v100:A2 accomp0:v100:D3 accomp0:v100:D4 accomp100:F3 wait:48 melody:v0:A6 melody:v0:A5 wait:48 melody:v100:G5 melody:v100:G5 melody:v100:G4 melody:v100:G4 wait:48 melody:v0:G4 melody:v0:G4 melody:v0:G4 wait:24 melody:v0:G4 melody:v0:G4 melody:v0:G5 melody:v0:G5 melody:v100:G4 melody:v100:G4 melody:v100:C5 melody:v100:C5 accomp0:v0:F3 accomp0:v0:D4 accomp0:v0:D3 accomp0:v0:A2 accomp0:v100:G3 accomp0:v100:E3 accomp0:v100:C3 accomp100:E4 wait:48 melody:v0:C5 melody:v0:C5 wait:24 melody:v100:C5 melody:v100:C5 melody:v100:C6 melody:v100:C6 accomp0:v0:E3 accomp0:v0:C3 accomp0:v0:E4 accomp0:v100:C3 accomp0:v100:G3 accomp0:v100:E3 accomp100:C4 wait:48 melody:v0:C6 melody:v0:C6 melody:v0:C5 melody:v0:C5 melody:v100:E5 melody:v100:E5 melody:v100:E6 melody:v100:E6 wait:24 melody:v0:E6 melody:v0:E6 melody:v0:E5 melody:v0:E5 melody:v0:E5 melody:v100:G4 melody:v100:G4 melody:v100:G5 melody:v100:G5 accomp0:v0:C4 accomp0:v0:E3 accomp0:v0:G3 accomp0:v0:C3 accomp0:v100:G3 accomp0:v100:E3 accomp0:v100:C3 accomp100:B3 wait:48 melody:v0:G5 melody:v0:G5 wait:24 melody:v100:G2 melody:v100:E2 melody:v100:A2 wait:48 melody:v0:A2 melody:v0:E2 melody:v0:G2 melody:v100:C2 melody:v100:C3 melody:v100:E2 accomp0:v0:B3 accomp0:v0:C3 accomp0:v0:E3 accomp0:v0:G3 accomp0:v100:G3 accomp0:v100:E3 accomp0:v100:E4 accomp100:C4 wait:48 melody:v0:E2 melody:v0:C3 melody:v0:C2 wait:48 melody:v100:C2 melody:v100:C3 melody:v100:E2 wait:48 melody:v0:E2 melody:v0:C3 melody:v0:C2 wait:24 melody:v100:C2 melody:v100:C3 melody:v100:E2 wait:48 melody:v0:E2 melody:v0:C3 melody:v0:C2 wait:24 melody:v0:C2 melody:v0:C3 melody:v100:C2 melody:v100:C3 melody:v100:E2 accomp0:v0:C4 accomp0:v0:E4 accomp0:v0:E3 accomp0:v0:G3 accomp0:v100:E2 accomp0:v100:G3 accomp0:v100:G3 accomp100:B3 wait:48 melody:v0:E2 melody:v0:G3 melody:v0:C2 melody:v100:
+
+[2910 | 7623.32] loss=0.07 avg=0.19
+[2920 | 7645.68] loss=0.12 avg=0.19
+[2930 | 7667.97] loss=0.14 avg=0.19
+[2940 | 7690.27] loss=0.16 avg=0.19
+[2950 | 7712.52] loss=0.15 avg=0.19
+[2960 | 7734.78] loss=0.15 avg=0.19
+[2970 | 7757.06] loss=0.15 avg=0.19
+[2980 | 7779.35] loss=0.26 avg=0.19
+[2990 | 7801.65] loss=0.16 avg=0.19
+[3000 | 7823.93] loss=0.17 avg=0.19
+Saving checkpoint/25jun_tc_run1/model-3000
+======== SAMPLE 1 ========
+2 accomp0:v0:B-2 wait:48 accomp0:v60:E-2 accomp0:v60:G#2 accomp0:v60:G#1 wait:48 accomp0:v0:E-2 accomp0:v0:G#2 accomp0:v0:G#1 accomp0:v60:G#1 accomp0:v60:G#2 accomp0:v60:E-2 wait:48 accomp0:v0:E-2 accomp0:v0:G#2 accomp0:v0:G#1 accomp0:v60:C4 accomp0:v60:E-2 accomp0:v60:G2 accomp0:v60:C3 wait:48 accomp0:v0:C3 accomp0:v0:C4 accomp0:v60:C3 accomp0:v60:G2 accomp0:v60:E-3 accomp0:v60:C4 accomp0:v60:G3 wait:48 accomp0:v0:G3 accomp0:v0:C4 accomp0:v0:C3 wait:48 accomp0:v60:C3 accomp0:v60:C4 accomp0:v60:G2 accomp0:v60:C4 wait:48 accomp0:v0:C3 accomp0:v0:C4 accomp0:v0:G2 accomp0:v0:C4 wait:48 accomp0:v60:G2 accomp0:v60:C4 accomp0:v60:C3 accomp0:v60:C4 wait:48 accomp0:v0:G2 accomp0:v0:C3 accomp0:v0:C4 accomp0:v0:C3 accomp0:v60:F3 accomp0:v60:F4 accomp0:v60:C3 accomp0:v60:F2 wait:48 accomp0:v0:F2 accomp0:v0:F4 accomp0:v0:C3 accomp0:v0:F3 accomp0:v60:C3 accomp0:v60:F3 accomp0:v60:F2 wait:48 accomp0:v0:F2 accomp0:v0:F3 accomp0:v0:C3 accomp0:v60:C3 accomp0:v60:F3 accomp0:v60:F2 wait:48 accomp0:v0:F2 accomp0:v0:F3 accomp0:v0:C3 accomp0:v60:F2 accomp0:v60:F3 accomp0:v60:C3 wait:48 accomp0:v0:C3 accomp0:v0:F3 accomp0:v0:F2 accomp0:v60:F2 accomp0:v60:F3 accomp0:v60:C3 wait:48 accomp0:v0:C3 accomp0:v0:F3 accomp0:v0:F2 accomp0:v60:F2 accomp0:v60:F3 accomp0:v60:C3 wait:48 accomp0:v0:C3 accomp0:v0:F3 accomp0:v0:F2 accomp0:v60:F2 accomp0:v60:F3 accomp0:v60:C3 wait:48 accomp0:v0:C3 accomp0:v0:F3 accomp0:v0:F2 accomp0:v60:F2 accomp0:v60:F3 accomp0:v60:C3 wait:48 accomp0:v0:C3 accomp0:v0:F3 accomp0:v0:F2 accomp0:v60:F2 accomp0:v60:F3 accomp0:v60:C3 wait:48 accomp0:v0:C3 accomp0:v0:F3 accomp0:v0:F2 accomp0:v60:C3 accomp0:v60:F3 accomp0:v60:F2 wait:48 accomp0:v0:F2 accomp0:v0:F3 accomp0:v0:C3 accomp0:v60:C3 accomp0:v60:F3 accomp0:v60:F2 wait:48 accomp0:v0:F2 accomp0:v0:F3 accomp0:v0:C3 wait:48 accomp0:v60:C4 accomp0:v60:C3 accomp0:v60:G#2 accomp0:v60:C3 accomp0:v60:C3 wait:48 accomp0:v0:C4 accomp0:v0
+
+[3010 | 7885.11] loss=0.20 avg=0.19
+[3020 | 7907.51] loss=0.19 avg=0.19
+[3030 | 7929.79] loss=0.18 avg=0.19
+[3040 | 7952.07] loss=0.13 avg=0.19
+[3050 | 7974.33] loss=0.14 avg=0.19
+[3060 | 7996.59] loss=0.28 avg=0.19
+[3070 | 8018.86] loss=0.31 avg=0.19
+[3080 | 8041.13] loss=0.19 avg=0.19
+[3090 | 8063.41] loss=0.10 avg=0.19
+[3100 | 8085.68] loss=0.20 avg=0.19
+Saving checkpoint/25jun_tc_run1/model-3100
+======== SAMPLE 1 ========
+  accomp0:v0:B2 accomp0:v0:E3 accomp0:v0:B3 accomp0:v100:B3 accomp0:v100:E3 accomp0:v100:B2 wait:48 melody:v0:C#5 melody:v100:B4 wait:24 melody:v0:B4 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:B4 accomp0:v0:B2 accomp0:v0:E3 accomp0:v0:B3 accomp0:v100:B3 accomp0:v100:E3 accomp0:v100:B2 wait:48 melody:v0:B4 melody:v100:B4 wait:24 melody:v0:B4 melody:v100:G#4 wait:24 melody:v0:G#4 melody:v100:F#4 wait:48 melody:v0:F#4 melody:v100:E4 wait:48 melody:v0:E4 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:F#4 wait:48 melody:v0:F#4 accomp0:v0:B2 accomp0:v0:E3 accomp0:v0:B3 accomp0:v100:F#3 accomp0:v100:C#3 accomp0:v100:B2 wait:24 melody:v100:B4 wait:24 melody:v0:B4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:F#4 wait:24 melody:v0:F#4 melody:v100:E5 wait:24 melody:v0:E5 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:E-5 accomp0:v0:B2 accomp0:v0:C#3 accomp0:v0:F#3 accomp0:v100:E2 accomp0:v100:E3 accomp0:v100:B2 wait:48 melody:v0:E-5 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:B4 wait:24 melody:v0:B4 melody:v100:B5 accomp0:v0:B2 accomp0:v0:E3 accomp0:v0:E2 accomp0:v100:E2 accomp0:v100:E3 accomp0:v100:B2 wait:24 melody:v100:B5 wait:24 melody:v0:B5 melody:v100:B4 accomp0:v0:B2 accomp0:v0:E3 accomp0:v0:E2 accomp0:v100:E2 accomp0:v100:E3 accomp0:v100:B2 wait:24 melody:v0:B4 melody:v100:G#4 wait:24 melody:v0:G#4 melody:v100:G#4 wait:24 melody:v0:G#4 melody:v100:G#4 accomp0:v0:B2 accomp0:v0:E3 accomp0:v0:E2 accomp0:v100:B3 accomp0:v100:F#3 accomp0:v100:C#3 wait:48 melody:v0:G#4 melody:v100:F#4 wait:24 melody:v0:F#4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:B4 wait:24 melody:v0:B4 melody:v100:F#4 wait:24 melody:v0:F#4 melody:v100:A4 wait:24 melody:v0:A4 melody:v100:E-5 wait:24 melody:v0:E-5 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:E5 accomp0:v0:C#3 accomp0:v0:F#3 accomp0:v0:B3 accomp0:v100:B2 accomp0:v100:E3 accomp0:v100:B3 wait:48 melody:v0:E5 melody:v100:B4 wait:24 melody:v0:B4 melody:v100:G#4 wait:24 melody:v0:G#4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:G#4 accomp0:v0:B
+
+[3110 | 8146.06] loss=0.22 avg=0.19
+[3120 | 8168.42] loss=0.11 avg=0.19
+[3130 | 8190.69] loss=0.11 avg=0.19
+[3140 | 8212.99] loss=0.26 avg=0.19
+[3150 | 8235.27] loss=0.12 avg=0.19
+[3160 | 8257.53] loss=0.11 avg=0.19
+[3170 | 8279.82] loss=0.14 avg=0.19
+[3180 | 8302.11] loss=0.14 avg=0.19
+[3190 | 8324.36] loss=0.11 avg=0.18
+[3200 | 8346.63] loss=0.25 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-3200
+======== SAMPLE 1 ========
+:v0:C#5 melody:v0:C#4 melody:v100:C#4 melody:v100:C#5 melody:v100:C#5 wait:24 accomp0:v0:C#5 wait:24 melody:v0:C#3 melody:v0:G#3 melody:v0:C#4 melody:v100:C#3 melody:v100:G#3 melody:v100:C#4 melody:v100:G#4 accomp0:v100:E2 wait:48 melody:v0:C#5 melody:v0:C#3 melody:v0:G#3 melody:v0:C#4 melody:v0:G#4 wait:48 melody:v100:B2 melody:v100:F#3 melody:v100:B3 melody:v100:E4 wait:24 melody:v0:E4 melody:v0:E4 melody:v0:B2 melody:v0:F#3 melody:v0:B3 melody:v100:B2 melody:v100:F#3 melody:v100:B3 melody:v100:E4 wait:48 melody:v0:E4 melody:v0:B3 melody:v0:F#3 melody:v0:B2 melody:v100:F#3 melody:v100:G#3 melody:v100:C#3 melody:v100:C#4 accomp0:v0:E2 wait:48 melody:v0:C#4 melody:v0:C#3 melody:v0:G#3 melody:v0:F#3 melody:v100:F#3 melody:v100:G#3 melody:v100:C#3 melody:v100:C#4 wait:48 melody:v0:C#4 melody:v0:C#3 melody:v0:G#3 melody:v0:F#3 melody:v100:F#3 melody:v100:G#3 melody:v100:C#3 melody:v100:C#4 wait:24 melody:v0:C#4 melody:v0:C#3 melody:v0:G#3 melody:v0:F#3 melody:v100:F#3 melody:v100:G#3 melody:v100:C#3 melody:v100:C#4 wait:24 melody:v0:C#4 melody:v0:C#3 melody:v0:G#3 melody:v0:F#3 wait:48 melody:v100:C#4 melody:v100:C#3 melody:v100:G#3 melody:v100:F#3 wait:24 melody:v0:C#4 melody:v0:C#3 melody:v0:G#3 melody:v0:F#3 melody:v100:C#3 melody:v100:G#3 melody:v100:C#4 melody:v100:G#4 accomp0:v0:E2 wait:48 melody:v0:G#4 melody:v0:C#4 melody:v0:C#3 melody:v0:G#3 melody:v100:G#3 melody:v100:E3 melody:v100:E4 melody:v100:B3 wait:48 melody:v0:B3 melody:v0:E4 melody:v0:E3 melody:v0:G#3 melody:v100:E3 melody:v100:B3 melody:v100:E4 melody:v100:G#4 accomp0:v0:E2 wait:48 melody:v0:G#4 melody:v0:E4 melody:v0:E3 melody:v0:B3 melody:v0:E3 melody:v100:E3 melody:v100:B3 melody:v100:E4 melody:v100:G#4 wait:24 melody:v0:G#4 melody:v0:E4 melody:v0:E3 melody:v0:B3 melody:v0:E4 melody:v100:G#3 melody:v100:E3 melody:v100:E4 melody:v100:B3 wait:48 melody:v0:B3 melody:v0:E4 melody:v0:E3 melody:v0:G#3 wait:48 melody:v100:C#4 melody:v100:C#3 melody:v100:G#3 melody:v100:F#3 wait:24 melody:v0:C
+
+[3210 | 8407.31] loss=0.18 avg=0.18
+[3220 | 8429.63] loss=0.17 avg=0.18
+[3230 | 8451.90] loss=0.15 avg=0.18
+[3240 | 8474.18] loss=0.10 avg=0.18
+[3250 | 8496.49] loss=0.29 avg=0.18
+[3260 | 8518.76] loss=0.08 avg=0.18
+[3270 | 8541.03] loss=0.21 avg=0.18
+[3280 | 8563.27] loss=0.11 avg=0.18
+[3290 | 8585.56] loss=0.23 avg=0.18
+[3300 | 8607.82] loss=0.10 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-3300
+======== SAMPLE 1 ========
+2 melody:v100:G2 accomp0:v0:F2 wait:24 melody:v0:F5 melody:v0:F4 melody:v0:C5 melody:v0:C2 melody:v0:C3 wait:24 melody:v100:C2 melody:v100:C3 melody:v100:G2 melody:v89:G4 melody:v89:E5 wait:48 melody:v0:E5 melody:v0:C2 melody:v0:C3 melody:v0:G2 melody:v100:G2 melody:v100:C3 melody:v100:C2 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:G2 melody:v0:C3 melody:v0:C2 melody:v100:F2 melody:v100:F3 melody:v100:D3 melody:v100:G4 melody:v100:E5 wait:48 melody:v0:E5 melody:v0:F2 melody:v0:F3 melody:v0:D3 melody:v0:G4 melody:v100:C4 melody:v100:D2 melody:v100:A2 wait:48 melody:v0:A2 melody:v0:D2 melody:v0:D3 melody:v0:C4 melody:v102:A2 melody:v100:D3 melody:v100:F3 melody:v100:D2 melody:v100:C5 wait:48 melody:v0:C5 melody:v0:F3 melody:v0:D3 melody:v0:A2 melody:v0:D2 wait:24 melody:v100:D3 melody:v100:F3 melody:v100:A2 wait:48 melody:v0:D3 melody:v0:F3 melody:v0:A2 wait:24 melody:v0:C5 melody:v89:D3 melody:v89:F3 melody:v88:A2 wait:24 melody:v0:D4 melody:v0:A2 melody:v100:G3 melody:v89:D3 melody:v88:A2 wait:24 melody:v0:G3 melody:v0:D3 melody:v88:E4 melody:v88:B3 wait:24 melody:v0:E4 melody:v0:B3 melody:v88:D3 melody:v88:F3 melody:v88:A2 wait:24 melody:v0:D2 melody:v0:F3 melody:v0:E4 melody:v0:B3 melody:v100:G3 melody:v91:G2 melody:v91:G3 melody:v95:B4 melody:v95:B3 wait:47 melody:v0:B3 melody:v0:G2 melody:v0:D3 melody:v0:G3 melody:v0:B4 melody:v97:B2 melody:v92:B2 melody:v91:D3 melody:v91:B3 melody:v95:G4 wait:24 melody:v0:G4 melody:v0:B3 melody:v0:D3 melody:v0:B2 melody:v0:B2 wait:24 melody:v100:B2 melody:v100:B3 melody:v95:G4 wait:24 melody:v0:B2 melody:v0:B3 melody:v0:G4 wait:24 melody:v0:B2 melody:v91:G4 wait:24 melody:v0:G4 wait:48 melody:v91:G4 wait:48 melody:v0:G4 wait:24 melody:v91:G4 accomp0:v0:B2 accomp0:v0:G4 accomp0:v0:B3 accomp0:v0:F3 accomp0:v100:C4 accomp0:v100:A2 accomp0:v100:E2 accomp0:v100:G4 wait:48 melody:v0:G4 melody:v0:A2 accomp0:v0:E2 accomp0:v0:C4 accomp0:v0:E2 accomp0:v100:C4 accomp0:v100:A2 accomp0:v100:E2 accomp0:v100:G4 wait:48 melody:v100:D2 melody:v100:A2 wait:48 melody:v0:D2 melody:v0:A2 wait:24 melody:
+
+[3310 | 8666.93] loss=0.23 avg=0.18
+[3320 | 8689.56] loss=0.17 avg=0.18
+[3330 | 8711.83] loss=0.24 avg=0.18
+[3340 | 8734.10] loss=0.13 avg=0.18
+[3350 | 8756.38] loss=0.14 avg=0.18
+[3360 | 8778.66] loss=0.25 avg=0.18
+[3370 | 8800.96] loss=0.13 avg=0.18
+[3380 | 8823.23] loss=0.18 avg=0.18
+[3390 | 8845.48] loss=0.14 avg=0.18
+[3400 | 8867.79] loss=0.59 avg=0.19
+Saving checkpoint/25jun_tc_run1/model-3400
+======== SAMPLE 1 ========
+5 accomp0:v0:A3 accomp0:v0:F#3 accomp0:v0:D3 accomp0:v100:F4 accomp0:v100:D4 accomp0:v100:B3 accomp0:v100:B4 wait:48 melody:v0:D5 accomp0:v0:B4 accomp0:v0:B3 accomp0:v0:D4 accomp0:v0:F4 wait:24 melody:v100:E5 accomp0:v100:D4 accomp0:v100:B4 accomp0:v100:D5 accomp0:v100:D4 wait:48 melody:v0:E5 accomp0:v0:D4 accomp0:v0:B4 accomp0:v0:D5 accomp0:v0:D4 wait:24 accomp0:v100:D4 accomp0:v100:B4 accomp0:v100:D5 accomp0:v100:D6 wait:48 melody:v100:D5 accomp0:v0:D4 accomp0:v0:B4 accomp0:v0:D5 accomp0:v0:D6 wait:24 melody:v0:D5 melody:v100:B4 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 accomp0:v100:G4 wait:48 melody:v0:B4 melody:v100:F#5 accomp0:v0:G4 accomp0:v0:G3 accomp0:v0:D3 accomp0:v0:B3 wait:24 melody:v0:F#5 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 accomp0:v100:G4 wait:48 melody:v100:D5 accomp0:v0:G4 accomp0:v0:G3 accomp0:v0:D3 accomp0:v0:B3 wait:24 melody:v0:D5 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 accomp0:v100:G4 wait:48 accomp0:v0:G4 accomp0:v0:G3 accomp0:v0:D3 accomp0:v0:B3 accomp0:v100:G3 accomp0:v100:D3 accomp0:v100:B3 accomp0:v100:G4 wait:48 accomp0:v0:G4 accomp0:v0:G3 accomp0:v0:B3 accomp0:v0:D3 accomp0:v100:G2 accomp0:v100:E3 accomp0:v100:B3 accomp0:v100:G3 wait:48 melody:v100:G4 accomp0:v0:G3 accomp0:v0:E3 accomp0:v0:B3 accomp0:v0:G2 wait:48 melody:v0:G4 melody:v100:A4 accomp0:v100:G2 accomp0:v100:E3 accomp0:v100:B3 accomp0:v100:G3 wait:48 accomp0:v0:G2 accomp0:v0:E3 accomp0:v0:B3 accomp0:v0:G3 wait:96 melody:v100:A4 accomp0:v100:G2 accomp0:v100:E3 accomp0:v100:B3 accomp0:v100:G3 wait:48 accomp0:v0:G2 accomp0:v0:E3 accomp0:v0:B3 accomp0:v0:G3 wait:48 melody:v0:A4 accomp0:v100:G2 accomp0:v100:E3 accomp0:v100:B3 accomp0:v100:G3 wait:48 accomp0:v0:G2 accomp0:v0:E3 accomp0:v0:B3 accomp0:v0:G3 wait:48 melody:v100:E5 accomp0:v100:E3 accomp0:v100:B3 accomp0:v100:G3 accomp0:v100:G2 wait:48 melody:v0:E5 accomp0:v0:G3 accomp0:v0:E3 accomp0:v0:B3 accomp0:v0:G2 accomp0:v100:G2 accomp0:v100:E3 accomp0:v100:B3 accomp0:v100:G3 wait:48 accomp0:v
+
+[3410 | 8927.36] loss=0.12 avg=0.19
+[3420 | 8950.04] loss=0.17 avg=0.19
+[3430 | 8972.31] loss=0.12 avg=0.18
+[3440 | 8994.60] loss=0.14 avg=0.18
+[3450 | 9016.92] loss=0.13 avg=0.18
+[3460 | 9039.21] loss=0.14 avg=0.18
+[3470 | 9061.53] loss=0.17 avg=0.18
+[3480 | 9083.78] loss=0.20 avg=0.18
+[3490 | 9106.06] loss=0.24 avg=0.18
+[3500 | 9128.34] loss=0.09 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-3500
+======== SAMPLE 1 ========
+:C4 accomp0:v0:E4 accomp0:v0:G2 accomp0:v98:G3 accomp0:v98:E4 accomp0:v98:C3 accomp0:v100:D4 wait:96 melody:v100:C5 accomp0:v0:D4 accomp0:v0:C3 accomp0:v0:G3 accomp0:v98:G3 accomp0:v98:E4 accomp0:v98:C3 accomp0:v100:D4 wait:72 melody:v0:C5 melody:v100:D5 wait:24 melody:v0:D5 melody:v100:C5 accomp0:v0:C3 accomp0:v0:G3 accomp0:v0:E4 accomp0:v98:G3 accomp0:v98:C3 accomp0:v98:E4 accomp0:v100:D4 wait:72 melody:v0:C5 melody:v100:C5 wait:24 melody:v0:C5 melody:v100:C6 accomp0:v0:E4 accomp0:v0:C3 accomp0:v0:G3 accomp0:v98:G3 accomp0:v98:C3 accomp0:v98:E4 accomp0:v100:D4 wait:72 melody:v0:C6 melody:v100:F5 wait:24 melody:v0:F5 melody:v100:D5 accomp0:v0:E4 accomp0:v0:C3 accomp0:v0:G3 accomp0:v98:G3 accomp0:v98:C3 accomp0:v98:E4 accomp0:v100:C3 wait:72 melody:v0:D5 melody:v100:C5 wait:24 melody:v0:C5 melody:v100:C6 accomp0:v0:E4 accomp0:v0:C3 accomp0:v0:G3 accomp0:v98:B2 accomp0:v98:G3 accomp0:v98:D3 accomp0:v100:G4 wait:72 melody:v0:C6 melody:v100:F5 wait:24 melody:v0:F5 melody:v100:D5 accomp0:v0:D3 accomp0:v0:G3 accomp0:v0:B2 accomp0:v98:B2 accomp0:v98:G3 accomp0:v98:D3 accomp0:v100:G4 wait:72 melody:v0:D5 melody:v100:C5 accomp0:v0:D3 accomp0:v0:G3 accomp0:v0:B2 accomp0:v98:B2 accomp0:v98:G3 accomp0:v98:D3 accomp0:v100:G4 wait:72 melody:v0:C5 melody:v100:E5 wait:24 melody:v0:E5 melody:v100:F5 accomp0:v0:D3 accomp0:v0:G3 accomp0:v0:B2 accomp0:v98:B2 accomp0:v98:G3 accomp0:v98:D3 accomp0:v100:D4 wait:72 melody:v0:F5 melody:v100:E5 accomp0:v0:D3 accomp0:v0:G3 accomp0:v0:B2 accomp0:v98:A4 accomp0:v98:E4 accomp0:v98:C4 accomp0:v100:C3 accomp0:v100:G4 wait:72 melody:v0:E5 melody:v100:C5 accomp0:v0:G4 accomp0:v0:C4 accomp0:v0:E4 accomp0:v98:C4 accomp0:v98:E4 accomp0:v98:A4 accomp0:v100:C3 accomp0:v100:G4 wait:72 melody:v0:C5 melody:v100:C5 accomp0:v0:C4 accomp0:v0:E4 accomp0:v0:A4 accomp0:v98:C4 accomp0:v98:E4 accomp0:v98:A4 accomp0:v100:D3 accomp0:v100:G3 accomp0:v100:G4 wait:72 melody:v0:C5 melody:v100:C5 wait:24 melody:v0:C5 melody:v100:A5 wait:48 accomp0:v0:
+
+[3510 | 9190.91] loss=0.12 avg=0.18
+[3520 | 9213.56] loss=0.22 avg=0.18
+[3530 | 9235.80] loss=0.21 avg=0.18
+[3540 | 9258.11] loss=0.21 avg=0.18
+[3550 | 9280.40] loss=0.09 avg=0.18
+[3560 | 9302.68] loss=0.29 avg=0.18
+[3570 | 9324.98] loss=0.16 avg=0.18
+[3580 | 9347.24] loss=0.14 avg=0.18
+[3590 | 9369.51] loss=0.21 avg=0.18
+[3600 | 9391.80] loss=0.12 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-3600
+======== SAMPLE 1 ========
+v100:C#3 wait:24 melody:v0:C#4 melody:v0:C#3 melody:v0:G#4 melody:v100:G#4 melody:v100:E3 melody:v100:A2 melody:v100:A3 wait:24 melody:v0:A3 melody:v0:E3 melody:v0:G#4 melody:v100:G#4 melody:v100:E3 melody:v100:A2 melody:v100:A3 wait:24 melody:v0:A3 melody:v0:E3 melody:v0:G#4 melody:v100:B4 melody:v100:E3 melody:v100:A2 melody:v100:A3 wait:24 melody:v0:A3 melody:v0:E3 melody:v0:B4 melody:v100:A4 melody:v100:G#2 melodies:v100:C#3 melody:v100:C#2 wait:24 melody:v0:C#2 melody:v0:G#2 melody:v0:C#3 melody:v100:G#4 melody:v100:C#3 melody:v100:C#2 melody:v100:C#2 wait:24 melody:v0:C#2 melody:v0:C#3 melody:v0:C#3 melody:v100:E3 melody:v100:C#3 melody:v100:C#2 wait:24 melody:v0:C#2 melody:v0:C#3 melody:v0:E3 melody:v100:B4 melody:v100:C#3 melody:v100:G#2 melody:v100:C#2 wait:24 melody:v0:C#2 melody:v0:G#2 melody:v0:C#3 melody:v100:B4 melody:v100:C#3 melody:v100:G#2 melody:v100:C#2 wait:24 melody:v0:C#2 melody:v0:C#3 melody:v0:E3 melody:v100:E-5 melody:v100:C#3 melody:v100:G#2 melody:v100:C#2 wait:24 melody:v0:C#2 melody:v0:G#2 melody:v0:C#3 wait:24 melody:v100:E-5 melody:v100:F#2 melody:v100:B2 melody:v100:B1 wait:24 melody:v0:E-5 melody:v100:B5 wait:24 melody:v0:B5 melody:v100:B5 wait:24 melody:v0:B5 melody:v100:G#5 wait:24 melody:v0:G#5 melody:v100:F#5 wait:24 melody:v0:F#5 melody:v100:B-5 wait:24 melody:v0:B-5 melody:v100:C#5 wait:24 melody:v0:C#5 wait:24 melody:v100:B-5 wait:24 melody:v0:B-5 melody:v100:B-5 wait:24 melody:v0:B-5 melody:v100:C#5 wait:24 melody:v0:C#5 wait:24 melody:v100:B5 wait:24 melody:v0:B5 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:B4 wait:24 melody:v0:B-5 melody:v100:C#5 wait:24 melody:v100:B5 wait:24 melody:v0:B-5 melody:v100:C#5 wait:24 melody:v0:C#5 wait:24 melody:v100:B-5 wait:24 melody:v0:B-5 melody:v100:C#5 wait:24 melody:v0:C#5 melody:v100:B-4 wait:24 melody:v0:B-4 melody:v100:B-4 wait:24 melody:v0:B-4 melody:v100:B-5 wait:24 melody:v0:B-5 melody:v100:C#6 wait:24 melody:v0:C#6 melody:v100:B-5 wait:24 melody:v0:B-5 melody:v100:C#5 wait:24 melody:v0:C#5 wait:24 melody:v100:B-5 wait:24 melody:v
+
+[3610 | 9452.16] loss=0.18 avg=0.18
+[3620 | 9474.46] loss=0.26 avg=0.18
+[3630 | 9496.72] loss=0.15 avg=0.18
+[3640 | 9519.00] loss=0.27 avg=0.18
+[3650 | 9541.27] loss=0.14 avg=0.18
+[3660 | 9563.57] loss=0.28 avg=0.18
+[3670 | 9585.82] loss=0.17 avg=0.18
+[3680 | 9608.09] loss=0.10 avg=0.18
+[3690 | 9630.35] loss=0.16 avg=0.18
+[3700 | 9652.62] loss=0.13 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-3700
+======== SAMPLE 1 ========
+:C4 melody:v100:G2 wait:48 melody:v0:G2 melody:v100:G3 wait:48 melody:v0:G3 melody:v100:A3 wait:48 melody:v0:A3 melody:v100:C4 wait:48 melody:v0:A2 melody:v0:C4 melody:v100:D2 wait:48 melody:v0:D2 melody:v100:D3 wait:48 melody:v0:D3 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:B4 wait:48 melody:v0:G4 melody:v100:A4 wait:48 melody:v0:D3 melody:v0:B4 melody:v0:A3 melody:v100:B3 wait:48 melody:v0:B3 melody:v100:A3 wait:48 melody:v0:A3 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:G4 wait:48 melody:v0:A4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:F4 wait:48 melody:v0:F4 melody:v100:D4 wait:48 melody:v0:D4 melody:v100:A3 wait:48 melody:v0:A3 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:B4 wait:48 melody:v0:A3 melody:v0:F4 melody:v0:B4 melody:v100:C3 wait:48 melody:v0:C3 melody:v100:A3 wait:48 melody:v0:A3 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:B4 wait:48 melody:v0:B4 melody:v0:G4 melody:v100:C4 wait:48 melody:v0:C4 melody:v100:A3 wait:48 melody:v0:A3 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:G4 wait:48 melody:v0:A4 melody:v100:G4 wait:48 melody:v0:G4 melody:v0:A4 melody:v100:B3 wait:48 melody:v0:B3 melody:v100:A3 wait:48 melody:v0:A3 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:B4 wait:48 melody:v0:B4 melody:v100:C5 wait:48 melody:v0:C5 melody:v100:A4 wait:48 melody:v0:A4 melody:v100:G4 wait:48 melody:v0:G4 melody:v100:F4 wait:48 melody:v0:F4 melody:v100:D4 wait:48 melody:v0:D4 melody:v100:B4 wait:48 melody:v0:B4 melody:v
+
+[3710 | 9713.08] loss=0.59 avg=0.19
+[3720 | 9735.37] loss=0.16 avg=0.19
+[3730 | 9757.67] loss=0.11 avg=0.19
+[3740 | 9779.95] loss=0.18 avg=0.19
+[3750 | 9802.22] loss=0.23 avg=0.19
+[3760 | 9824.46] loss=0.16 avg=0.19
+[3770 | 9846.73] loss=0.10 avg=0.18
+[3780 | 9869.05] loss=0.17 avg=0.18
+[3790 | 9891.32] loss=0.11 avg=0.18
+[3800 | 9913.57] loss=0.13 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-3800
+======== SAMPLE 1 ========
+6 accomp0:v58:B-3 accomp0:v58:D4 wait:48 melody:v0:B-5 melody:v0:B-4 wait:48 accomp0:v0:B-3 accomp0:v0:D4 accomp0:v0:F4 accomp0:v58:D4 accomp0:v58:F4 accomp0:v58:B-3 wait:96 melody:v58:D5 melody:v58:D4 accomp0:v58:B-3 accomp0:v58:D4 accomp0:v58:F4 wait:144 melody:v0:D5 melody:v0:D4 accomp0:v0:B-3 accomp0:v0:D4 accomp0:v0:F4 accomp0:v58:C4 accomp0:v58:E-4 accomp0:v58:G#4 wait:144 melody:v58:D4 melody:v58:D5 accomp0:v0:G#4 accomp0:v0:E-4 accomp0:v0:C4 accomp0:v58:C4 accomp0:v58:C4 accomp0:v58:G#4 wait:48 melody:v0:D4 melody:v0:D5 melody:v58:F5 melody:v58:F4 accomp0:v0:G#4 accomp0:v0:C4 accomp0:v0:C3 wait:144 accomp0:v58:G#4 accomp0:v58:E-4 accomp0:v58:C4 wait:48 melody:v0:F4 melody:v0:F5 melody:v58:G#5 melody:v58:C4 melody:v58:C5 accomp0:v0:G#4 accomp0:v0:E-4 accomp0:v0:C4 accomp0:v58:C4 accomp0:v58:C4 accomp0:v58:G#4 wait:48 melody:v0:C5 melody:v0:C4 accomp0:v0:G#4 accomp0:v0:C4 accomp0:v0:C3 wait:96 melody:v58:C4 melody:v58:C5 accomp0:v58:C4 accomp0:v58:G#4 accomp0:v58:E-4 wait:144 melody:v0:C4 melody:v0:C5 accomp0:v0:C4 accomp0:v0:G#4 accomp0:v0:E-4 accomp0:v58:G#4 accomp0:v58:E-4 accomp0:v58:C4 wait:96 melody:v58:C6 melody:v58:C5 accomp0:v0:C4 accomp0:v0:E-4 accomp0:v0:G#4 accomp0:v58:A4 accomp0:v58:F4 accomp0:v58:DF3 wait:96 melody:v0:C6 melody:v0:C5 melody:v58:G#5 melody:v58:G#4 accomp0:v0:DF3 accomp0:v0:F4 accomp0:v0:A4 accomp0:v58:E-4 accomp0:v58:F4 accomp0:v58:A4 wait:96 melody:v0:G#5 melody:v0:G#4 melody:v58:B-5 melody:v58:B-4 accomp0:v0:A4 accomp0:v0:F4 accomp0:v0:E-4 accomp0:v58:D4 wait:48 melody:v0:B-4 melody:v0:B-5 melody:v58:B-5 melody:v58:E-5 melody:v58:E-6 accomp0:v0:D4 accomp0:v58:B-3 wait:48 accomp0:v0:B-3 accomp0:v58:F4 wait:24 melody:v0:E-6 melody:v0:E-5 melody:v0:B-5 melody:v58:B-5 melody:v58:G#5 wait:24 melody:v58:E-5 melody:v58:E-6 melody:v58:B-5 melody:v58:G#5 wait:24 melody:v0:E-5 melody:v0:E-6 melody:v0:B-5 melody:v0:G#5 melody:v58:G5 melody:v58:E-5
+
+[3810 | 9975.16] loss=0.13 avg=0.18
+[3820 | 9997.48] loss=0.27 avg=0.18
+[3830 | 10019.75] loss=0.10 avg=0.18
+[3840 | 10042.08] loss=0.13 avg=0.18
+[3850 | 10064.39] loss=0.12 avg=0.18
+[3860 | 10086.68] loss=0.13 avg=0.18
+[3870 | 10108.97] loss=0.17 avg=0.18
+[3880 | 10131.25] loss=0.32 avg=0.18
+[3890 | 10153.51] loss=0.09 avg=0.18
+[3900 | 10175.78] loss=0.18 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-3900
+======== SAMPLE 1 ========
+100:F5 melody:v100:F6 wait:48 melody:v0:F6 melody:v0:F5 accomp0:v0:E-3 accomp0:v0:E-2 accomp0:v0:C#2 accomp0:v100:E-2 accomp0:v100:E-3 accomp0:v100:C#2 wait:48 melody:v100:F6 melody:v100:F5 accomp0:v0:C#2 accomp0:v0:E-3 accomp0:v0:E-2 accomp0:v100:E-2 accomp0:v100:E-3 accomp0:v100:C#2 wait:48 melody:v0:F5 melody:v0:F6 melody:v100:C#6 melody:v100:C#5 accomp0:v0:C#2 accomp0:v0:E-3 accomp0:v0:E-2 accomp0:v100:F#2 accomp0:v100:C#3 wait:48 melody:v0:C#5 melody:v0:C#6 wait:48 melody:v100:F6 melody:v100:F5 accomp0:v0:F#2 accomp0:v0:C#3 accomp0:v0:C#4 accomp0:v100:C#2 accomp0:v100:C#3 accomp0:v100:F#2 wait:48 melody:v0:F5 melody:v0:F6 melody:v100:C#6 melody:v100:C#5 accomp0:v0:F#2 accomp0:v0:C#3 accomp0:v0:C#2 accomp0:v100:F#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:48 melody:v0:C#5 melody:v0:C#6 wait:48 melody:v100:C#6 melody:v100:C#5 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:F#2 accomp0:v100:F#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:48 melody:v0:C#5 melody:v0:C#6 wait:48 melody:v100:B5 melody:v100:B6 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:F#2 accomp0:v100:C#2 accomp0:v100:C#3 accomp0:v100:F#2 wait:48 melody:v0:B6 melody:v0:B5 accomp0:v0:F#2 accomp0:v0:C#3 accomp0:v0:C#2 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:48 melody:v100:G#5 melody:v100:G#6 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:G#2 accomp0:v100:B2 accomp0:v100:B1 accomp0:v100:F#2 wait:48 melody:v0:G#6 melody:v0:G#5 accomp0:v0:F#2 accomp0:v0:B1 accomp0:v0:B2 accomp0:v100:B2 accomp0:v100:B1 accomp0:v100:F#2 wait:48 melody:v100:G#5 melody:v100:G#6 accomp0:v0:F#2 accomp0:v0:B1 accomp0:v0:B2 accomp0:v100:B2 accomp0:v100:B1 accomp0:v100:F#2 wait:48 melody:v0:G#6 melody:v0:G#5 accomp0:v0:F#2 accomp0:v0:B1 accomp0:v0:B2 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:48 melody:v100:G#5 melody:v100:G#6 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:G#2 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:48 melody:v0:G#
+
+[3910 | 10235.79] loss=0.11 avg=0.18
+[3920 | 10258.20] loss=0.17 avg=0.18
+[3930 | 10280.48] loss=0.10 avg=0.18
+[3940 | 10302.77] loss=0.34 avg=0.18
+[3950 | 10325.04] loss=0.11 avg=0.18
+[3960 | 10347.34] loss=0.17 avg=0.18
+[3970 | 10369.60] loss=0.10 avg=0.18
+[3980 | 10391.86] loss=0.13 avg=0.18
+[3990 | 10414.15] loss=0.13 avg=0.18
+[4000 | 10436.41] loss=0.16 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-4000
+======== SAMPLE 1 ========
+  accomp1:v100:C++2 accomp1:v100:C#2 accomp1:v100:C#3 wait:48 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v0:F5 accomp1:v0:F4 accomp1:v0:C#2 accomp1:v0:C#3 accomp1:v100:C#2 accomp1:v100:C#3 accomp1:v100:G#2 accomp1:v100:B-4 accomp1:v100:B-5 wait:46 accomp1:v0:B-5 accomp1:v0:B-4 accomp1:v0:G#2 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v100:F5 accomp1:v100:F6 wait:1 accomp1:v0:F6 accomp1:v0:F5 accomp1:v0:G#2 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v100:C#2 accomp1:v100:C#3 accomp1:v100:G#2 accomp1:v100:B-4 accomp1:v100:B-5 wait:30 accomp1:v0:B-5 accomp1:v0:B-4 wait:30 accomp1:v0:G#2 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v100:F4 accomp1:v100:F5 wait:1 accomp1:v0:F5 accomp1:v0:F4 accomp1:v100:G#2 accomp1:v100:C#3 accomp1:v100:C#2 accomp1:v100:F4 accomp1:v100:F5 wait:45 accomp1:v0:F5 accomp1:v0:F4 accomp1:v0:G#2 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v100:G#2 accomp1:v100:C#3 accomp1:v100:C#2 accomp1:v100:F4 accomp1:v100:F5 wait:60 accomp1:v0:F5 accomp1:v0:F4 accomp1:v0:C#2 accomp1:v0:C#3 accomp1:v0:G#2 accomp1:v100:C#2 accomp1:v100:C#3 accomp1:v100:G#2 accomp1:v100:B-4 accomp1:v100:B-5 wait:48 accomp1:v0:B-5 accomp1:v0:B-4 accomp1:v0:G#2 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v100:C#3 accomp1:v100:G#2 accomp1:v100:B-4 accomp1:v100:B-5 wait:12 accomp1:v0:B-5 accomp1:v0:B-4 accomp1:v0:G#2 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v100:C#2 accomp1:v100:C#3 accomp1:v100:G#2 accomp1:v100:B-4 accomp1:v100:B-5 wait:12 accomp1:v0:B-5 accomp1:v0:B-4 wait:12 accomp1:v0:G#2 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v100:G#2 accomp1:v100:C#3 accomp1:v100:B-4 accomp1:v100:B-5 wait:14 accomp1:v0:B-5 accomp1:v0:B-4 accomp1:v0:G#2 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v100:C#2 accomp1:v100:C#3 accomp1:v100:B-4 accomp1:v100:B-5 wait:12 accomp1:v0:B-5 accomp1:v0:B-4 accomp1:v0:C#3 accomp1:v0:C#2 accomp1:v0:G#2 accomp1:v100:C#2 accomp1:v100:C#3 accomp1:v100:A4 accomp1:v100:A5 wait:48
+
+[4010 | 10501.13] loss=0.13 avg=0.18
+[4020 | 10523.45] loss=0.21 avg=0.18
+[4030 | 10545.72] loss=0.16 avg=0.18
+[4040 | 10568.01] loss=0.15 avg=0.18
+[4050 | 10590.32] loss=0.21 avg=0.18
+[4060 | 10612.63] loss=0.11 avg=0.18
+[4070 | 10634.91] loss=0.14 avg=0.18
+[4080 | 10657.19] loss=0.19 avg=0.18
+[4090 | 10679.47] loss=0.23 avg=0.18
+[4100 | 10701.74] loss=0.14 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-4100
+======== SAMPLE 1 ========
+  accomp0:v100:F4 accomp0:v100:D4 accomp0:v100:B-4 accomp0:v100:F5 wait:48 melody:v0:B-5 melody:v0:F5 melody:v0:D5 wait:48 melody:v0:B-5 melody:v0:F5 melody:v0:D5 wait:48 melody:v0:F5 melody:v0:D5 melody:v100:C6 melody:v100:G5 accomp0:v0:B-4 accomp0:v0:F4 accomp0:v0:D4 accomp0:v100:G3 accomp0:v100:B-3 accomp0:v100:D4 accomp0:v100:F5 accomp0:v100:B-5 accomp0:v100:F4 wait:48 melody:v0:G5 melody:v0:C6 melody:v100:B-5 melody:v100:D6 wait:48 melody:v0:D6 melody:v0:B-5 melody:v100:A5 melody:v100:B-5 accomp0:v0:F4 accomp0:v0:B-5 accomp0:v0:D4 accomp0:v0:G3 accomp0:v100:G3 accomp0:v100:B-3 accomp0:v100:D4 accomp0:v100:F5 accomp0:v100:F4 wait:48 melody:v0:B-5 melody:v0:A5 wait:24 melody:v100:B-5 melody:v100:C6 accomp0:v0:D4 accomp0:v0:B-3 accomp0:v0:G3 accomp0:v100:B-3 accomp0:v100:G3 accomp0:v100:F5 accomp0:v100:F4 wait:48 accomp0:v0:F4 accomp0:v0:F5 accomp0:v0:G3 accomp0:v0:B-3 wait:24 melody:v0:B-5 melody:v0:C6 accomp0:v100:F3 accomp0:v100:C3 accomp0:v100:G3 accomp0:v100:G5 wait:48 melody:v100:C5 melody:v100:B-4 melody:v100:C6 accomp0:v0:G5 accomp0:v0:G4 accomp0:v0:F3 accomp0:v0:C3 accomp0:v100:F3 accomp0:v100:C3 accomp0:v100:G5 accomp0:v100:G4 wait:48 melody:v0:C5 melody:v0:B-4 melody:v100:B-5 melody:v100:D6 melody:v100:B-4 wait:24 melody:v0:B-4 melody:v0:D6 melody:v0:B-5 accomp0:v0:G5 accomp0:v0:G4 accomp0:v100:G3 accomp0:v100:B-3 accomp0:v100:D4 accomp0:v100:G5 wait:48 melody:v100:B-5 melody:v100:B-4 accomp0:v0:G5 accomp0:v0:G4 accomp0:v0:D4 accomp0:v0:B-3 accomp0:v100:G3 accomp0:v100:B-3 accomp0:v100:D4 accomp0:v100:F5 accomp0:v100:F4 wait:48 melody:v0:B-4 melody:v0:B-5 wait:24 melody:v100:B-5 melody:v100:B-4 accomp0:v0:B-3 accomp0:v0:G3 accomp0:v0:G5 accomp0:v100:F3 accomp0:v100:C3 accomp0:v100:G3 accomp0:v100:G5 accomp0:v100:G4 wait:48 melody:v0:B-5 melody:v0:B-4 accomp0:v0:G3 accomp0:v0:C3 accomp0:v0:F3 wait:24 melody:v100:G5 melody:v100:G4 accomp0:v100:F3 accomp0:v100:C3 accomp0:v100:G3 accomp0:v100:G5 accomp0:v100:G4 wait:48 melody:v0:G5 melody:v0:
+
+[4110 | 10762.11] loss=0.19 avg=0.18
+[4120 | 10784.42] loss=0.17 avg=0.18
+[4130 | 10806.70] loss=0.32 avg=0.18
+[4140 | 10829.01] loss=0.11 avg=0.18
+[4150 | 10851.28] loss=0.08 avg=0.18
+[4160 | 10873.57] loss=0.29 avg=0.18
+[4170 | 10895.85] loss=0.14 avg=0.18
+[4180 | 10918.13] loss=0.12 avg=0.18
+[4190 | 10940.43] loss=0.14 avg=0.18
+[4200 | 10962.70] loss=0.25 avg=0.18
+Saving checkpoint/25jun_tc_run1/model-4200
+======== SAMPLE 1 ========
+  melody:v100:G#2 accomp0:v100:E-3 wait:24 accomp0:v100:G#2 wait:72 melody:v0:G#4 wait:72 accomp0:v0:G#2 wait:24 melody:v100:G#4 melody:v100:G#5 accomp0:v100:G#2 wait:48 accomp0:v0:G#2 wait:144 melody:v0:G#5 melody:v0:G#4 melody:v0:G#2 accomp0:v100:G#4 accomp0:v100:G#5 accomp0:v100:E-3 accomp0:v100:G#3 wait:48 melody:v100:E-5 melody:v100:E-6 wait:48 melody:v0:E-5 melody:v0:E-6 accomp0:v0:G#3 accomp0:v0:G#4 accomp0:v0:E-3 accomp0:v100:C#5 accomp0:v100:C#6 wait:48 melody:v100:E-5 melody:v100:E-6 wait:48 melody:v0:E-5 melody:v0:E-6 wait:192 melody:v100:B-4 melody:v100:B-5 accomp0:v0:C#5 accomp0:v0:C#6 accomp0:v100:B-6 accomp0:v100:B-5 wait:48 melody:v0:B-5 melody:v0:B-4 melody:v100:G#4 melody:v100:G#5 accomp0:v0:B-5 accomp0:v0:B-6 wait:24 accomp0:v100:E-5 accomp0:v100:E-6 wait:48 melody:v0:G#5 melody:v0:G#4 melody:v100:G#4 melody:v100:G#5 accomp0:v0:E-5 accomp0:v0:E-6 wait:24 accomp0:v100:B-5 accomp0:v100:B-6 wait:48 melody:v0:G#5 melody:v0:G#4 accomp0:v0:B-6 accomp0:v0:B-5 wait:48 melody:v100:G#4 melody:v100:G#5 accomp0:v100:B-5 accomp0:v100:B-6 wait:24 accomp0:v0:B-6 accomp0:v0:B-5 wait:24 melody:v0:G#4 melody:v0:G#5 wait:24 melody:v100:G#4 melody:v100:G#5 accomp0:v100:B-6 accomp0:v100:B-5 wait:48 melody:v0:G#4 melody:v0:G#5 melody:v100:e-6 melody:v100:E-7 accomp0:v0:B-3 accomp0:v0:B-2 accomp0:v0:E-3 accomp0:v100:E-2 accomp0:v100:G#2 accomp0:v100:G#3 wait:192 accomp0:v0:G#3 accomp0:v0:G#2 accomp0:v0:E-2 accomp0:v100:E-6 accomp0:v100:E-5 wait:240 accomp0:v0:E-5 accomp0:v0:E-6 accomp0:v100:C#6 accomp0:v100:C#5 wait:48 melody:v0:G#3 melody:v0:F4 melody:v0:B-3 accomp0:v0:C#5 accomp0:v0:C#6 wait:240 melody:v100:F3 accomp0:v100:C#5 accomp0:v100:C#6 wait:384 melody:v0:G#6 melody:v100:G#6 accomp0:v0:C#5 accomp0:v0:C#6 accomp0:v100:F#3 accomp0:v100:C#4 accomp0:v100:F#4 wait:384 melody:v0:G#6 melody:v100:F#6 accomp0:v0:F#4 accomp0:v0:C#4 accomp0:v0:F#3 accomp0:v100:E-4 accomp0:v100:B-3 accomp0:v100:G3 wait:48 melody:v0:F#
+
+[4210 | 11022.78] loss=0.12 avg=0.18
+[4220 | 11045.40] loss=0.09 avg=0.18
+[4230 | 11067.69] loss=0.14 avg=0.18
+[4240 | 11090.00] loss=0.12 avg=0.18
+[4250 | 11112.29] loss=0.13 avg=0.18
+[4260 | 11134.56] loss=0.13 avg=0.17
+[4270 | 11156.89] loss=0.16 avg=0.17
+[4280 | 11179.20] loss=0.14 avg=0.17
+[4290 | 11201.46] loss=0.12 avg=0.17
+[4300 | 11223.76] loss=0.13 avg=0.17
+Saving checkpoint/25jun_tc_run1/model-4300
+======== SAMPLE 1 ========
+:D3 accomp0:v100:A3 accomp0:v100:A2 accomp0:v100:E3 wait:48 melody:v0:F#4 melody:v0:F#5 melody:v100:C#5 melody:v100:C#4 wait:24 melody:v0:C#4 melody:v0:C#5 melody:v100:B4 melody:v100:B3 wait:24 melody:v0:B3 melody:v0:B4 melody:v100:E4 melody:v100:E5 accomp0:v0:E3 accomp0:v0:A2 accomp0:v0:A3 accomp0:v100:A3 accomp0:v100:A2 accomp0:v100:E3 wait:48 melody:v0:E5 melody:v0:E4 melody:v100:D4 melody:v100:D5 wait:24 melody:v0:D5 melody:v0:D4 melody:v100:E4 melody:v100:E5 wait:24 melody:v0:E5 melody:v0:E4 melody:v100:B3 melody:v100:B4 accomp0:v0:E3 accomp0:v0:A2 accomp0:v0:A3 accomp0:v100:A3 accomp0:v100:A2 accomp0:v100:E3 wait:48 melody:v0:B4 melody:v0:B3 melody:v100:G4 melody:v100:G5 wait:48 accomp0:v0:E3 accomp0:v0:A2 accomp0:v0:A3 accomp0:v100:A3 accomp0:v100:A2 accomp0:v100:E3 wait:48 melody:v0:G5 melody:v0:G4 melody:v100:F#4 melody:v100:F#5 wait:24 melody:v0:F#5 melody:v0:F#4 melody:v100:D4 melody:v100:D5 wait:24 melody:v0:D5 melody:v0:D4 melody:v100:E4 melody:v100:E5 accomp0:v0:E3 accomp0:v0:A2 accomp0:v0:A3 accomp0:v100:A3 accomp0:v100:A2 accomp0:v100:E3 wait:24 melody:v0:E5 melody:v0:E4 wait:24 melody:v100:D4 melody:v100:D5 wait:48 accomp0:v0:E3 accomp0:v0:A2 accomp0:v0:A3 accomp0:v100:D3 accomp0:v100:D2 accomp0:v100:A2 wait:48 melody:v0:D5 melody:v0:D4 melody:v100:G4 melody:v100:G5 wait:48 melody:v0:G5 melody:v0:G4 melody:v100:A4 melody:v100:A5 accomp0:v0:A2 accomp0:v0:D2 accomp0:v0:D3 accomp0:v100:D3 accomp0:v100:D2 accomp0:v100:A2 wait:48 melody:v0:A5 melody:v0:A4 wait:48 accomp0:v0:A2 accomp0:v0:D2 accomp0:v0:D3 accomp0:v100:D3 accomp0:v100:D2 accomp0:v100:A2 wait:48 melody:v100:D4 melody:v100:D5 wait:24 melody:v0:D4 melody:v0:D5 melody:v100:A4 melody:v100:A5 wait:24 melody:v0:A5 melody:v0:A4 melody:v100:B4 melody:v100:B5 accomp0:v0:A2 accomp0:v0:D2 accomp0:v0:D3 accomp0:v100:D3 accomp0:v100:D2 accomp0:v100:A2 wait:24 melody:v0:B5 melody:v0:B4 melody:v100:C#5 melody:v100:C#6 wait:24 melody:v0:C#6 melody:v0:C#5 melody:v100:G5 melody:v100:G4 wait:24 accomp0:v0:A2 accomp0:v0:D2 accomp0:v0:D
+
+[4310 | 11287.32] loss=0.13 avg=0.17
+[4320 | 11309.78] loss=0.10 avg=0.17
+[4330 | 11332.07] loss=0.12 avg=0.17
+[4340 | 11354.36] loss=0.07 avg=0.17
+[4350 | 11376.63] loss=0.11 avg=0.17
+[4360 | 11398.93] loss=0.14 avg=0.17
+[4370 | 11421.21] loss=0.22 avg=0.17
+[4380 | 11443.49] loss=0.12 avg=0.17
+[4390 | 11465.77] loss=0.17 avg=0.17
+[4400 | 11488.04] loss=0.21 avg=0.17
+Saving checkpoint/25jun_tc_run1/model-4400
+======== SAMPLE 1 ========
+vv0:A2 melody:v0:A3 melody:v0:C#3 melody:v0:E3 melody:v104:A2 melody:v100:A3 melody:v100:E3 melody:v100:C#3 wait:24 melody:v0:A5 melody:v0:A6 wait:24 melody:v0:C#3 melody:v0:E3 melody:v0:A3 melody:v0:A2 melody:v0:C#6 melody:v0:C#7 melody:v100:A7 melody:v100:A6 wait:24 melody:v0:A6 melody:v0:A7 wait:24 melody:v0:C#3 melody:v0:E3 melody:v0:A3 melody:v0:A2 melody:v100:A2 melody:v100:A3 melody:v100:E3 melody:v100:C#3 wait:48 melody:v0:C#3 melody:v0:E3 melody:v0:A3 melody:v0:A2 melody:v0:A6 melody:v0:A7 melody:v100:A7 melody:v100:A6 wait:24 melody:v0:A6 melody:v0:A7 melody:v0:C#3 melody:v0:E3 melody:v0:A3 melody:v0:A2 wait:24 melody:v100:A2 melody:v104:A3 melody:v100:E3 melody:v100:C#3 wait:24 melody:v0:A2 melody:v0:A3 melody:v0:E3 melody:v0:C#3 wait:24 melody:v0:A6 melody:v0:A7 melody:v100:G#7 melody:v100:G#6 wait:24 melody:v0:G#6 melody:v0:G#7 melody:v0:A2 melody:v0:A3 melody:v0:E3 melody:v100:A2 melody:v104:A3 melody:v100:E3 melody:v100:C#3 wait:48 melody:v0:C#3 melody:v0:E3 melody:v0:A3 melody:v0:A2 melody:v0:G#6 melody:v0:G#6 melody:v100:G#6 melody:v100:G#6 melody:v100:G#6 melody:v0:G#6 melody:v0:G#6 melody:v0:G#6 melody:v100:G#6 melody:v100:G#6 melody:v100:G#6 melody:v0:G#6 melody:v0:G#6 melody:v100:G#6 melody:v100:G#6 melody:v100:G#6 melody:v0:G#6 melody:v0:G#6 melody:v100:G#6 melody:v100:G#6 melody:v100:G#6 melody:v0:G#6 melody:v0:G#6 melody:v100:G#6 melody:v100:G#6 melody:v100:G#6 melody:v100:G#6 melody:v0:G#6 melodies:v0:G#6 melody:v0:G#6 melody:v0:G#6 melody:v100:C#7 melody:v100:C#6 wait:24 melody:v0:C#6 melody:v0:C#7 wait:24 melody:v0:C#3 melody:v0:C#3 melody:v0:G#3 melody:v0:C#3 melody:v0:C#3 wait:24 melody:v100:B2 melody:v100:B3 melody:v100:F#3 melody:v100:E-3 wait:24 melody:v0:B2 melody:v0:B3 melody:v0:F#3 melody:v0:E-3 wait:24 melody:v100:B3 melody:v100:F#3 melody:v100:B2 wait:24 melody:v0:B3 melody:v0:F#3 melody:v0:B2 melody:v0:B3 melody:v100:B2 melody:v100:B3 melody:v100:F#3 melody:v100:E-3 wait:48 melody:v0:E-3 melody:v0:F#3 melody:v0:B3 melody
+
+[4410 | 11547.62] loss=0.11 avg=0.17
+[4420 | 11570.58] loss=0.21 avg=0.17
+[4430 | 11592.82] loss=0.15 avg=0.17
+[4440 | 11615.10] loss=0.25 avg=0.17
+[4450 | 11637.37] loss=0.15 avg=0.17
+[4460 | 11659.65] loss=0.14 avg=0.17
+[4470 | 11681.93] loss=0.13 avg=0.17
+[4480 | 11704.21] loss=0.17 avg=0.17
+[4490 | 11726.48] loss=0.13 avg=0.17
+[4500 | 11748.77] loss=0.22 avg=0.17
+Saving checkpoint/25jun_tc_run1/model-4500
+======== SAMPLE 1 ========
+:v0:A2 accomp0:v0:A3
+12 accomp0:v0:E3 wait:48 melody:v100:E6 accomp0:v100:E3 accomp0:v100:E4 accomp0:v100:B3 wait:48 melody:v0:E6 melody:v100:D6 accomp0:v0:E3 accomp0:v0:E4 accomp0:v0:B3 wait:48 melody:v0:D6 melody:v100:B5 accomp0:v100:B3 accomp0:v100:E4 accomp0:v100:E3 wait:48 melody:v0:B5 melody:v100:C6 accomp0:v0:E3 accomp0:v0:B3 accomp0:v0:E4 accomp0:v100:C3 accomp0:v100:C2 wait:48 melody:v0:C6 accomp0:v0:C2 accomp0:v0:C3 wait:48 melody:v100:E6 accomp0:v100:C3 accomp0:v100:C2 wait:24 accomp0:v0:G3 accomp0:v0:C3 accomp0:v100:G3 accomp0:v100:E4 accomp0:v100:C4 wait:24 accomp0:v0:C4 accomp0:v0:E4 accomp0:v0:G3 wait:24 accomp0:v100:G3 accomp0:v100:C4 accomp0:v100:E4 wait:24 accomp0:v0:G3 accomp0:v0:C4 accomp0:v0:E4 wait:24 accomp0:v100:E4 accomp0:v100:C4 accomp0:v100:G3 wait:24 accomp0:v0:C4 accomp0:v0:E4 accomp0:v100:F3 accomp0:v100:C4 accomp0:v100:A3 wait:24 melody:v0:E6 accomp0:v0:A3 accomp0:v0:C4 accomp0:v0:F3 wait:24 accomp0:v100:F3 accomp0:v100:C4 accomp0:v100:A3 wait:24 accomp0:v0:A3 accomp0:v0:F3 accomp0:v0:C4 wait:24 accomp0:v100:F3 accomp0:v100:C4 accomp0:v100:A3 wait:24 accomp0:v0:F3 accomp0:v0:C4 accomp0:v0:A3 wait:24 accomp0:v100:F3 accomp0:v100:C4 accomp0:v100:A3 wait:24 accomp0:v0:A3 accomp0:v0:F3 accomp0:v0:C4 wait:24 melody:v0:E6 accomp0:v0:A3 accomp0:v0:F3 accomp0:v100:C3 accomp0:v100:C2 wait:24 accomp0:v0:C2 accomp0:v0:C3 accomp0:v100:G3 accomp0:v100:C4 accomp0:v100:E4 wait:24 accomp0:v0:E4 accomp0:v0:C4 accomp0:v0:G3 wait:24 accomp0:v100:G3 accomp0:v100:C4 accomp0:v100:E4 wait:24 accomp0:v0:G3 accomp0:v0:C4 accomp0:v0:E4 wait:24 accomp0:v100:E4 accomp0:v100:C4 accomp0:v100:G3 wait:24 accomp0:v0:E4 accomp0:v0:C4 accomp0:v0:G3 wait:24 accomp0:v100:G3 accomp0:v100:C4 accomp0:v100:E4 wait:24 accomp0:v0:G3 accomp0:v0:C4 accomp0:v0:E4 wait:24 accomp0:v100:E4 accomp0:v100:C4 accomp0:v100:G3 wait:24 accomp0:v0:G3 accomp0:v0:E4 accomp0:v0:C4 wait:24 accomp0:v100:E4 accomp0:v100:C4 accomp0:v100:G3 wait:24 accomp0:v0:E4 accomp0:v0:C4 accomp0:v0:G3 wait:24
+
+[4510 | 11809.04] loss=0.26 avg=0.17
+[4520 | 11831.42] loss=0.08 avg=0.17
+[4530 | 11853.71] loss=0.25 avg=0.17
+[4540 | 11876.04] loss=0.11 avg=0.17
+[4550 | 11898.29] loss=0.25 avg=0.17
+[4560 | 11920.59] loss=0.19 avg=0.17
+[4570 | 11942.87] loss=0.15 avg=0.17
+[4580 | 11965.16] loss=0.44 avg=0.17
+[4590 | 11987.41] loss=0.09 avg=0.17
+[4600 | 12009.69] loss=0.17 avg=0.17
+Saving checkpoint/25jun_tc_run1/model-4600
+======== SAMPLE 1 ========
+:G2 accomp3:v0:C3 accomp3:v0:C4 accomp3:v0:G3 accomp3:v0:B2 accomp3:v0:B4 accomp3:v60:B2 accomp3:v60:B3 accomp3:v60:F#3 accomp3:v60:B3 accomp3:v60:F#2 accomp3:v0:B4 wait:144 accomp3:v60:B4 wait:192 accomp3:v0:B4 wait:192 accomp3:v60:B4 accomp3:v0:B4 wait:192 accomp3:v50:B4 waited:192 accomp3:v0:B4 wait:48 accomp3:v0:F#2 accomp3:v0:C3 accomp3:v0:F#3 accomp3:v0:B3 accomp3:v0:B2 accomp3:v60:G3 accomp3:v60:C3 accomp3:v60:C4 accomp3:v60:D3 accomp3:v60:D6 accomp3:v60:D5 wait:144 accomp3:v0:D5 accomp3:v0:D6 accomp3:v0:D3 accomp3:v0:C4 accomp3:v0:G3 accomp3:v60:G3 accomp3:v60:C3 accomp3:v60:C4 accomp3:v60:D3 accomp3:v60:D5 accomp3:v60:D6 wait:144 accomp3:v0:D6 accomp3:v0:D5 accomp3:v0:D3 accomp3:v0:C4 accomp3:v0:G3 accomp3:v60:G3 accomp3:v60:C3 accomp3:v60:C4 accomp3:v60:D3 accomp3:v60:A4 accomp3:v60:A5 wait:96 accomp3:v0:D3 accomp3:v0:C4 accomp3:v0:G3 accomp3:v0:C3 accomp3:v0:C4 accomp3:v60:B-2 accomp3:v60:B-3 accomp3:v60:B-2 accomp3:v60:F3 accomp3:v60:B-3 accomp3:v0:A4 accomp3:v0:A5 accomp3:v0:B-2 accomp3:v0:B-3 accomp3:v0:B-2 accomp3:v0:B-3 accomp3:v0:B-3 accomp3:v60:B-2 accomp3:v60:B-3 accomp3:v60:B-2 accomp3:v60:F3 accomp3:v60:B-3 accomp3:v0:A5 accomp3:v0:A4 accomp3:v0:F3 accomp3:v0:B-2 accomp3:v0:B-3 accomp3:v0:B-2 accomp3:v60:D4 accomp3:v60:D5 accomp3:v60:D4 accomp3:v60:D5 wait:48 accomp3:v0:D5 accomp3:v0:D4 accomp3:v0:D5 wait:48 accomp3:v0:D5 accomp3:v0:D4 accomp3:v0:D5 accomp3:v60:A4 accomp3:v60:A5 accomp3:v60:G5 accomp3:v60:G4 accomp3:v60:B4 accomp3:v60:B5 accomp3:v60:A4 wait:96 accomp3:v0:A4 accomp3:v0:A5 accomp3:v0:G4 accomp3:v0:D4 accomp3:v0:D5 accomp3:v0:G5 accomp3:v0:G4 accomp3:v0:B4 accomp3:v60:B4 accomp3:v60:G4 accomp3:v60:D5 accomp3:v60:D4 accomp3:v60:G5 accomp3:v60:G4 accomp3:v60:B4 wait:48 accomp3:v0:B4 accomp3:v0:B5 accomp3:v0:D4 accomp3:v0:E5 accomp3:v0:D5 accomp3:v0:G4 accomp3:v0:G4 accomp3:v60:B4 accomp3:v60:G4 accomp3:v60:D5 accomp3
+
+[4610 | 12073.91] loss=0.08 avg=0.17
+[4620 | 12096.21] loss=0.23 avg=0.17
+[4630 | 12118.48] loss=0.16 avg=0.17
+[4640 | 12140.81] loss=0.14 avg=0.17
+[4650 | 12163.08] loss=0.15 avg=0.17
+[4660 | 12185.37] loss=0.13 avg=0.17
+[4670 | 12207.66] loss=0.23 avg=0.17
+[4680 | 12229.93] loss=0.09 avg=0.17
+[4690 | 12252.23] loss=0.11 avg=0.17
+[4700 | 12274.54] loss=0.17 avg=0.17
+Saving checkpoint/25jun_tc_run1/model-4700
+======== SAMPLE 1 ========
+  melody melody:v100:E-5 melody:v100:B-5 melody:v100:F5 accomp0:v0:F1 accomp0:v0:C3 accomp0:v0:F2 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:96 melody:v0:E-5 melody:v0:B-5 melody:v100:B-5 melody:v100:C#6 melody:v100:C#6 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:G#2 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:72 melody:v0:C#6 melody:v0:C#6 melody:v0:B-5 melody:v100:B-5 melody:v100:C#6 melody:v100:C#6 wait:24 melody:v0:C#6 melody:v0:C#6 melody:v0:B-5 melody:v0:C#5 melody:v100:G#5 melody:v100:E-5 melody:v100:G#5 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:G#2 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:192 melody:v0:G#5 melody:v0:E-5 melody:v0:G#5 melody:v100:E5 melody:v100:B-5 melody:v100:B-5 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:G#2 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:24 melody:v0:B-5 melody:v0:B-5 melody:v0:E5 melody:v100:E5 melody:v100:B-5 melody:v100:B-5 wait:24 melody:v0:B-5 melody:v0:B-5 melody:v0:E5 melody:v100:E-5 melody:v100:G#5 melody:v100:G#5 wait:24 melody:v0:G#5 melody:v0:G#5 melody:v0:E-5 melody:v100:G#5 melody:v100:G#5 melody:v100:G#5 melody:v100:G#5 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:G#2 accomp0:v100:E-3 accomp0:v100:G#3 accomp0:v100:G#2 wait:48 melody:v0:G#5 melody:v0:G#5 melody:v0:G#5 melody:v0:E-5 melody:v100:E-5 melody:v100:G#5 melody:v100:G#5 melody:v100:G#5 wait:24 melody:v0:G#5 melody:v0:G#5 melody:v0:E-5 melody:v100:G#5 melody:v100:E-5 melody:v100:E-5 melody:v100:G#5 accomp0:v0:G#2 accomp0:v0:G#3 accomp0:v0:E-3 accomp0:v100:G#2 accomp0:v100:C#3 accomp0:v100:C#2 wait:24 melody:v0:G#5 melody:v0:E-5 melody:v0:E-5 melody:v100:G#5 melody:v100:E-5 melody:v100:E-5 melody:v100:G#5 wait:24 melody:v0:G#5 melody:v0:E-5 melody:v0:G#5 melody:v100:G#5 melody:v100:E-5 melody:v100:E-5 melody:v100:G#5 accomp0:v0:C#2 accomp0:v0:C#3 accomp0:v0:G#2 accomp0:v100:E-3 accomp0:v100:G#3 accomp0:v100:G#2 wait:48 melody:v0:G#5 melody:v0:G#5 melody
+
+[4710 | 12334.30] loss=0.19 avg=0.17
+[4720 | 12357.09] loss=0.11 avg=0.17
+[4730 | 12379.38] loss=0.21 avg=0.17
+[4740 | 12401.73] loss=0.09 avg=0.17
+[4750 | 12424.06] loss=0.10 avg=0.17
+[4760 | 12446.36] loss=0.09 avg=0.17
+[4770 | 12468.64] loss=0.08 avg=0.17
+[4780 | 12490.92] loss=0.15 avg=0.17
+[4790 | 12513.18] loss=0.17 avg=0.17
+[4800 | 12535.48] loss=0.18 avg=0.17
+Saving checkpoint/25jun_tc_run1/model-4800
+======== SAMPLE 1 ========
+100:A5 wait:24 melody:v0:A5 melody:v0:F3 melody:v100:C4 melody:v100:E3 melody:v100:A3 wait:24 melody:v100:A5 wait:24 melody:v0:A3 melody:v0:C4 melody:v0:E3 wait:24 melody:v0:A5 melody:v100:A5 wait:24 melody:v0:A5 melody:v100:G5 wait:24 melody:v0:G5 melody:v100:F3 melody:v100:C4 wait:24 melody:v0:A3 melody:v0:F3 melody:v0:C4 melody:v100:D4 melody:v100:B2 wait:24 melody:v100:D5 wait:24 melody:v0:D5 wait:24 melody:v0:D4 melody:v100:G5 wait:24 melody:v0:G5 melody:v100:D4 melody:v100:B2 wait:24 melody:v0:B2 melody:v0:D4 melody:v100:A4 melody:v100:D4 wait:24 accomp0:v100:A3 accomp0:v100:C3 accomp0:v100:F3 wait:24 melody:v0:A4 melody:v0:D4 melody:v100:A4 wait:24 melody:v0:A4 melody:v100:C5 melody:v100:F4 melody:v100:A4 wait:24 melody:v0:A4 melody:v0:C5 melody:v0:F4 melody:v100:A4 melody:v100:E4 wait:24 melody:v0:E4 melody:v100:C5 melody:v100:F4 wait:24 melody:v0:F4 melody:v0:C5 wait:24 melody:v0:A3 melody:v0:C5 melody:v100:D4 melody:v100:A2 wait:24 melody:v100:D5 wait:24 melody:v0:D5 melody:v100:F4 melody:v100:A4 melody:v100:D5 wait:24 melody:v0:D5 melody:v0:F4 melody:v0:A4 melody:v100:C5 melody:v100:A4 wait:24 melody:v0:A4 melody:v0:C5 melody:v100:A4 melody:v100:C4 melody:v100:D5 wait:24 melody:v0:D5 melody:v0:A4 melody:v100:A4 wait:24 melody:v0:A4 melody:v100:G4 melody:v100:C4 melody:v100:D5 wait:24 melody:v0:D5 melody:v0:G4 melody:v100:C4 melody:v100:A3 wait:24 melody:v0:A3 melody:v0:C4 melody:v0:A4 melody:v100:D4 melody:v100:B2 wait:24 melody:v100:D5 wait:24 melody:v0:D5 melody:v100:F4 melody:v100:A4 melody:v100:D4 wait:24 melody:v0:D4 melody:v0:F4 melody:v0:A4 melody:v100:C5 melody:v100:F4 melody:v100:A3 wait:24 melody:v0:A3 melody:v0:C5 melody:v0:F4 melody:v0:A4 melody:v100:A4 melody:v100:C4 wait:24 melody:v0:A4 melody:v100:G4 melody:v100:D4 melody:v100:B3 wait:24 melody:v0:B3 melody:v0:G4 melody:v0:D4 melody:v100:A4 melody:v100:A3 wait:24 melody:v0:A3 melody:v100:G4 melody:v100:G3 wait:24 melody:v0:G4 melody:v0:G3 wait:24 melody:v100:G4 melody:v100:B3 wait:24 melody:v0:G4 melody:v0:G3 melody:v100:A4 wait:24 melody:v0:G4 melody:v100:D4 melody:v100:C4 melody:v100:F4 wait:24 melody:v0:F4 melody:v0
+
+[4810 | 12595.15] loss=0.19 avg=0.17
+[4820 | 12617.92] loss=0.28 avg=0.17
+[4830 | 12640.23] loss=0.15 avg=0.17
+[4840 | 12662.53] loss=0.11 avg=0.17
+[4850 | 12684.84] loss=0.12 avg=0.17
+[4860 | 12707.16] loss=0.16 avg=0.17
+[4870 | 12729.45] loss=0.09 avg=0.17
+[4880 | 12751.73] loss=0.20 avg=0.17
+[4890 | 12774.02] loss=0.15 avg=0.17
+[4900 | 12796.30] loss=0.20 avg=0.17
+Saving checkpoint/25jun_tc_run1/model-4900
+======== SAMPLE 1 ========
+  accomp0:v0:E4 accomp0:v100:F#4 accomp0:v100:C#4 accomp0:v100:A4 wait:48 melody:v0:A5 melody:v100:B5 wait:48 melody:v0:B5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:A5 accomp0:v0:A4 accomp0:v0:C#4 accomp0:v0:F#4 accomp0:v100:A4 accomp0:v100:D4 accomp0:v100:F4 wait:48 melody:v0:A5 melody:v100:G5 accomp0:v0:F4 accomp0:v0:D4 accomp0:v0:A4 accomp0:v100:A4 accomp0:v100:F4 accomp0:v100:D4 wait:48 melody:v0:G5 melody:v100:F#5 wait:48 melody:v0:F#5 melody:v100:A5 wait:48 melody:v0:A5 melody:v100:G5 accomp0:v0:D4 accomp0:v0:F4 accomp0:v0:A4 accomp0:v100:G4 accomp0:v100:F4 accomp0:v100:D4 wait:48 melody:v0:G5 melody:v100:F#5 wait:24 melody:v0:F#5 wait:24 melody:v100:E5 wait:24 melody:v0:E5 accomp0:v0:G4 accomp0:v0:D4 accomp0:v0:F4 accomp0:v100:D4 accomp0:v100:F4 accomp0:v100:B2 wait:24 melody:v100:D5 wait:24 melody:v0:D5 melody:v100:E5 wait:24 melody:v0:E5 melody:v100:D5 wait:24 melody:v0:D5 melody:v100:A5 wait:24 melody:v0:A5 melody:v100:F#5 wait:24 melody:v0:F#5 melody:v100:A5 wait:24 accomp0:v0:B2 accomp0:v0:D4 accomp0:v0:G4 accomp0:v100:A4 accomp0:v100:F#4 accomp0:v100:C#4 wait:96 melody:v0:A5 melody:v100:A5 accomp0:v0:C#4 accomp0:v0:F#4 accomp0:v0:A4 accomp0:v100:A4 accomp0:v100:C#4 accomp0:v100:F#4 wait:24 melody:v0:A5 melody:v100:D5 wait:24 melody:v0:D5 accomp0:v0:F#4 accomp0:v0:C#4 accomp0:v0:A4 wait:24 melody:v100:G5 wait:24 melody:v0:G5 melody:v100:F#5 wait:24 melody:v0:F#5 accomp0:v100:B2 wait:24 melody:v100:D5 wait:24 melody:v0:D5 accomp0:v0:B2 wait:24 melody:v100:G5 wait:24 melody:v0:G5 melody:v100:A5 accomp0:v100:C#4 accomp0:v100:E4 accomp0:v100:A4 wait:24 melody:v100:D5 wait:24 melody:v0:D5 melody:v100:B5 wait:24 melody:v0:B5 accomp0:v0:A4 accomp0:v0:C#4 accomp0:v0:E4 wait:24 melody:v100:G5 wait:30 melody:v0:G5 melody:v100:F#5 wait:13 melody:v0:F#5 melody:v100:E5 accomp0:v0:A4 accomp0:v0:C#4 accomp0:v0:E4 accomp0:v100:A4 accomp0:v100:E4 accomp0:v100:C#4 wait:48 melody:v0:E5 melody:v100:D5 accomp0:v0:C#4 accomp0:v0:E4 accomp0:v0:A4 accomp0:v100:D4 accomp0:v100:B3 accomp0:v100:F#4 wait:
+
+[4910 | 12856.91] loss=0.12 avg=0.17
+[4920 | 12879.28] loss=0.13 avg=0.17
+[4930 | 12901.53] loss=0.19 avg=0.17
+[4940 | 12923.80] loss=0.19 avg=0.17
+[4950 | 12946.09] loss=0.38 avg=0.17
+[4960 | 12968.39] loss=0.17 avg=0.17
+[4970 | 12990.65] loss=0.16 avg=0.17
+[4980 | 13012.92] loss=0.09 avg=0.17
+[4990 | 13035.26] loss=0.14 avg=0.17
+[5000 | 13057.56] loss=0.16 avg=0.17
+Saving checkpoint/25jun_tc_run1/model-5000

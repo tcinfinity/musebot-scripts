@@ -10,25 +10,28 @@ import music21
 from music21 import *
 
 import numpy as np
+import math
+
+from tqdm import tqdm
 
 
 """Converts MIDI file to text"""
 def midiToText(filename):
 
-    print('File: {}'.format(filename))
+    tqdm.write('File: {}'.format(filename))
 
     # read from input filename
     mid = MidiFile(filename)
 
-    print('Length (sec): {}'.format(mid.length))
-    print('Ticks per beat: {}'.format(mid.ticks_per_beat)) # e.g. 96/480 per beat (crotchet)
+    tqdm.write('Length (sec): {}'.format(mid.length))
+    tqdm.write('Ticks per beat: {}'.format(mid.ticks_per_beat)) # e.g. 96/480 per beat (crotchet)
 
 
     # check for muliple tempos (e.g. change in tempo halfway through piece)
     check_multiple_tempos = []
 
     # instantiate final tempo for piece
-    tempo = None
+    tempo = 120
 
     """
     What is a channel? vs What is a track?
@@ -42,7 +45,7 @@ def midiToText(filename):
 
     for i, track in enumerate(mid.tracks):
 
-        print('Track {}: {}'.format(i, track.name))
+        tqdm.write('Track {}: {}'.format(i, track.name))
 
         for msg in track:
             if msg.type == 'set_tempo': # Note: is_meta
@@ -54,6 +57,7 @@ def midiToText(filename):
 
     if len(check_multiple_tempos) > 1:
         warnings.warn('Multiple tempos: {}'.format(check_multiple_tempos))
+        tempo = check_multiple_tempos[0]
     
     elif len(check_multiple_tempos) == 0: # does this even happen?
         warnings.warn('No tempo: setting default 120')
@@ -63,6 +67,12 @@ def midiToText(filename):
         tempo = check_multiple_tempos[0]
 
     print('Tempo: {}'.format(tempo))
+
+
+    # get total time of piece
+    # mid.length returns total playback time in seconds
+    length_in_ticks = mid.length/60*tempo*mid.ticks_per_beat #mido.second2tick(mid.length, ticks_per_beat=mid.ticks_per_beat, tempo=tempo)
+    print(length_in_ticks)
 
 
     # contains arrays of messages (only notes) for each track
@@ -138,10 +148,16 @@ def midiToText(filename):
     """
 
     # instantiate text list
-    result_list = ['start', 'tempo{}'.format(tempo)]
+    # [CLS] (classification) used for indicating start of input (using other model standards)
+    result_list = ['[CLS]', 'tempo{}'.format(tempo), '[127]']
 
 
     # loop through grouped messages and check for delta time differences between tracks
+
+    # to keep track of time passed during the piece
+    current_wait_time_elapsed = 0
+    time_embed_counter = 126
+    time_embed_interval = math.ceil(length_in_ticks / 127) # rounding up - should prevent underflow of time i.e. [0] comes before end of piece
 
     while max(len(track) for track in grouped_messages_list) > 0:
 
@@ -168,6 +184,23 @@ def midiToText(filename):
             wait_text = 'wait:{}'.format(min_dt)
             result_list.append(wait_text)
 
+            current_wait_time_elapsed += min_dt
+
+            if time_embed_counter != 0:
+
+                # check for insertion of wait (word) embedding
+                if current_wait_time_elapsed > time_embed_interval:
+
+                    time_embed_multiple = current_wait_time_elapsed // time_embed_interval
+                    time_pushover = current_wait_time_elapsed - time_embed_interval * time_embed_multiple
+
+                    word_embedding = '[{}]'.format(time_embed_counter)
+                    result_list.append(word_embedding)
+
+                    current_wait_time_elapsed = time_pushover
+                    time_embed_counter -= time_embed_multiple
+
+                    # time_embed_counter cannot be 0 due to integer rounding
 
         for i, track_group in enumerate(all_first_groups):
 
@@ -201,8 +234,9 @@ def midiToText(filename):
 
         # Possible scenario: ONLY if at the start, one track has a rest e.g. time=96
 
-
-    result_list.append('end')
+    print('Final time embedding: {}'.format(time_embed_counter))
+    result_list.append('[0]')
+    result_list.append('[SEP]')
 
     result_string = ' '.join(result_list)
 
