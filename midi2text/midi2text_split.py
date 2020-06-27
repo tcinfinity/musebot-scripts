@@ -18,7 +18,7 @@ from tqdm import tqdm
 """Converts MIDI file to text"""
 def midiToText(filename):
 
-    print('File: {}'.format(filename))
+    tqdm.write('File: {}'.format(filename))
 
     # read from input filename
     mid = MidiFile(filename)
@@ -57,6 +57,7 @@ def midiToText(filename):
 
     if len(check_multiple_tempos) > 1:
         warnings.warn('Multiple tempos: {}'.format(check_multiple_tempos))
+        tempo = check_multiple_tempos[0]
     
     elif len(check_multiple_tempos) == 0: # does this even happen?
         warnings.warn('No tempo: setting default 120')
@@ -148,7 +149,7 @@ def midiToText(filename):
 
     # instantiate text list
     # [CLS] (classification) used for indicating start of input (using other model standards)
-    result_list = ['[CLS]', 't{}'.format(tempo), '[127]']
+    result_list = ['[CLS]', 'tempo{}'.format(tempo), '[127]']
 
 
     # loop through grouped messages and check for delta time differences between tracks
@@ -180,7 +181,7 @@ def midiToText(filename):
 
         # append wait
         if min_dt != 0:
-            wait_text = 'w{}'.format(min_dt)
+            wait_text = 'wait:{}'.format(min_dt)
             result_list.append(wait_text)
 
             current_wait_time_elapsed += min_dt
@@ -211,8 +212,12 @@ def midiToText(filename):
             if all_first_times[i] == min_dt:
                 for msg in track_group['group']:
 
-                    track_type = str(i)
-                    new_text = '{track_type} v{vel} n{note}'.format(track_type=track_type, vel=msg.velocity, note=msg.note)
+                    # convert from 1-88 to A4
+                    note = music21.note.Note(msg.note)
+                    note_name = note.nameWithOctave
+
+                    track_type = 'melody' if i == 0 else 'accomp{}'.format(i-1)
+                    new_text = '{track_type} v{vel} {note}'.format(track_type=track_type, vel=msg.velocity, note=note_name)
 
                     result_list.append(new_text)
 
@@ -231,7 +236,7 @@ def midiToText(filename):
 
     print('Final time embedding: {}'.format(time_embed_counter))
     result_list.append('[0]')
-    result_list.append('[END]')
+    result_list.append('[SEP]')
 
     result_string = ' '.join(result_list)
 
