@@ -1,0 +1,253 @@
+import mido
+
+import sys
+import os
+from os.path import isfile
+from warnings import warn
+
+import datetime
+
+import argparse
+from tqdm import tqdm
+
+# hard coded stuff
+notetonumberacc = {'C#':1,'D-':1,'D#':3,'E-':3,'F#':6,'G-':6,'G#':8,'A-':8,'A#':10,'B-':10, 'C-':-1, 'F-':4, 'B#':12, 'E#':5} 
+notetonumbernat = {'C':0,'D':2,'E':4,'F':5,'G':7,'A':9,'B':11,}
+
+
+# converts from musical notation to midi numbers
+def notetonumber(note):
+
+    if '-' in note or '#' in note: # test for accidentals
+        # check if octave missing
+        if note[2:] == '':
+            print(note)
+
+        return notetonumberacc[note[:2:]] + 12*(int(note[2::])+1)
+
+    else: # no accidentals
+        # check if octave missing
+        if note[1:] == '':
+            print(note)
+
+        return notetonumbernat[note[:1:]] + 12*(int(note[1::])+1)
+
+
+# main function
+def texttotrack(miditext):
+    midilist = miditext.split()
+    partslist = {}
+
+    midilist = [note for note in midilist if not note.startswith('<')]
+
+    # getting tempo
+    if midilist[0].startswith('t'):
+        tempo = int(midilist.pop(0)[1:])
+    else:
+        tempo = 120
+
+    print(tempo)
+
+    # remove extra tempos
+    midilist = [note for note in midilist if not note.startswith('t')]
+
+    # determine tracks and instantiate
+    for note in midilist:
+        if not note.startswith('w'):
+            possible_track = note.split('v')[0]
+            if possible_track not in partslist:
+                partslist[possible_track] = []
+
+
+    for part in partslist:
+        for note in midilist:
+            # 0v100G4
+            print(note)
+            if part == note.split('v')[0]:
+                note_part = note.split('v')[1] # 100G4
+                note_part_list = list(note_part)
+                for i, x in enumerate(note_part_list):
+                    # velocity is made of int, start of note will return error for parsing int
+                    try:
+                        int(x)
+                    except:
+                        note_part_list.insert(i, ':') # insert ':' before key (non-int) for splitting later
+                        break
+
+                # 100:G4
+                joined_note_part = 'v' + ''.join(note_part_list) # v100:G4
+                partslist[part].append(joined_note_part)
+
+            elif note.startswith('w'):
+                partslist[part].append(note) # w80
+
+
+    # combining waits in a list 
+    for part in partslist:  
+        copy = [i for i in partslist[part]] 
+        count = 0   
+        temp = []   
+        for i in range(len(copy)):
+            current = copy[i+count]
+            if not current.startswith('w'): # not a wait
+                temp.append(copy[i+count])
+            else: # is a wait
+                temp.append([int(copy[i+count][1::])])
+                for j in copy[i+count+1:]:
+                    if j.startswith('w'):
+                        temp[-1].append(int(j[1::]))
+                        count += 1
+                    else:
+                        break
+            if i+count == len(copy) - 1:
+                break
+        partslist[part] = temp
+
+    # summing waits
+    for part in partslist:
+        for i in range(len(partslist[part])):
+            if isinstance(partslist[part][i], list):
+                partslist[part][i] = sum(partslist[part][i]) # waits are stored as int
+
+
+    # adding waits to notes as dt
+    for part in partslist:
+        for i in range(len(partslist[part])):
+
+            if not isinstance(partslist[part][i], int): # not wait i.e. note
+                try:
+                    previous_index = partslist[part][i-1]
+                    if isinstance(previous_index, int): # wait dt
+                        partslist[part][i] += ':' + str(previous_index)
+                    else:
+                        partslist[part][i] += ':0'
+
+                except IndexError: # for first index
+                    partslist[part][i] += ':0'
+    
+    # removing waits
+    for part in partslist:
+        for note in partslist[part]:
+            if isinstance(note, int):
+                partslist[part].remove(note)
+    
+    # translating to message
+    for part in partslist:
+        for i in range(len(partslist[part])):
+            note = partslist[part][i][1:].split(':')
+            partslist[part][i] = mido.Message('note_on', note=notetonumber(note[1]), velocity=int(note[0]), time=int(note[2]))            
+
+
+    # append tempo
+    for part in partslist:
+        partslist[part].insert(0, mido.MetaMessage('set_tempo', tempo=mido.bpm2tempo(tempo)))
+        
+
+    return partslist
+
+
+def dicttomidi(outputdict, name):
+    midi = mido.MidiFile()
+    for part in outputdict:
+        track = mido.MidiTrack()
+        midi.tracks.append(track)
+        track.append(outputdict[part][0]) # tempo
+        track.append(mido.Message(type='program_change', program=0))
+        
+        for message in outputdict[part][1:]:
+            track.append(message)
+    midi.save(name)
+
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--file', '-f', help='text file')
+    parser.add_argument('--text', '-t', help='text string to convert')
+    parser.add_argument('--output', '-o', help='name of output file')
+    args = parser.parse_args()
+
+    if args.file and args.text:
+        raise Exception("Conflict Error: Both --file and --text specified\nPlease only use one option at a time.")
+
+
+    elif args.text:
+        # check if midi file with same name has already exists
+        if args.output:
+            if not args.output.endswith('.mid'):
+                output = '{}.mid'.format(args.output)
+                warn('Added ".mid" to ending of args.output: {}'.format(args.output))
+            else:
+                output = args.output
+        
+        else:
+            # default
+            timestamp = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
+            output = 'output-{}.mid'.format(timestamp)
+        
+        # check if file exists with same output name specified to prevent overwrite
+        if isfile(output):
+            raise FileExistsError('File already exists with name: {}'.format(output))
+
+        
+        # generate midi file
+        try:
+            dicttomidi(texttotrack(args.text), output)
+        
+        except:
+            print('args.text error: ', sys.exc_info()[0])
+            raise
+
+
+    elif args.file:
+        
+        # check if args.file is valid
+        try:
+            f = open(args.file, 'r')
+        except FileNotFoundError:
+            print('File not found: {}'.format(args.file))
+            raise
+        
+
+        # validate folder creation to store midi files
+        if args.output:
+            # create folder with name from args.output
+            new_folder_name = args.output
+
+        else:
+            # create folder with same name as args.file
+            base_input_file = os.path.basename(args.file)
+            new_folder_name = os.path.splitext(base_input_file)[0]
+
+
+        # check if folder with same name already exists
+        try:
+            os.makedirs(new_folder_name)    
+        except FileExistsError:
+            # add timestamp at the back to make unique folder name
+            timestamp = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
+            corrected_folder_name = '{}-{}'.format(new_folder_name, timestamp)
+            warn('Directory "{}" already exists; saving as "{}" instead'.format(new_folder_name, corrected_folder_name))
+            os.makedirs(corrected_folder_name)
+            new_folder_name = corrected_folder_name
+
+
+        # generate midi files inside folder
+        # each line containing text to generate a midi file
+        input_text_list = [line for line in f.read().split('\n') if line != '']
+        f.close()
+        
+        # generate midi files in folder
+        for i, text in enumerate(tqdm(input_text_list)):
+            # e.g. [args.file]/0.mid
+            output = '{}/{}.mid'.format(new_folder_name, i)
+            dicttomidi(texttotrack(text), output)
+
+
+    else:
+        raise Exception('Please specify a --file or --text.')
+
+
+    # print(texttotrack(sample_text))
+    # output = open('midioutput.txt','w')
+    # output.write(str(texttotrack(sample_text)))

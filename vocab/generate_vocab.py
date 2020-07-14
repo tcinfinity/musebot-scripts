@@ -1,4 +1,4 @@
-vocab = {'[CLS':0,'[SEP]':1,'PAD':2,'[UNK]':3,'start':4,'end':5,'melody':6}
+vocab = {'[CLS]':0,'[SEP]':1,'[PAD]':2,'[UNK]':3,'start':4,'end':5,'melody':6}
 
 # accomp0 - accomp19
 accomps = {}

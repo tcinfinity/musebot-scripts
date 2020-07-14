@@ -133,10 +133,9 @@ def dicttomidi(outputdict, name):
     for part in outputdict:
         track = mido.MidiTrack()
         midi.tracks.append(track)
-        track.append(mido.MetaMessage('set_tempo', tempo=mido.bpm2tempo(120)))
+        track.append(outputdict[part][0]) # tempo
         track.append(mido.Message(type='program_change', program=0))
-        
-        for message in outputdict[part]:
+        for message in outputdict[part][1:]:
             track.append(message)
     midi.save(name)
 
@@ -216,7 +215,7 @@ if __name__ == "__main__":
 
         # generate midi files inside folder
         # each line containing text to generate a midi file
-        input_text_list = f.read().split('/n')
+        input_text_list = [line for line in f.read().split('\n') if line != '']
         f.close()
         
         # generate midi files in folder

@@ -21,11 +21,6 @@ def generate_transposed_midi(input_dir, output_dir):
         key = score.analyze('key')
         # print(key.tonic.name, key.mode)
 
-        # if key.mode == "major":
-        #     half_steps = majors[key.tonic.name]
-        # elif key.mode == "minor":
-        #     half_steps = minors[key.tonic.name]
-
         for step in tqdm(steps):
             new_score = score.transpose(step)
             key = new_score.analyze('key')

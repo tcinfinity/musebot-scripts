@@ -1,1 +1,5 @@
 datasets/*
+training_output/*
+generated_tests/*
+checkpoints/*
+outputs/

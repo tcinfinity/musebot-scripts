@@ -11,24 +11,25 @@ from music21 import *
 
 import numpy as np
 
+from tqdm import tqdm
 
 """Converts MIDI file to text"""
 def midiToText(filename):
 
-    print('File: {}'.format(filename))
+    tqdm.write('File: {}'.format(filename))
 
     # read from input filename
     mid = MidiFile(filename)
 
-    print('Length (sec): {}'.format(mid.length))
-    print('Ticks per beat: {}'.format(mid.ticks_per_beat)) # e.g. 96/480 per beat (crotchet)
+    tqdm.write('Length (sec): {}'.format(mid.length))
+    tqdm.write('Ticks per beat: {}'.format(mid.ticks_per_beat)) # e.g. 96/480 per beat (crotchet)
 
 
     # check for muliple tempos (e.g. change in tempo halfway through piece)
     check_multiple_tempos = []
 
     # instantiate final tempo for piece
-    tempo = None
+    tempo = 120
 
     """
     What is a channel? vs What is a track?
@@ -42,7 +43,7 @@ def midiToText(filename):
 
     for i, track in enumerate(mid.tracks):
 
-        print('Track {}: {}'.format(i, track.name))
+        tqdm.write('Track {}: {}'.format(i, track.name))
 
         for msg in track:
             if msg.type == 'set_tempo': # Note: is_meta
@@ -138,7 +139,7 @@ def midiToText(filename):
     """
 
     # instantiate text list
-    result_list = ['start', 'tempo{}'.format(tempo)]
+    result_list = ['<|startoftext|>', 't{}'.format(tempo)]
 
 
     # loop through grouped messages and check for delta time differences between tracks
@@ -165,7 +166,7 @@ def midiToText(filename):
 
         # append wait
         if min_dt != 0:
-            wait_text = 'wait:{}'.format(min_dt)
+            wait_text = 'w{}'.format(min_dt)
             result_list.append(wait_text)
 
 
@@ -183,8 +184,8 @@ def midiToText(filename):
                     note = music21.note.Note(msg.note)
                     note_name = note.nameWithOctave
 
-                    track_type = 'melody' if i == 0 else 'accomp{}'.format(i-1)
-                    new_text = '{track_type}:v{vel}:{note}'.format(track_type=track_type, vel=msg.velocity, note=note_name)
+                    track_type = str(i)
+                    new_text = '{track_type}v{vel}{note}'.format(track_type=track_type, vel=msg.velocity, note=note_name)
 
                     result_list.append(new_text)
 
@@ -202,7 +203,7 @@ def midiToText(filename):
         # Possible scenario: ONLY if at the start, one track has a rest e.g. time=96
 
 
-    result_list.append('end')
+    result_list.append('<|endoftext|>')
 
     result_string = ' '.join(result_list)
 
